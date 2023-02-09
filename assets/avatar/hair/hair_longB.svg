@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="mySVG"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="hair_longB.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="1.4770342"
+     inkscape:cx="169.2581"
+     inkscape:cy="327.68368"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect6043"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect14166"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect2574"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect441"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect437"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="hair_long"
+       style="fill:#803300;stroke:none;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 58.208333 66.145833 C 58.208333 66.145833 56.583342 74.995352 55.5625 79.375 C 52.454504 92.70902 46.192423 105.42491 44.979167 119.0625 C 44.038084 129.64073 47.625 150.8125 47.625 150.8125 C 47.625 150.8125 46.918642 141.93611 47.625 137.58333 C 48.071741 134.8304 50.270833 129.64583 50.270833 129.64583 C 50.270833 129.64583 49.839799 136.72782 50.270833 140.22917 C 50.715134 143.83826 50.52539 148.07301 52.916667 150.8125 C 56.039901 154.39054 61.416314 155.66994 66.145833 156.10417 C 70.624046 156.51532 74.885288 153.7151 79.375 153.45833 C 86.603741 153.04493 98.603962 154.41343 105.592 155.33367 L 105.56875 156.10417 C 105.56875 156.10417 106.69352 155.93541 108.34687 155.70367 C 110.00023 155.93541 111.125 156.10417 111.125 156.10417 L 111.10175 155.33367 C 118.08979 154.41343 130.09001 153.04493 137.31875 153.45833 C 141.80847 153.7151 146.10893 156.82452 150.54792 156.10417 C 154.05723 155.53469 157.66154 153.64638 159.80833 150.8125 C 162.00412 147.91396 162.00987 143.83827 162.45417 140.22917 C 162.8852 136.72783 162.45417 129.64583 162.45417 129.64583 C 162.45417 129.64583 164.55657 134.84784 165.1 137.58333 C 166.0156 142.19209 166.09219 151.64501 166.09219 151.64501 C 166.09219 151.64501 168.3929 129.91797 167.74583 119.0625 C 167.00042 106.55737 163.68279 94.337638 161.39583 82.020833 C 160.57486 77.599358 158.75 68.791667 158.75 68.791667 L 108.47917 68.791667 L 58.208333 66.145833 z " />
+  </g>
+</svg>
