@@ -1,6 +1,6 @@
 <h1>Avatar</h1>
 <div class="grid">
-  <div class="col-3">
+  <div class="col-3 attributeColumn">
     <div>Gender</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -10,7 +10,7 @@
       (onChange)="changeGender(selectedTestGender.value)"
     ></p-dropdown>
   </div>
-  <div class="col-3">
+  <div class="col-3 attributeColumn">
     <div>Species</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -20,7 +20,7 @@
       (onChange)="changeRace(selectedTestRace.value)"
     ></p-dropdown>
   </div>
-  <div class="col-3">
+  <div class="col-3 attributeColumn">
     <div>Role</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -30,7 +30,7 @@
       (onChange)="changeRole(selectedTestRole.value)"
     ></p-dropdown>
   </div>
-  <div class="col-3">
+  <div class="col-3 attributeColumn">
     <div>Rank</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -49,9 +49,9 @@
   <div class="bar-5"></div>
 </div>
 <div class="grid">
-  <div class="col-6">
+  <div class="col-6 mainColumn">
     <div class="grid">
-      <div class="col-6">
+      <div class="col-6 settingsColumn">
         <div>Hair</div>
         <div class="grid">
           <div class="col-2">
@@ -201,7 +201,7 @@
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-6 settingsColumn">
         <div>Haircolor</div>
         <div class="grid">
           <div class="col-2">
@@ -352,7 +352,7 @@
       >save picture</p-button
     >
   </div>
-  <div class="col-6">
+  <div class="col-6 mainColumn">
     <div id="avatar" class="wrapper">
       <div #uniform id="uniform" class="uniform" [innerHTML]="uniformSVG"></div>
       <div #head id="headID" class="headID" [innerHTML]="headSVG"></div>

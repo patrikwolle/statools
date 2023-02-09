@@ -313,6 +313,8 @@ export class AvatarComponent implements OnInit {
       case 'head':
         if (up === true && this.headIndex < this.allHeads.length - 1) {
           this.headIndex++;
+        } else if (up === true && this.headIndex === this.allHeads.length - 1) {
+          this.headIndex = 0;
         } else if (up === false && this.headIndex > 0) {
           this.headIndex--;
         }

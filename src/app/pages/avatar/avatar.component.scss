@@ -5,6 +5,18 @@
   background-size: cover;
 }
 
+.settingsColumn {
+  min-width: 350px;
+}
+
+.attributeColumn {
+  min-width: 350px;
+}
+
+.mainColumn {
+  min-width: 500px;
+}
+
 .uniform {
   position: absolute;
   z-index: 6;
