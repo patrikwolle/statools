@@ -15,11 +15,7 @@ export class PrintService {
     if (el) {
       console.log("saving img");
 
-      html2canvas(el).then(canvas => {
-        console.log(canvas);
-        const imgWidth = 1122.52;
-        const imgHeight = 793.7;
-        
+      html2canvas(el).then(canvas => {      
         const link = document.createElement('a');
         link.download = 'startrek_avatar.png';
         link.href = canvas.toDataURL('image/png');
