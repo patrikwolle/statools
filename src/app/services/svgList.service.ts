@@ -63,6 +63,7 @@ export enum ranks {
 
 export interface avatarList {
   file: string | string[];
+  name?: string;
   tags: {
     imagePart: imageParts;
     gender: gender[];
@@ -73,9 +74,11 @@ export interface avatarList {
 export const avatarSvgList: avatarList[] = [
   {
     file: 'uniform_male.svg',
+    name: 'Male Uniform 1',
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.male],
+
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
@@ -88,6 +91,7 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: 'uniform_male2.svg',
+    name: 'Male Uniform 2',
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.male],
@@ -102,6 +106,7 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: 'uniform_male3.svg',
+    name: 'Male Uniform 3',
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.male],
@@ -116,6 +121,7 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: 'uniform_female1.svg',
+    name: 'Female Uniform 1',
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.female],
@@ -131,6 +137,7 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: 'uniform_female2.svg',
+    name: 'Female Uniform 2',
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.female],
@@ -146,6 +153,7 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: 'uniform_female3.svg',
+    name: 'Female Uniform 3',
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.female],
