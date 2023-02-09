@@ -185,6 +185,12 @@ export class AvatarComponent implements OnInit {
   }
 
   onChangePart() {
+    document
+      .getElementById('avatar')
+      ?.setAttribute(
+        'style',
+        `height: ${document.getElementById('avatar')?.offsetWidth! * 1.2}px`
+      );
     this.setSVGs();
     this.setColors();
     this.avatar.loadPartBySelection(this.selectedUniform).subscribe((res) => {
@@ -436,21 +442,17 @@ export class AvatarComponent implements OnInit {
    * @returns size corrected SVG string
    */
   changeSizeOfSVG(input?: string): string {
-    console.log(input);
     let width = document.getElementById('avatar')?.offsetWidth;
     let height = 0;
     if (width) {
       height = width * 1.2;
     }
     if (input) {
-      let image =
-        input.split('width')[0] +
-        'width="' +
-        width +
-        'px" height="' +
-        height +
-        'px" viewbox' +
-        input.split(/viewBox(.*)/s)[1];
+      let image = `${
+        input.split('width')[0]
+      }width="${width}px" height="${height}px" viewbox${
+        input.split(/viewBox(.*)/s)[1]
+      }`;
       console.log(image);
       return image;
     }
