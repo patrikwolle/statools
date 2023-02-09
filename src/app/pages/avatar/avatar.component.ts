@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AvatarService } from 'src/app/services/avatar.service';
 import {
   alienRaceList,
@@ -189,7 +189,6 @@ export class AvatarComponent implements OnInit {
     this.setColors();
     this.avatar.loadPartBySelection(this.selectedUniform).subscribe((res) => {
       this.uniformSVG = this.sanitizer.bypassSecurityTrustHtml(res);
-
       setTimeout(() => {
         this.color.setUniformColor(
           document.getElementById('uniform_right'),
@@ -199,28 +198,47 @@ export class AvatarComponent implements OnInit {
           document.getElementById('uniform_left'),
           this.selectedRole
         );
+        this.changeSizeOfSVG();
       }, 1);
     });
     this.avatar.loadPartBySelection(this.selectedHead).subscribe((res) => {
       this.headSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+      setTimeout(() => {
+        this.changeSizeOfSVG();
+      }, 1);
     });
     this.avatar.loadPartBySelection(this.selectedEyes).subscribe((res) => {
       this.eyesSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+      setTimeout(() => {
+        this.changeSizeOfSVG();
+      }, 1);
     });
     this.avatar.loadPartBySelection(this.selectedEyebrows).subscribe((res) => {
       this.eyebrowsSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+      setTimeout(() => {
+        this.changeSizeOfSVG();
+      }, 1);
     });
     this.avatar.loadPartBySelection(this.selectedNose).subscribe((res) => {
       this.noseSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+      setTimeout(() => {
+        this.changeSizeOfSVG();
+      }, 1);
     });
     this.avatar.loadPartBySelection(this.selectedMouth).subscribe((res) => {
       this.mouthSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+      setTimeout(() => {
+        this.changeSizeOfSVG();
+      }, 1);
     });
     if (this.selectedHeadDeco) {
       this.avatar
         .loadPartBySelection(this.selectedHeadDeco)
         .subscribe((res) => {
           this.headDecoSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+          setTimeout(() => {
+            this.changeSizeOfSVG();
+          }, 1);
         });
     }
 
@@ -228,6 +246,7 @@ export class AvatarComponent implements OnInit {
       this.earsSVG = this.sanitizer.bypassSecurityTrustHtml(res);
       setTimeout(() => {
         this.avatar.setColor('skin', this.selectedSkinColor);
+        this.changeSizeOfSVG();
       }, 1);
     });
     if (Array.isArray(this.selectedHair.file)) {
@@ -254,6 +273,9 @@ export class AvatarComponent implements OnInit {
 
       this.avatar.loadPartBySelection(file2).subscribe((res) => {
         this.longHairSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+        setTimeout(() => {
+          this.changeSizeOfSVG();
+        }, 1);
       });
     } else {
       this.longHairSVG = '';
@@ -265,6 +287,7 @@ export class AvatarComponent implements OnInit {
             document.getElementById('hair_band'),
             this.selectedRole
           );
+          this.changeSizeOfSVG();
         }, 1);
       });
     }
@@ -404,6 +427,21 @@ export class AvatarComponent implements OnInit {
         'style',
         this.replaceStyleColor(styleElement, oldStyle, fillColor)
       );
+    }
+  }
+
+  changeSizeOfSVG() {
+    let width = document.getElementById('avatar')?.offsetWidth;
+    if (width) {
+      let allSVGs = Array.from(document.getElementsByTagName('svg'));
+      let height = width * 1.414;
+      allSVGs.forEach((svg) => {
+        svg.setAttribute('width', `${width}px`);
+        svg.setAttribute('height', `${height}px`);
+      });
+      document
+        .getElementById('avatar')
+        ?.setAttribute('style', `height: ${width * 1.1}px`);
     }
   }
 
