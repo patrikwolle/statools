@@ -1,0 +1,38 @@
+<h2>Upload new SVGs</h2>
+<div class="grid">
+    <div class="col-6">
+        <div class="grid">
+            <div class="col-6">
+                <p-fileUpload mode="basic" [customUpload]="true" [auto]="true" accept="image/svg+xml" (uploadHandler)="uploadImage($event)" chooseLabel="Browse "></p-fileUpload>
+            </div>
+            <div class="col-6">{{file?.name}}</div>
+        </div>
+
+    </div>
+    <div class="col-6 ">
+        <div class="grid">
+            <div class="col-6">
+                <p-checkbox name="groupname" value="female" label="female" [(ngModel)]="selectedGenders"></p-checkbox>
+
+            </div>
+            <div class="col-6">
+                <p-checkbox name="groupname" value="male" label="male" [(ngModel)]="selectedGenders"></p-checkbox>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid">
+    <div class="col-6">
+        <p-multiSelect [style]="{'width':'100%'}" [options]="races" [(ngModel)]="selectedRaces" optionLabel="name"></p-multiSelect>
+    </div>
+    <div class="col-6"><input [style]="{'width':'100%'}" type="text" [(ngModel)]="newRaces" pInputText /></div>
+</div>
+<div class="grid">
+    <div class="col-6">
+        <p-dropdown [style]="{'width':'100%'}" [options]="bodyParts" [(ngModel)]="selectedBodyPart" optionLabel="name"></p-dropdown>
+    </div>
+    <div class="col-6"><input [style]="{'width':'100%'}" type="text" [(ngModel)]="newBodyPart" pInputText /></div>
+</div>
+<div>
+    <p-button (onClick)="addImage()" label="Add Image"></p-button>
+</div>

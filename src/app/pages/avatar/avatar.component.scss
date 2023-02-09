@@ -1,0 +1,149 @@
+.wrapper {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.uniform {
+  position: absolute;
+  z-index: 6;
+}
+
+.headID {
+  position: absolute;
+  z-index: 7;
+}
+
+.eyes {
+  position: absolute;
+  z-index: 8;
+}
+
+.hair {
+  position: absolute;
+  z-index: 10;
+}
+
+.nose {
+  position: absolute;
+  z-index: 8;
+}
+
+.insignia {
+  position: absolute;
+  z-index: 8;
+}
+
+.earsID {
+  position: absolute;
+  z-index: 6;
+}
+
+.headDecoID {
+  position: absolute;
+  z-index: 11;
+}
+
+.eyebrows {
+  position: absolute;
+  z-index: 9;
+}
+
+.mouth {
+  position: absolute;
+  z-index: 8;
+}
+
+.longHair {
+  position: absolute;
+  z-index: 5;
+}
+
+.bar-panel {
+  display: flex;
+  height: 22px;
+}
+
+.bar-1,
+.bar-2,
+.bar-3,
+.bar-4,
+.bar-5,
+.bar-6,
+.bar-7,
+.bar-9,
+.bar-10 {
+  height: 22px;
+}
+
+.bar-1,
+.bar-2,
+.bar-3,
+.bar-4,
+.bar-6,
+.bar-7,
+.bar-8,
+.bar-9 {
+  border-right: 5px solid #000;
+}
+
+.bar-1,
+.bar-6 {
+  transition: width 1s;
+}
+
+.bar-1 {
+  width: 433px;
+  background-color: #78f;
+}
+
+.bar-2 {
+  width: 40px;
+  background-color: #f70;
+}
+
+.bar-3 {
+  width: 200px;
+  background-color: #c8f;
+}
+
+.bar-4 {
+  flex: 1;
+  background-color: #c8f;
+}
+
+.bar-5 {
+  width: 50px;
+  background-color: #d44;
+}
+
+.bar-6 {
+  width: 433px;
+  background-color: #d44;
+}
+
+.bar-7 {
+  width: 40px;
+  background-color: #ffaa90;
+}
+
+.bar-8 {
+  width: 200px;
+  height: 11px;
+  background-color: #d44;
+}
+
+.bar-9 {
+  flex: 1;
+  background-color: #c8f;
+}
+
+.bar-10 {
+  width: 50px;
+  background-color: #ffaa90;
+}
+
+#gap {
+  margin-top: 10px;
+}
