@@ -13,19 +13,18 @@ import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
 export class PrintService {
   async downLoadAvatar(el: HTMLElement) {
     if (el) {
-      htmlToImage.toPng(el).then(function (dataUrl) {});
+      console.log("saving img");
 
-      /*
-      const link = document.createElement('a');
-      link.setAttribute('download', 'startrek_avatar.png');
-      link.setAttribute(
-        'href',
-        printCanvas
-          .toDataURL('image/png')
-          .replace('image/png', 'image/octet-stream')
-      );
-      link.click();
-      */
+      html2canvas(el).then(canvas => {
+        console.log(canvas);
+        const imgWidth = 1122.52;
+        const imgHeight = 793.7;
+        
+        const link = document.createElement('a');
+        link.download = 'startrek_avatar.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      });
     }
   }
 }
