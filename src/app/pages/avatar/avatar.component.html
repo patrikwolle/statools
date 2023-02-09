@@ -1,6 +1,6 @@
 <h1>Avatar</h1>
-<div class="grid">
-  <div class="col-3 attributeColumn">
+<div class="grid" style="width: 75vw">
+  <div class="col-12 md:col-6 lg:col-3">
     <div>Gender</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -10,7 +10,7 @@
       (onChange)="changeGender(selectedTestGender.value)"
     ></p-dropdown>
   </div>
-  <div class="col-3 attributeColumn">
+  <div class="col-12 md:col-6 lg:col-3">
     <div>Species</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -20,7 +20,7 @@
       (onChange)="changeRace(selectedTestRace.value)"
     ></p-dropdown>
   </div>
-  <div class="col-3 attributeColumn">
+  <div class="col-12 md:col-6 lg:col-3">
     <div>Role</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -30,7 +30,7 @@
       (onChange)="changeRole(selectedTestRole.value)"
     ></p-dropdown>
   </div>
-  <div class="col-3 attributeColumn">
+  <div class="col-12 md:col-6 lg:col-3">
     <div>Rank</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -48,10 +48,10 @@
   <div class="bar-4"></div>
   <div class="bar-5"></div>
 </div>
-<div class="grid">
-  <div class="col-6 mainColumn">
+<div class="grid" style="width: 75vw">
+  <div class="col-12 md:col-6 lg:col-6">
     <div class="grid">
-      <div class="col-6 settingsColumn">
+      <div class="col-12 md:col-6 lg:col-6">
         <div>Hair</div>
         <div class="grid">
           <div class="col-2">
@@ -201,7 +201,7 @@
           </div>
         </div>
       </div>
-      <div class="col-6 settingsColumn">
+      <div class="col-12 md:col-6 lg:col-6">
         <div>Haircolor</div>
         <div class="grid">
           <div class="col-2">
@@ -352,31 +352,41 @@
       >save picture</p-button
     >
   </div>
-  <div class="col-6 mainColumn">
-    <div id="avatar" class="wrapper">
-      <div #uniform id="uniform" class="uniform" [innerHTML]="uniformSVG"></div>
-      <div #head id="headID" class="headID" [innerHTML]="headSVG"></div>
-      <div #eyes id="eyes" class="eyes" [innerHTML]="eyesSVG"></div>
-      <div #eyes id="hair" class="hair" [innerHTML]="hairSVG"></div>
+  <div class="col-12 md:col-6 lg:col-6">
+    <div id=" avatar " class="wrapper">
+      <div
+        #uniform
+        id="uniform "
+        class="uniform"
+        [innerHTML]="uniformSVG"
+      ></div>
+      <div #head id="headID " class="headID" [innerHTML]="headSVG"></div>
+      <div #eyes id="eyes " class="eyes" [innerHTML]="eyesSVG"></div>
+      <div #eyes id="hair " class="hair" [innerHTML]="hairSVG"></div>
       <div
         #longHair
-        id="longHair"
+        id="longHair "
         class="longHair"
         [innerHTML]="longHairSVG"
       ></div>
-      <div #nose id="nose" class="nose" [innerHTML]="noseSVG"></div>
-      <div #mouth id="mouth" class="mouth" [innerHTML]="mouthSVG"></div>
+      <div #nose id="nose " class="nose" [innerHTML]="noseSVG"></div>
+      <div #mouth id="mouth " class="mouth" [innerHTML]="mouthSVG"></div>
       <div
         #eyebrows
-        id="eyebrows"
+        id="eyebrows "
         class="eyebrows"
         [innerHTML]="eyebrowsSVG"
       ></div>
-      <div #ears id="earsID" class="earsID" [innerHTML]="earsSVG"></div>
-      <div #ears id="insignia" class="insignia" [innerHTML]="insigniaSVG"></div>
+      <div #ears id="earsID " class="earsID" [innerHTML]="earsSVG"></div>
       <div
         #ears
-        id="headDecoID"
+        id="insignia "
+        class="insignia"
+        [innerHTML]="insigniaSVG"
+      ></div>
+      <div
+        #ears
+        id="headDecoID "
         class="headDecoID"
         [innerHTML]="headDecoSVG"
       ></div>
