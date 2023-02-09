@@ -188,7 +188,9 @@ export class AvatarComponent implements OnInit {
     this.setSVGs();
     this.setColors();
     this.avatar.loadPartBySelection(this.selectedUniform).subscribe((res) => {
-      this.uniformSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+      this.uniformSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.changeSizeOfSVG(res)
+      );
       setTimeout(() => {
         this.color.setUniformColor(
           document.getElementById('uniform_right'),
@@ -198,55 +200,49 @@ export class AvatarComponent implements OnInit {
           document.getElementById('uniform_left'),
           this.selectedRole
         );
-        this.changeSizeOfSVG();
       }, 1);
     });
     this.avatar.loadPartBySelection(this.selectedHead).subscribe((res) => {
-      this.headSVG = this.sanitizer.bypassSecurityTrustHtml(res);
-      setTimeout(() => {
-        this.changeSizeOfSVG();
-      }, 1);
+      this.headSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.changeSizeOfSVG(res)
+      );
     });
     this.avatar.loadPartBySelection(this.selectedEyes).subscribe((res) => {
-      this.eyesSVG = this.sanitizer.bypassSecurityTrustHtml(res);
-      setTimeout(() => {
-        this.changeSizeOfSVG();
-      }, 1);
+      this.eyesSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.changeSizeOfSVG(res)
+      );
     });
     this.avatar.loadPartBySelection(this.selectedEyebrows).subscribe((res) => {
-      this.eyebrowsSVG = this.sanitizer.bypassSecurityTrustHtml(res);
-      setTimeout(() => {
-        this.changeSizeOfSVG();
-      }, 1);
+      this.eyebrowsSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.changeSizeOfSVG(res)
+      );
     });
     this.avatar.loadPartBySelection(this.selectedNose).subscribe((res) => {
-      this.noseSVG = this.sanitizer.bypassSecurityTrustHtml(res);
-      setTimeout(() => {
-        this.changeSizeOfSVG();
-      }, 1);
+      this.noseSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.changeSizeOfSVG(res)
+      );
     });
     this.avatar.loadPartBySelection(this.selectedMouth).subscribe((res) => {
-      this.mouthSVG = this.sanitizer.bypassSecurityTrustHtml(res);
-      setTimeout(() => {
-        this.changeSizeOfSVG();
-      }, 1);
+      this.mouthSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.changeSizeOfSVG(res)
+      );
     });
     if (this.selectedHeadDeco) {
       this.avatar
         .loadPartBySelection(this.selectedHeadDeco)
         .subscribe((res) => {
-          this.headDecoSVG = this.sanitizer.bypassSecurityTrustHtml(res);
-          setTimeout(() => {
-            this.changeSizeOfSVG();
-          }, 1);
+          this.headDecoSVG = this.sanitizer.bypassSecurityTrustHtml(
+            this.changeSizeOfSVG(res)
+          );
         });
     }
 
     this.avatar.loadPartBySelection(this.selectedEars).subscribe((res) => {
-      this.earsSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+      this.earsSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.changeSizeOfSVG(res)
+      );
       setTimeout(() => {
         this.avatar.setColor('skin', this.selectedSkinColor);
-        this.changeSizeOfSVG();
       }, 1);
     });
     if (Array.isArray(this.selectedHair.file)) {
@@ -260,7 +256,9 @@ export class AvatarComponent implements OnInit {
       };
 
       this.avatar.loadPartBySelection(file1).subscribe((res) => {
-        this.hairSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+        this.hairSVG = this.sanitizer.bypassSecurityTrustHtml(
+          this.changeSizeOfSVG(res)
+        );
       });
       let file2 = {
         file: this.selectedHair.file[1],
@@ -272,27 +270,29 @@ export class AvatarComponent implements OnInit {
       };
 
       this.avatar.loadPartBySelection(file2).subscribe((res) => {
-        this.longHairSVG = this.sanitizer.bypassSecurityTrustHtml(res);
-        setTimeout(() => {
-          this.changeSizeOfSVG();
-        }, 1);
+        this.longHairSVG = this.sanitizer.bypassSecurityTrustHtml(
+          this.changeSizeOfSVG(res)
+        );
       });
     } else {
       this.longHairSVG = '';
       this.avatar.loadPartBySelection(this.selectedHair).subscribe((res) => {
-        this.hairSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+        this.hairSVG = this.sanitizer.bypassSecurityTrustHtml(
+          this.changeSizeOfSVG(res)
+        );
         setTimeout(() => {
           console.log('timeout');
           this.color.setUniformColor(
             document.getElementById('hair_band'),
             this.selectedRole
           );
-          this.changeSizeOfSVG();
         }, 1);
       });
     }
     this.avatar.loadInsignia(true).subscribe((res) => {
-      this.insigniaSVG = this.sanitizer.bypassSecurityTrustHtml(res);
+      this.insigniaSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.changeSizeOfSVG(res)
+      );
       setTimeout(() => {
         this.color.setInsigniaColor(this.selectedRank);
       }, 1);
@@ -430,19 +430,31 @@ export class AvatarComponent implements OnInit {
     }
   }
 
-  changeSizeOfSVG() {
+  /**
+   * Takes the result string of a loaded SVG, and changes the sizes before adding the svg to the innerHTML
+   * @param input input string directly from http
+   * @returns size corrected SVG string
+   */
+  changeSizeOfSVG(input?: string): string {
+    console.log(input);
     let width = document.getElementById('avatar')?.offsetWidth;
+    let height = 0;
     if (width) {
-      let allSVGs = Array.from(document.getElementsByTagName('svg'));
-      let height = width * 1.414;
-      allSVGs.forEach((svg) => {
-        svg.setAttribute('width', `${width}px`);
-        svg.setAttribute('height', `${height}px`);
-      });
-      document
-        .getElementById('avatar')
-        ?.setAttribute('style', `height: ${width * 1.1}px`);
+      height = width * 1.2;
     }
+    if (input) {
+      let image =
+        input.split('width')[0] +
+        'width="' +
+        width +
+        'px" height="' +
+        height +
+        'px" viewbox' +
+        input.split(/viewBox(.*)/s)[1];
+      console.log(image);
+      return image;
+    }
+    return '';
   }
 
   replaceStyleColor(
