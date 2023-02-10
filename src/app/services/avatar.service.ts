@@ -4,8 +4,9 @@ import { Observable } from 'rxjs';
 import { avatarSvgList } from '../data/svgArray';
 import { alienRaceList, imageParts, gender } from '../enums/avatar.enum';
 import { avatarList } from '../interfaces/avatar.interface';
-import { ColorHex } from '../interfaces/color.interface';
-import { ColorServicce, pinkSkin } from './colors.service';
+import { ColorHex, HairColor } from '../interfaces/color.interface';
+import { ColorServicce } from './colors.service';
+import { hairColorService } from './hair-color.service';
 import { skinColorService } from './skin-color.service';
 
 /**
@@ -19,7 +20,8 @@ export class AvatarService {
   constructor(
     private http: HttpClient,
     private color: ColorServicce,
-    private skinColor: skinColorService
+    private skinColor: skinColorService,
+    private hairColor: hairColorService
   ) {}
 
   /**
@@ -45,7 +47,7 @@ export class AvatarService {
     if (part === 'skin') {
       return this.skinColor.getSkinColors(race);
     } else {
-      return [];
+      return this.hairColor.getHairColor(race);
     }
   }
 
@@ -55,10 +57,17 @@ export class AvatarService {
     });
   }
 
-  setColor(part: string, color: ColorHex) {
+  setColor(
+    part: string,
+    skinColor: ColorHex | undefined,
+    hairColor?: HairColor
+  ) {
     switch (part) {
       case 'skin':
-        this.color.setSkinColor(color);
+        if (skinColor) this.color.setSkinColor(skinColor);
+        break;
+      case 'hair':
+        if (hairColor) this.color.setHairColor(hairColor);
     }
   }
 
@@ -76,3 +85,18 @@ export class AvatarService {
     );
   }
 }
+
+export const idsSvg = {
+  uniform: ['uniform_right', 'uniform_left'],
+  skin: ['head', 'ear_left', 'ear_right', 'neck', 'antenna'],
+  hair: [
+    'hair',
+    'hair_long',
+    'hair_highlight',
+    'hair_highlight_long',
+    'hair_shade',
+    'hair_shade_long',
+    'eyebrows_left',
+    'eyebrows_right',
+  ],
+};

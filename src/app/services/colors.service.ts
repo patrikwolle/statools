@@ -2,10 +2,12 @@ import { Injectable } from '@angular/core';
 import { ranks, roles } from '../enums/avatar.enum';
 import {
   ColorHex,
+  HairColor,
   HairColorsProbability,
   SkinColor,
   SkinColorHexObject,
 } from '../interfaces/color.interface';
+import { idsSvg } from './avatar.service';
 
 /**
  * Service that handels loading colors and managing colors
@@ -53,6 +55,31 @@ export class ColorServicce {
     els.forEach((el) => {
       if (el) {
         this.changeColorOfStyle(el, 'fill', color);
+      }
+    });
+  }
+
+  setHairColor(color: HairColor) {
+    idsSvg.hair.forEach((id) => {
+      let element = document.getElementById(id);
+      if (element !== null && element !== undefined) {
+        switch (id) {
+          case 'hair_highlight':
+          case 'hair_highlight_long':
+            this.changeColorOfStyle(element, 'fill', color.highlightColor);
+            break;
+          case 'hair_shade':
+          case 'hair_shade_long':
+          case 'eyebrows_left':
+          case 'eyebrows_right':
+            this.changeColorOfStyle(element, 'fill', color.shadeColor);
+            break;
+          default:
+            console.log(color);
+            this.changeColorOfStyle(element, 'fill', color.baseColor);
+            console.log(element);
+            break;
+        }
       }
     });
   }
@@ -115,79 +142,4 @@ export const disciplineColors = [
   { role: roles.security, color: '#f2c300' as ColorHex },
   { role: roles.command, color: '#df0000' as ColorHex },
   { role: roles.flycontrol, color: '#df0000' as ColorHex },
-];
-//skin color
-export const pinkSkin: SkinColorHexObject = {
-  fair: ['#fae7d0', '#ffdbac'],
-  dark: ['#ffcc99', '#feb186'],
-};
-export const yellowSkin: SkinColorHexObject = {
-  fair: ['#ffe39f', '#f3e39f', '#e8cda8'],
-  dark: ['#dfc183', '#ceab69', '#b58a3f'],
-};
-export const brownSkin: SkinColorHexObject = {
-  fair: ['#f2efee', '#efe6dd', '#ebd3c5', '#d7b6a5', '#c8aca3'],
-  dark: ['#b98865', '#935d37', '#7b4b2a', '#573719', '#483728'],
-};
-export const fairSkin: ColorHex[] = [
-  ...pinkSkin.fair,
-  ...yellowSkin.fair,
-  ...brownSkin.fair,
-];
-export const darkSkin: ColorHex[] = [
-  ...pinkSkin.dark,
-  ...yellowSkin.dark,
-  ...brownSkin.dark,
-];
-export const fleshySkin: ColorHex[] = [...fairSkin, ...darkSkin];
-export const blueSkin: ColorHex[] = [
-  '#add8e6',
-  '#dffaff',
-  '#81e9e6',
-  '#c6ffff',
-  '#95d4ff',
-  '#caeaff',
-];
-
-//hair color
-export const whiteHair: ColorHex[] = ['#fafafa', '#f2f3f5', '#e8e9eb'];
-export const grayHair: ColorHex[] = ['#cfccc3', '#a3a695', '#7e836c'];
-export const blondHair: ColorHex[] = [
-  '#faf0be',
-  '#e1cb9a',
-  '#f4dd6c',
-  '#bc9b34',
-  '#a67c26',
-];
-export const brownHair: ColorHex[] = ['#84532a', '#653521', '#55413a'];
-export const darkHair: ColorHex[] = ['#492d2a', '#321b0f', '#272b2a'];
-export const redHair: ColorHex[] = ['#a94631', '#cc3333', '#990000'];
-export const coloredHair: ColorHex[] = [
-  '#ff9900',
-  '#3399ff',
-  '#8800ff',
-  '#ff99cc',
-  '#009966',
-];
-export const normaleAndColeredHair: HairColorsProbability[] = [
-  { HairColors: whiteHair, probability: 0.02 },
-  { HairColors: grayHair, probability: 0.04 },
-  { HairColors: blondHair, probability: 0.25 },
-  { HairColors: brownHair, probability: 0.4 },
-  { HairColors: darkHair, probability: 0.2 },
-  { HairColors: redHair, probability: 0.05 },
-  { HairColors: coloredHair, probability: 0.04 },
-];
-export const normaleHair: HairColorsProbability[] = [
-  { HairColors: whiteHair, probability: 0.02 },
-  { HairColors: grayHair, probability: 0.04 },
-  { HairColors: blondHair, probability: 0.22 },
-  { HairColors: brownHair, probability: 0.5 },
-  { HairColors: darkHair, probability: 0.2 },
-  { HairColors: redHair, probability: 0.02 },
-];
-export const darkGrayHair: HairColorsProbability[] = [
-  { HairColors: whiteHair, probability: 0.01 },
-  { HairColors: grayHair, probability: 0.01 },
-  { HairColors: darkHair, probability: 0.98 },
 ];

@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AvatarComponent } from './pages/avatar/avatar.component';
-import { UploadComponent } from './pages/upload/upload.component';
 import { FileUploadModule } from 'primeng/fileupload';
 import { InputTextModule } from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
@@ -19,7 +18,7 @@ import { MessageModule } from 'primeng/message';
 import { MessageService } from 'primeng/api';
 import { CheckboxModule } from 'primeng/checkbox';
 @NgModule({
-  declarations: [AppComponent, AvatarComponent, UploadComponent],
+  declarations: [AppComponent, AvatarComponent],
   imports: [
     BrowserModule,
     FileUploadModule,

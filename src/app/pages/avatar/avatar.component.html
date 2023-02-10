@@ -207,15 +207,23 @@
           <div class="col-2">
             <p-button
               [style]="{ width: '100%' }"
+              (click)="nextPart('hairColor', false)"
               icon="pi pi-angle-left"
             ></p-button>
           </div>
           <div class="col-8">
-            <input style="width: 100%" pInputText />
+            <input
+              style="width: 100%"
+              [ngStyle]="{ 'background-color': selectedHairColor.baseColor }"
+              *ngIf="selectedHairColor"
+              [(ngModel)]="selectedHairColor.baseColor"
+              pInputText
+            />
           </div>
           <div class="col-2">
             <p-button
               [style]="{ width: '100%' }"
+              (click)="nextPart('hairColor', true)"
               icon="pi pi-angle-right"
             ></p-button>
           </div>
