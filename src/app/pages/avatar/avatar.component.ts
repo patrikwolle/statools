@@ -13,6 +13,7 @@ import {
 import { avatarList } from 'src/app/interfaces/avatar.interface';
 import { HairColor } from 'src/app/interfaces/color.interface';
 import { backgrounds } from 'src/app/data/backgroundsImg';
+import { randomInt } from 'crypto';
 
 @Component({
   selector: 'app-avatar',
@@ -116,6 +117,18 @@ export class AvatarComponent implements OnInit {
   }
 
   loadArrays() {
+    this.uniformIndex = 0;
+    this.headIndex = 0;
+    this.eyeIndex = 0;
+    this.hairIndex = 0;
+    this.noseIndex = 0;
+    this.mouthIndex = 0;
+    this.eyebrowIndex = 0;
+    this.earsIndex = 0;
+    this.skinColorIndex = 0;
+    this.headDecoIndex = 0;
+    this.hairColorIndex = 0;
+    this.backgroundIndex = 0;
     this.allUniforms = this.avatar.loadPart(
       imageParts.uniform,
       this.selectedRace,
@@ -350,6 +363,27 @@ export class AvatarComponent implements OnInit {
     this.selectedEars = this.allEars[this.earsIndex];
     this.selectedHeadDeco = this.allHeadDeco[this.headDecoIndex];
     this.selectedHairColor = this.allHairColors[this.hairColorIndex];
+  }
+
+  random() {
+    this.uniformIndex = this.randomInt(this.allUniforms.length);
+    this.headIndex = this.randomInt(this.allHeads.length);
+    this.eyeIndex = this.randomInt(this.allHeads.length);
+    this.hairIndex = this.randomInt(this.allHairs.length);
+    this.noseIndex = this.randomInt(this.allNoses.length);
+    this.mouthIndex = this.randomInt(this.allMouths.length);
+    this.eyebrowIndex = this.randomInt(this.allEyebrows.length);
+    this.earsIndex = this.randomInt(this.allEars.length);
+    this.selectedHeadDeco = this.randomInt(this.allHeadDeco.length);
+    this.hairColorIndex = this.randomInt(this.allHairColors.length);
+    this.skinColorIndex = this.randomInt(this.allSkinColors.length);
+    this.backgroundIndex = this.randomInt(this.allBackgrounds.length);
+
+    this.onChangePart();
+  }
+
+  randomInt(max: number): number {
+    return Math.floor(Math.random() * max);
   }
 
   setColors(): void {
