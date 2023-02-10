@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { alienRaceList } from './svgList.service';
 import { ColorHex, SkinColor } from '../interfaces/color.interface';
 import {
   blueSkin,
@@ -9,7 +8,8 @@ import {
   fleshySkin,
   pinkSkin,
 } from './colors.service';
-import { ColorConversionService } from './colorConverter.service';
+import { ColorConversionService } from './color-converter.service';
+import { alienRaceList } from '../enums/avatar.enum';
 
 /**
  * Service that handels loading colors and managing colors

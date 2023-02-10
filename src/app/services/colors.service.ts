@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
+import { ranks, roles } from '../enums/avatar.enum';
 import {
   ColorHex,
   HairColorsProbability,
   SkinColor,
   SkinColorHexObject,
 } from '../interfaces/color.interface';
-import { alienRaceList, ranks, roles } from './svgList.service';
 
 /**
  * Service that handels loading colors and managing colors

@@ -1,16 +1,16 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AvatarService } from 'src/app/services/avatar.service';
-import {
-  alienRaceList,
-  avatarList,
-  gender,
-  imageParts,
-  ranks,
-  roles,
-} from 'src/app/services/svgList.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ColorServicce } from 'src/app/services/colors.service';
 import { PrintService } from 'src/app/services/print.service';
+import {
+  alienRaceList,
+  ranks,
+  roles,
+  gender,
+  imageParts,
+} from 'src/app/enums/avatar.enum';
+import { avatarList } from 'src/app/interfaces/avatar.interface';
 
 @Component({
   selector: 'app-avatar',
@@ -43,6 +43,7 @@ export class AvatarComponent implements OnInit {
   allEars: avatarList[] = [];
   allSkinColors: any[] = [];
   allHeadDeco: avatarList[] = [];
+  allHairColors: any[] = [];
 
   /** Selected elements out of the arrays of the body parts */
   selectedUniform: any;
@@ -56,6 +57,7 @@ export class AvatarComponent implements OnInit {
   selectedSkinColor: any;
   selectedHeadDeco: any;
   selectedHeadRacial: any;
+  selectedHairColor: any;
 
   /** Variables to hold the svg information */
   uniformSVG: SafeHtml = '';
@@ -82,6 +84,7 @@ export class AvatarComponent implements OnInit {
   earsIndex: number = 0;
   skinColorIndex: number = 0;
   headDecoIndex: number = 0;
+  hairColorIndex: number = 0;
 
   constructor(
     public avatar: AvatarService,
@@ -155,6 +158,12 @@ export class AvatarComponent implements OnInit {
     );
     this.allSkinColors = this.avatar.loadColor(
       'skin',
+      this.selectedRace,
+      this.selectedGender
+    );
+
+    this.allHairColors = this.avatar.loadColor(
+      'hair',
       this.selectedRace,
       this.selectedGender
     );

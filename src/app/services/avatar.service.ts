@@ -1,16 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import {
-  alienRaceList,
-  avatarList,
-  avatarSvgList,
-  gender,
-  imageParts,
-} from '../services/svgList.service';
+import { avatarSvgList } from '../data/svgArray';
+import { alienRaceList, imageParts, gender } from '../enums/avatar.enum';
+import { avatarList } from '../interfaces/avatar.interface';
 import { ColorHex } from '../interfaces/color.interface';
 import { ColorServicce, pinkSkin } from './colors.service';
-import { skinColorService } from './skinColor.service';
+import { skinColorService } from './skin-color.service';
 
 /**
  * Service that handels loading the svgs, and the svg-config file
@@ -46,7 +42,11 @@ export class AvatarService {
   }
 
   loadColor(part: string, race: alienRaceList, gender: gender) {
-    return this.skinColor.getSkinColors(race);
+    if (part === 'skin') {
+      return this.skinColor.getSkinColors(race);
+    } else {
+      return [];
+    }
   }
 
   loadInsignia(officer: boolean): Observable<string> {
@@ -68,8 +68,11 @@ export class AvatarService {
    * @returns Observable of the loaded svg
    */
   loadPartBySelection(part: avatarList): Observable<string> {
-    return this.http.get(`assets/avatar/${part.tags.imagePart}/${part.file}`, {
-      responseType: 'text',
-    });
+    return this.http.get(
+      `assets/avatar/${part.tags.imagePart.toLowerCase()}/${part.file}`,
+      {
+        responseType: 'text',
+      }
+    );
   }
 }
