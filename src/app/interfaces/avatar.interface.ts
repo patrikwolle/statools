@@ -9,3 +9,8 @@ export interface avatarList {
     race: alienRaceList[];
   };
 }
+
+export interface backgroundInterface {
+  name: string;
+  path: string;
+}

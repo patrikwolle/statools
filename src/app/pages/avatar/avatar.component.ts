@@ -12,6 +12,7 @@ import {
 } from 'src/app/enums/avatar.enum';
 import { avatarList } from 'src/app/interfaces/avatar.interface';
 import { HairColor } from 'src/app/interfaces/color.interface';
+import { backgrounds } from 'src/app/data/backgroundsImg';
 
 @Component({
   selector: 'app-avatar',
@@ -45,6 +46,7 @@ export class AvatarComponent implements OnInit {
   allSkinColors: any[] = [];
   allHeadDeco: avatarList[] = [];
   allHairColors: any[] = [];
+  allBackgrounds: any[] = [];
 
   /** Selected elements out of the arrays of the body parts */
   selectedUniform: any;
@@ -59,6 +61,7 @@ export class AvatarComponent implements OnInit {
   selectedHeadDeco: any;
   selectedHeadRacial: any;
   selectedHairColor: HairColor | undefined;
+  selectedBackground: any;
 
   /** Variables to hold the svg information */
   uniformSVG: SafeHtml = '';
@@ -86,6 +89,7 @@ export class AvatarComponent implements OnInit {
   skinColorIndex: number = 0;
   headDecoIndex: number = 0;
   hairColorIndex: number = 0;
+  backgroundIndex: number = 0;
 
   constructor(
     public avatar: AvatarService,
@@ -168,6 +172,7 @@ export class AvatarComponent implements OnInit {
       this.selectedRace,
       this.selectedGender
     );
+    this.allBackgrounds = backgrounds;
     console.log(this.allHairColors);
     this.onChangePart();
   }
@@ -203,6 +208,7 @@ export class AvatarComponent implements OnInit {
         `height: ${document.getElementById('avatar')?.offsetWidth! * 1.2}px`
       );
     this.setSVGs();
+    this.setBackground();
     this.setColors();
     this.avatar.loadPartBySelection(this.selectedUniform).subscribe((res) => {
       this.uniformSVG = this.sanitizer.bypassSecurityTrustHtml(
@@ -349,6 +355,21 @@ export class AvatarComponent implements OnInit {
     this.selectedSkinColor = this.allSkinColors[this.skinColorIndex];
   }
 
+  setBackground(): void {
+    this.selectedBackground = this.allBackgrounds[this.backgroundIndex];
+    document
+      .getElementById('background')
+      ?.setAttribute('src', `${this.selectedBackground.path}`);
+    document.getElementById('background')?.setAttribute(
+      'style',
+      `
+    position: absolute;
+    z-index: 1;
+    width: ${document.getElementById('avatar')?.offsetWidth}px;
+    height: ${document.getElementById('avatar')?.offsetWidth! * 1.2}px`
+    );
+  }
+
   nextPart(part: string, up: boolean): void {
     switch (part) {
       case 'uniform':
@@ -452,6 +473,24 @@ export class AvatarComponent implements OnInit {
           this.hairColorIndex--;
         } else {
           this.hairColorIndex = this.allHairColors.length - 1;
+        }
+        this.onChangePart();
+        break;
+      case 'background':
+        if (
+          up === true &&
+          this.backgroundIndex < this.allBackgrounds.length - 1
+        ) {
+          this.backgroundIndex++;
+        } else if (
+          up === true &&
+          this.backgroundIndex === this.allBackgrounds.length - 1
+        ) {
+          this.backgroundIndex = 0;
+        } else if (up === false && this.backgroundIndex > 0) {
+          this.backgroundIndex--;
+        } else {
+          this.backgroundIndex = this.allBackgrounds.length - 1;
         }
         this.onChangePart();
         break;
