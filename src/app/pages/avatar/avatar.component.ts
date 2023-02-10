@@ -273,6 +273,9 @@ export class AvatarComponent implements OnInit {
           this.headDecoSVG = this.sanitizer.bypassSecurityTrustHtml(
             this.changeSizeOfSVG(res)
           );
+          setTimeout(() => {
+            this.avatar.setColor('skin', this.selectedSkinColor);
+          }, 1);
         });
     }
 
