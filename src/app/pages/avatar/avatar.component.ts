@@ -329,6 +329,7 @@ export class AvatarComponent implements OnInit {
         this.color.setInsigniaColor(this.selectedRank);
       }, 1);
     });
+    console.log(this.selectedHairColor);
   }
 
   print() {

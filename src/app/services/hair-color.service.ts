@@ -73,9 +73,11 @@ export class hairColorService {
 
   lightnessVariation(baseColor: ColorHex, lightnessDiff: number): ColorHex {
     let baseColHsl = this.colorConverter.hexToHSL(baseColor);
+    console.log(baseColHsl);
     let newLightness = baseColHsl.l + lightnessDiff;
+    console.log(newLightness);
     if (newLightness < 0) {
-      baseColHsl.l = 0;
+      baseColHsl.l = 2;
     } else if (newLightness > 100) {
       baseColHsl.l = 100;
     } else {

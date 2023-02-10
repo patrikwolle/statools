@@ -1,6 +1,6 @@
 import { ColorHex } from '../interfaces/color.interface';
 
-export const whiteHair: ColorHex[] = ['#fafafa', '#f2f3f5', '#e8e9eb'];
+export const whiteHair: ColorHex[] = ['#fafaf1', '#f2f3f5', '#e8e9eb'];
 export const grayHair: ColorHex[] = ['#cfccc3', '#a3a695', '#7e836c'];
 export const blondHair: ColorHex[] = [
   '#faf0be',
