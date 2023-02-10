@@ -46,6 +46,7 @@ export class AvatarComponent implements OnInit {
   allEars: avatarList[] = [];
   allSkinColors: any[] = [];
   allHeadDeco: avatarList[] = [];
+  allHeadRacial: avatarList[] = [];
   allHairColors: any[] = [];
   allBackgrounds: any[] = [];
 
@@ -91,6 +92,7 @@ export class AvatarComponent implements OnInit {
   headDecoIndex: number = 0;
   hairColorIndex: number = 0;
   backgroundIndex: number = 0;
+  headRacialIndex: number = 0;
 
   constructor(
     public avatar: AvatarService,
@@ -129,6 +131,7 @@ export class AvatarComponent implements OnInit {
     this.headDecoIndex = 0;
     this.hairColorIndex = 0;
     this.backgroundIndex = 0;
+    this.headRacialIndex = 0;
     this.allUniforms = this.avatar.loadPart(
       imageParts.uniform,
       this.selectedRace,
@@ -174,6 +177,11 @@ export class AvatarComponent implements OnInit {
       this.selectedRace,
       this.selectedGender
     );
+    this.allHeadRacial = this.avatar.loadPart(
+      imageParts.headRacial,
+      this.selectedRace,
+      this.selectedGender
+    );
     this.allSkinColors = this.avatar.loadColor(
       'skin',
       this.selectedRace,
@@ -187,6 +195,7 @@ export class AvatarComponent implements OnInit {
     );
     this.allBackgrounds = backgrounds;
     console.log(this.allHairColors);
+    console.log(this.allHeadRacial);
     this.onChangePart();
   }
 
@@ -266,6 +275,16 @@ export class AvatarComponent implements OnInit {
         this.changeSizeOfSVG(res)
       );
     });
+    if (this.selectedHeadRacial) {
+      this.avatar
+        .loadPartBySelection(this.selectedHeadRacial)
+        .subscribe((res) => {
+          this.headRacialSVG = this.sanitizer.bypassSecurityTrustHtml(
+            this.changeSizeOfSVG(res)
+          );
+        });
+    }
+
     if (this.selectedHeadDeco) {
       this.avatar
         .loadPartBySelection(this.selectedHeadDeco)
@@ -366,6 +385,7 @@ export class AvatarComponent implements OnInit {
     this.selectedEars = this.allEars[this.earsIndex];
     this.selectedHeadDeco = this.allHeadDeco[this.headDecoIndex];
     this.selectedHairColor = this.allHairColors[this.hairColorIndex];
+    this.selectedHeadRacial = this.allHeadRacial[this.headRacialIndex];
   }
 
   random() {
@@ -529,6 +549,24 @@ export class AvatarComponent implements OnInit {
           this.backgroundIndex--;
         } else {
           this.backgroundIndex = this.allBackgrounds.length - 1;
+        }
+        this.onChangePart();
+        break;
+      case 'headRacial':
+        if (
+          up === true &&
+          this.headRacialIndex < this.allHeadRacial.length - 1
+        ) {
+          this.headRacialIndex++;
+        } else if (
+          up === true &&
+          this.headRacialIndex === this.allHeadRacial.length - 1
+        ) {
+          this.headRacialIndex = 0;
+        } else if (up === false && this.headRacialIndex > 0) {
+          this.headRacialIndex--;
+        } else {
+          this.headRacialIndex = this.allHeadRacial.length - 1;
         }
         this.onChangePart();
         break;

@@ -55,11 +55,13 @@
         <div>Hair</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('hair', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -70,21 +72,25 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('hair', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div>Head</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('head', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -95,21 +101,25 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('head', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div>Eyebrows</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('eyebrow', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -119,21 +129,25 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('eyebrow', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div>Eyes</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('eyes', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -144,21 +158,25 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('eyes', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div>Body</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('uniform', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -169,21 +187,25 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('uniform', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div *ngIf="selectedHeadDeco">HeadDeko</div>
         <div *ngIf="selectedHeadDeco" class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('headDeco', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -193,11 +215,13 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('headDeco', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
       </div>
@@ -205,53 +229,67 @@
         <div>Haircolor</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
+              class="p-button-warning"
               [style]="{ width: '100%' }"
               (click)="nextPart('hairColor', false)"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
               style="width: 100%"
-              [ngStyle]="{ 'background-color': selectedHairColor.baseColor }"
+              [ngStyle]="{
+                'background-color': selectedHairColor.baseColor,
+                color: selectedHairColor.baseColor
+              }"
               *ngIf="selectedHairColor"
               [(ngModel)]="selectedHairColor.baseColor"
               pInputText
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
+              class="p-button-help"
               [style]="{ width: '100%' }"
               (click)="nextPart('hairColor', true)"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div>Skincolor</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
+              class="p-button-warning"
               [style]="{ width: '100%' }"
               (click)="nextPart('skinColor', false)"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
               style="width: 100%"
-              [ngStyle]="{ 'background-color': selectedSkinColor }"
+              [ngStyle]="{
+                'background-color': selectedSkinColor,
+                color: selectedSkinColor
+              }"
               *ngIf="selectedSkinColor"
               [(ngModel)]="selectedSkinColor"
               pInputText
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
+              class="p-button-help"
               [style]="{ width: '100%' }"
               (click)="nextPart('skinColor', true)"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div>Mouth</div>
@@ -285,11 +323,13 @@
         <div>Nose</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('nose', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -299,21 +339,25 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('nose', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div>Ears</div>
         <div class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('ears', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -323,45 +367,53 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('ears', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
-        <div>HeadRacial</div>
-        <div class="grid">
+        <div *ngIf="selectedHeadRacial">HeadRacial</div>
+        <div *ngIf="selectedHeadRacial" class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
-              (click)="nextPart('ears', false)"
+              (click)="nextPart('headRacial', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
               style="width: 100%"
-              [(ngModel)]="selectedEars.file"
+              [(ngModel)]="selectedHeadRacial.file"
               pInputText
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
-              (click)="nextPart('ears', true)"
+              (click)="nextPart('headRacial', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
         <div>Background</div>
         <div *ngIf="selectedBackground" class="grid">
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('background', false)"
+              class="p-button-warning"
               icon="pi pi-angle-left"
-            ></p-button>
+            ></button>
           </div>
           <div class="col-8">
             <input
@@ -371,24 +423,36 @@
             />
           </div>
           <div class="col-2">
-            <p-button
+            <button
+              pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('background', true)"
+              class="p-button-help"
               icon="pi pi-angle-right"
-            ></p-button>
+            ></button>
           </div>
         </div>
       </div>
       <div class="grid" style="width: 75vw">
         <div class="col-12 md:col-6 lg:col-6">
-          <p-button [style]="{ width: '100%' }" (click)="random()"
-            >Random Character</p-button
+          <button
+            pButton
+            [style]="{ width: '100%' }"
+            class="p-button-warning"
+            (click)="random()"
           >
+            Random Character
+          </button>
         </div>
         <div class="col-12 md:col-6 lg:col-6">
-          <p-button [style]="{ width: '100%' }" (click)="print()"
-            >Save Picture</p-button
+          <button
+            pButton
+            [style]="{ width: '100%' }"
+            class="p-button-help"
+            (click)="print()"
           >
+            Save Picture
+          </button>
         </div>
       </div>
     </div>
@@ -435,6 +499,12 @@
         id="headDecoID "
         class="headDecoID"
         [innerHTML]="headDecoSVG"
+      ></div>
+      <div
+        #headRacial
+        id="headRacialID "
+        class="headRacialID"
+        [innerHTML]="headRacialSVG"
       ></div>
     </div>
   </div>
