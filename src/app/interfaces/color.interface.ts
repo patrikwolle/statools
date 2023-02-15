@@ -40,5 +40,5 @@ export interface HairColor {
 
 export interface SkinColor {
   baseColor: ColorHex;
-  racial: ColorHex;
+  marks: ColorHex;
 }
