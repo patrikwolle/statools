@@ -12,6 +12,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -28,6 +29,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -43,6 +45,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -58,6 +61,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -74,6 +78,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -90,6 +95,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -105,6 +111,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -120,6 +127,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -135,6 +143,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -150,6 +159,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -165,6 +175,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -180,6 +191,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -195,6 +207,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -210,6 +223,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -225,6 +239,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -253,6 +268,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -268,6 +284,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -283,6 +300,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -312,6 +330,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -327,6 +346,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -342,6 +362,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -357,6 +378,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -372,6 +394,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -387,6 +410,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -402,6 +426,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.human,
         alienRaceList.trill,
       ],
@@ -424,6 +449,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.human,
         alienRaceList.trill,
         alienRaceList.vulcan,
@@ -438,6 +464,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -465,6 +492,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.human,
         alienRaceList.trill,
       ],
@@ -478,6 +506,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.human,
         alienRaceList.trill,
       ],
@@ -491,6 +520,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.human,
         alienRaceList.trill,
       ],
@@ -517,6 +547,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.human,
         alienRaceList.trill,
       ],
@@ -554,11 +585,20 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
         alienRaceList.vulcan,
       ],
+    },
+  },
+  {
+    file: 'denubulan_foreheadsvg',
+    tags: {
+      imagePart: imageParts.headRacial,
+      gender: [gender.male, gender.female],
+      race: [alienRaceList.denobulan],
     },
   },
 ];
