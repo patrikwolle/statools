@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ranks, roles } from '../enums/avatar.enum';
+import { alienRaceList, ranks, roles } from '../enums/avatar.enum';
 import {
   ColorHex,
   HairColor,
@@ -16,7 +16,7 @@ import { idsSvg } from './avatar.service';
 @Injectable({
   providedIn: 'root',
 })
-export class ColorServicce {
+export class ColorService {
   constructor() {}
   insignia = [
     //source: https://memory-alpha.fandom.com/de/wiki/Sternenflottenr%C3%A4nge
@@ -43,20 +43,29 @@ export class ColorServicce {
     }
   }
 
-  setSkinColor(color: ColorHex) {
+  setSkinColor(color: SkinColor, race: alienRaceList) {
+    console.log('color:', color);
     let els = [];
     els.push(document.getElementById('head'));
     els.push(document.getElementById('ear_left'));
     els.push(document.getElementById('ear_right'));
     els.push(document.getElementById('neck'));
+    els.push(document.getElementById('marks'));
     if (document.getElementById('antenna')) {
       els.push(document.getElementById('antenna'));
     }
+    if (document.getElementById('head_racial')) {
+      els.push(document.getElementById('head_racial'));
+    }
     els.forEach((el) => {
       if (el) {
-        this.changeColorOfStyle(el, 'fill', color);
+        this.changeColorOfStyle(el, 'fill', color.baseColor);
       }
     });
+    let marks = document.getElementById('marks');
+    if (marks && race == alienRaceList.trill) {
+      this.changeColorOfStyle(marks, 'fill', color.marks);
+    }
   }
 
   setHairColor(color: HairColor) {
@@ -75,9 +84,7 @@ export class ColorServicce {
             this.changeColorOfStyle(element, 'fill', color.shadeColor);
             break;
           default:
-            console.log(color);
             this.changeColorOfStyle(element, 'fill', color.baseColor);
-            console.log(element);
             break;
         }
       }
