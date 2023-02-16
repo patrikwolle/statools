@@ -254,6 +254,7 @@ export const avatarSvgList: avatarList[] = [
       race: [
         alienRaceList.andorian,
         alienRaceList.betazoid,
+        alienRaceList.denobulan,
         alienRaceList.ferengi,
         alienRaceList.human,
         alienRaceList.trill,
@@ -567,14 +568,6 @@ export const avatarSvgList: avatarList[] = [
       imagePart: imageParts.headDeco,
       gender: [gender.male, gender.female],
       race: [alienRaceList.andorian],
-    },
-  },
-  {
-    file: 'trill_marks.svg',
-    tags: {
-      imagePart: imageParts.headRacial,
-      gender: [gender.male, gender.female],
-      race: [alienRaceList.trill],
     },
   },
   {

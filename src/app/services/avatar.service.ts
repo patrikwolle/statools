@@ -4,10 +4,10 @@ import { Observable } from 'rxjs';
 import { avatarSvgList } from '../data/svgArray';
 import { alienRaceList, imageParts, gender } from '../enums/avatar.enum';
 import { avatarList } from '../interfaces/avatar.interface';
-import { ColorHex, HairColor } from '../interfaces/color.interface';
-import { ColorServicce } from './colors.service';
+import { ColorHex, HairColor, SkinColor } from '../interfaces/color.interface';
+import { ColorService } from './colors.service';
 import { hairColorService } from './hair-color.service';
-import { skinColorService } from './skin-color.service';
+import { SkinColorService } from './skin-color.service';
 
 /**
  * Service that handels loading the svgs, and the svg-config file
@@ -19,8 +19,8 @@ import { skinColorService } from './skin-color.service';
 export class AvatarService {
   constructor(
     private http: HttpClient,
-    private color: ColorServicce,
-    private skinColor: skinColorService,
+    private color: ColorService,
+    private skinColor: SkinColorService,
     private hairColor: hairColorService
   ) {}
 
@@ -43,12 +43,12 @@ export class AvatarService {
       .filter((av) => av.tags.gender.includes(gender));
   }
 
-  loadColor(part: string, race: alienRaceList, gender: gender) {
-    if (part === 'skin') {
-      return this.skinColor.getSkinColors(race);
-    } else {
-      return this.hairColor.getHairColor(race);
-    }
+  loadSkinColor(race: alienRaceList): ColorHex[] {
+    return this.skinColor.getSkinColors(race);
+  }
+
+  loadHairColor(race: alienRaceList) {
+    return this.hairColor.getHairColor(race);
   }
 
   loadInsignia(officer: boolean): Observable<string> {
@@ -57,18 +57,11 @@ export class AvatarService {
     });
   }
 
-  setColor(
-    part: string,
-    skinColor: ColorHex | undefined,
-    hairColor?: HairColor
-  ) {
-    switch (part) {
-      case 'skin':
-        if (skinColor) this.color.setSkinColor(skinColor);
-        break;
-      case 'hair':
-        if (hairColor) this.color.setHairColor(hairColor);
-    }
+  setHairColor(hc: HairColor) {
+    this.color.setHairColor(hc);
+  }
+  setSkinColor(sc: SkinColor, race: alienRaceList) {
+    this.color.setSkinColor(sc, race);
   }
 
   /**
@@ -88,7 +81,7 @@ export class AvatarService {
 
 export const idsSvg = {
   uniform: ['uniform_right', 'uniform_left'],
-  skin: ['head', 'ear_left', 'ear_right', 'neck', 'antenna'],
+  skin: ['head', 'ear_left', 'ear_right', 'neck', 'antenna', 'head_racial'],
   hair: [
     'hair',
     'hair_long',

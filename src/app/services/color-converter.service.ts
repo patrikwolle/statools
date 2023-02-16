@@ -81,4 +81,17 @@ export class ColorConversionService {
     };
     return `#${f(0)}${f(8)}${f(4)}`;
   }
+
+  lightnessVariation(baseColor: ColorHex, lightnessDiff: number): ColorHex {
+    let baseColHsl = this.hexToHSL(baseColor);
+    let newLightness = baseColHsl.l + lightnessDiff;
+    if (newLightness < 0) {
+      baseColHsl.l = 2;
+    } else if (newLightness > 100) {
+      baseColHsl.l = 100;
+    } else {
+      baseColHsl.l = newLightness;
+    }
+    return this.hslToHex(baseColHsl);
+  }
 }

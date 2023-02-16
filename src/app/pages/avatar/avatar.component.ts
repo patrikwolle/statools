@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AvatarService } from 'src/app/services/avatar.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { ColorServicce } from 'src/app/services/colors.service';
+import { ColorService } from 'src/app/services/colors.service';
 import { PrintService } from 'src/app/services/print.service';
 import {
   alienRaceList,
@@ -11,9 +11,10 @@ import {
   imageParts,
 } from 'src/app/enums/avatar.enum';
 import { avatarList } from 'src/app/interfaces/avatar.interface';
-import { HairColor } from 'src/app/interfaces/color.interface';
+import { HairColor, SkinColor } from 'src/app/interfaces/color.interface';
 import { backgrounds } from 'src/app/data/backgroundsImg';
 import { randomInt } from 'crypto';
+import { SkinColorService } from 'src/app/services/skin-color.service';
 
 @Component({
   selector: 'app-avatar',
@@ -47,7 +48,7 @@ export class AvatarComponent implements OnInit {
   allSkinColors: any[] = [];
   allHeadDeco: avatarList[] = [];
   allHeadRacial: avatarList[] = [];
-  allHairColors: any[] = [];
+  allHairColors: HairColor[] = [];
   allBackgrounds: any[] = [];
 
   /** Selected elements out of the arrays of the body parts */
@@ -62,7 +63,7 @@ export class AvatarComponent implements OnInit {
   selectedSkinColor: any;
   selectedHeadDeco: any;
   selectedHeadRacial: any;
-  selectedHairColor: HairColor | undefined;
+  selectedHairColor: any;
   selectedBackground: any;
 
   /** Variables to hold the svg information */
@@ -97,8 +98,9 @@ export class AvatarComponent implements OnInit {
   constructor(
     public avatar: AvatarService,
     private sanitizer: DomSanitizer,
-    private color: ColorServicce,
-    private printService: PrintService
+    private color: ColorService,
+    private printService: PrintService,
+    private skinColor: SkinColorService
   ) {}
 
   /** Load all the informations from the arrays, because of the fact thats a sync call we can do this by simple calls directly in the onInit */
@@ -182,20 +184,10 @@ export class AvatarComponent implements OnInit {
       this.selectedRace,
       this.selectedGender
     );
-    this.allSkinColors = this.avatar.loadColor(
-      'skin',
-      this.selectedRace,
-      this.selectedGender
-    );
+    this.allSkinColors = this.avatar.loadSkinColor(this.selectedRace);
 
-    this.allHairColors = this.avatar.loadColor(
-      'hair',
-      this.selectedRace,
-      this.selectedGender
-    );
+    this.allHairColors = this.avatar.loadHairColor(this.selectedRace);
     this.allBackgrounds = backgrounds;
-    console.log(this.allHairColors);
-    console.log(this.allHeadRacial);
     this.onChangePart();
   }
 
@@ -262,7 +254,7 @@ export class AvatarComponent implements OnInit {
         this.changeSizeOfSVG(res)
       );
       setTimeout(() => {
-        this.avatar.setColor('hair', undefined, this.selectedHairColor);
+        this.avatar.setHairColor(this.selectedHairColor);
       }, 1);
     });
     this.avatar.loadPartBySelection(this.selectedNose).subscribe((res) => {
@@ -293,7 +285,10 @@ export class AvatarComponent implements OnInit {
             this.changeSizeOfSVG(res)
           );
           setTimeout(() => {
-            this.avatar.setColor('skin', this.selectedSkinColor);
+            this.avatar.setSkinColor(
+              this.skinColor.generateSkinColors(this.selectedSkinColor),
+              this.selectedRace
+            );
           }, 1);
         });
     }
@@ -303,7 +298,10 @@ export class AvatarComponent implements OnInit {
         this.changeSizeOfSVG(res)
       );
       setTimeout(() => {
-        this.avatar.setColor('skin', this.selectedSkinColor);
+        this.avatar.setSkinColor(
+          this.skinColor.generateSkinColors(this.selectedSkinColor),
+          this.selectedRace
+        );
       }, 1);
     });
     if (Array.isArray(this.selectedHair.file)) {
@@ -321,7 +319,7 @@ export class AvatarComponent implements OnInit {
           this.changeSizeOfSVG(res)
         );
         setTimeout(() => {
-          this.avatar.setColor('hair', undefined, this.selectedHairColor);
+          this.avatar.setHairColor(this.selectedHairColor);
         }, 1);
       });
       let file2 = {
@@ -338,7 +336,7 @@ export class AvatarComponent implements OnInit {
           this.changeSizeOfSVG(res)
         );
         setTimeout(() => {
-          this.avatar.setColor('hair', undefined, this.selectedHairColor);
+          this.avatar.setHairColor(this.selectedHairColor);
         }, 1);
       });
     } else {
@@ -348,7 +346,7 @@ export class AvatarComponent implements OnInit {
           this.changeSizeOfSVG(res)
         );
         setTimeout(() => {
-          this.avatar.setColor('hair', undefined, this.selectedHairColor);
+          this.avatar.setHairColor(this.selectedHairColor);
           this.color.setUniformColor(
             document.getElementById('hair_band'),
             this.selectedRole
@@ -364,7 +362,6 @@ export class AvatarComponent implements OnInit {
         this.color.setInsigniaColor(this.selectedRank);
       }, 1);
     });
-    console.log(this.selectedHairColor);
   }
 
   print() {
