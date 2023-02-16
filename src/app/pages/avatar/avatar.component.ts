@@ -50,6 +50,7 @@ export class AvatarComponent implements OnInit {
   allHeadRacial: avatarList[] = [];
   allHairColors: HairColor[] = [];
   allBackgrounds: any[] = [];
+  allBeards: unknown[] = [];
 
   /** Selected elements out of the arrays of the body parts */
   selectedUniform: any;
@@ -65,6 +66,7 @@ export class AvatarComponent implements OnInit {
   selectedHeadRacial: any;
   selectedHairColor: any;
   selectedBackground: any;
+  selectedBeard: any;
 
   /** Variables to hold the svg information */
   uniformSVG: SafeHtml = '';
@@ -79,6 +81,7 @@ export class AvatarComponent implements OnInit {
   insigniaSVG: SafeHtml = '';
   headDecoSVG: SafeHtml = '';
   headRacialSVG: SafeHtml = '';
+  beardSVG: SafeHtml = '';
 
   /** Indexes for the selection of an element out of the body part Arrays */
   uniformIndex: number = 0;
@@ -94,6 +97,7 @@ export class AvatarComponent implements OnInit {
   hairColorIndex: number = 0;
   backgroundIndex: number = 0;
   headRacialIndex: number = 0;
+  beardIndex: number = 0;
 
   constructor(
     public avatar: AvatarService,

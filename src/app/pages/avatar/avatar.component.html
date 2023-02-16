@@ -167,6 +167,35 @@
             ></button>
           </div>
         </div>
+        <div *ngIf="selectedGender === 'male'">Beard</div>
+        <div *ngIf="selectedGender === 'male'" class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('beard', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedBeard"
+              [(ngModel)]="selectedBeard.name"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('beard', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
         <div>Body</div>
         <div class="grid">
           <div class="col-2">
