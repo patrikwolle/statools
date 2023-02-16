@@ -125,19 +125,6 @@ export class AvatarComponent implements OnInit {
   }
 
   loadArrays() {
-    this.uniformIndex = 0;
-    this.headIndex = 0;
-    this.eyeIndex = 0;
-    this.hairIndex = 0;
-    this.noseIndex = 0;
-    this.mouthIndex = 0;
-    this.eyebrowIndex = 0;
-    this.earsIndex = 0;
-    this.skinColorIndex = 0;
-    this.headDecoIndex = 0;
-    this.hairColorIndex = 0;
-    this.backgroundIndex = 0;
-    this.headRacialIndex = 0;
     this.allUniforms = this.avatar.loadPart(
       imageParts.uniform,
       this.selectedRace,
@@ -199,12 +186,37 @@ export class AvatarComponent implements OnInit {
     this.headDecoSVG = '';
     this.selectedRace = <alienRaceList>sr;
 
+    this.uniformIndex = 0;
+    this.headIndex = 0;
+    this.eyeIndex = 0;
+    this.hairIndex = 0;
+    this.noseIndex = 0;
+    this.mouthIndex = 0;
+    this.eyebrowIndex = 0;
+    this.earsIndex = 0;
+    this.skinColorIndex = 0;
+    this.headDecoIndex = 0;
+    this.hairColorIndex = 0;
+    this.backgroundIndex = 0;
+    this.headRacialIndex = 0;
     this.loadArrays();
   }
 
   changeGender(sr: string) {
     this.selectedGender = <gender>sr;
+    this.uniformIndex = 0;
+    this.headIndex = 0;
+    this.eyeIndex = 0;
     this.hairIndex = 0;
+    this.noseIndex = 0;
+    this.mouthIndex = 0;
+    this.eyebrowIndex = 0;
+    this.earsIndex = 0;
+    this.skinColorIndex = 0;
+    this.headDecoIndex = 0;
+    this.hairColorIndex = 0;
+    this.backgroundIndex = 0;
+    this.headRacialIndex = 0;
     this.loadArrays();
   }
 
