@@ -594,11 +594,25 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
-    file: 'denubulan_foreheadsvg',
+    file: 'denubulan_forehead.svg',
     tags: {
       imagePart: imageParts.headRacial,
       gender: [gender.male, gender.female],
       race: [alienRaceList.denobulan],
+    },
+  },
+  {
+    file: 'beard_schnauzer.svg',
+    tags: {
+      imagePart: imageParts.beard,
+      gender: [gender.male],
+      race: [
+        alienRaceList.andorian,
+        alienRaceList.betazoid,
+        alienRaceList.human,
+        alienRaceList.trill,
+        alienRaceList.vulcan,
+      ],
     },
   },
 ];

@@ -27,6 +27,7 @@ export enum imageParts {
   hair = 'hair',
   headDeco = 'headDeco',
   headRacial = 'headRacial',
+  beard = 'beard',
 }
 export enum gender {
   male = 'male',
