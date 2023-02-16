@@ -8,6 +8,7 @@ import {
   darkSkin,
   fairSkin,
   fleshySkin,
+  greenSkin,
   pinkSkin,
 } from '../data/skin-colors';
 import { hairColorService } from './hair-color.service';
@@ -51,6 +52,9 @@ export class SkinColorService {
       }
       case alienRaceList.cardassian: {
         return brownSkin.fair;
+      }
+      case alienRaceList.orion: {
+        return greenSkin;
       }
       default:
         throw new Error('Could not parse race');

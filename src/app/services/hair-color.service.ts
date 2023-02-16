@@ -4,6 +4,7 @@ import {
   grayHair,
   normaleAndColeredHair,
   normaleHair,
+  orionHair,
   whiteHair,
 } from '../data/hair-colors';
 import { alienRaceList } from '../enums/avatar.enum';
@@ -52,6 +53,9 @@ export class hairColorService {
       // eslint-disable-next-line no-fallthrough
       case alienRaceList.efrosian: {
         return this.getHairColorWithHighlightColor(whiteHair);
+      }
+      case alienRaceList.orion: {
+        return this.getHairColorWithHighlightColor(orionHair);
       }
       default:
         throw new Error('Could not parse race');

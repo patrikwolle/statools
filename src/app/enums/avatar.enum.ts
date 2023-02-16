@@ -12,6 +12,7 @@ export enum alienRaceList {
   human = 'human',
   ktarian = 'ktarian' /* */,
   klingon = 'klingon' /* */,
+  orion = 'orion',
   tellarite = 'tellarite' /* */,
   trill = 'trill',
   vulcan = 'vulcan',
