@@ -12,6 +12,7 @@ export enum alienRaceList {
   human = 'human',
   ktarian = 'ktarian' /* */,
   klingon = 'klingon' /* */,
+  orion = 'orion',
   tellarite = 'tellarite' /* */,
   trill = 'trill',
   vulcan = 'vulcan',
@@ -27,6 +28,7 @@ export enum imageParts {
   hair = 'hair',
   headDeco = 'headDeco',
   headRacial = 'headRacial',
+  beard = 'beard',
 }
 export enum gender {
   male = 'male',

@@ -4,6 +4,7 @@ import {
   grayHair,
   normaleAndColeredHair,
   normaleHair,
+  orionHair,
   whiteHair,
 } from '../data/hair-colors';
 import { alienRaceList } from '../enums/avatar.enum';
@@ -28,12 +29,12 @@ export class hairColorService {
         return this.getHairColorWithHighlightColor(normaleAndColeredHair);
       }
       case alienRaceList.vulcan:
+      case alienRaceList.denobulan:
       case alienRaceList.bajoran:
       case alienRaceList.ktarian: {
         return this.getHairColorWithHighlightColor(normaleHair);
       }
       case alienRaceList.klingon:
-      case alienRaceList.denobulan:
       case alienRaceList.cardassian:
       case alienRaceList.tellarite: {
         return this.getHairColorWithHighlightColor(darkGrayHair);
@@ -53,6 +54,9 @@ export class hairColorService {
       case alienRaceList.efrosian: {
         return this.getHairColorWithHighlightColor(whiteHair);
       }
+      case alienRaceList.orion: {
+        return this.getHairColorWithHighlightColor(orionHair);
+      }
       default:
         throw new Error('Could not parse race');
     }
@@ -63,26 +67,11 @@ export class hairColorService {
     hairColorArr.forEach((hc) => {
       let hairColor = {
         baseColor: hc,
-        highlightColor: this.lightnessVariation(hc, 10),
-        shadeColor: this.lightnessVariation(hc, -10),
+        highlightColor: this.colorConverter.lightnessVariation(hc, 10),
+        shadeColor: this.colorConverter.lightnessVariation(hc, -10),
       };
       hairColors.push(hairColor);
     });
     return hairColors;
-  }
-
-  lightnessVariation(baseColor: ColorHex, lightnessDiff: number): ColorHex {
-    let baseColHsl = this.colorConverter.hexToHSL(baseColor);
-    console.log(baseColHsl);
-    let newLightness = baseColHsl.l + lightnessDiff;
-    console.log(newLightness);
-    if (newLightness < 0) {
-      baseColHsl.l = 2;
-    } else if (newLightness > 100) {
-      baseColHsl.l = 100;
-    } else {
-      baseColHsl.l = newLightness;
-    }
-    return this.colorConverter.hslToHex(baseColHsl);
   }
 }

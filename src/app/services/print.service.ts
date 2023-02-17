@@ -13,9 +13,7 @@ import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
 export class PrintService {
   async downLoadAvatar(el: HTMLElement) {
     if (el) {
-      console.log("saving img");
-
-      html2canvas(el).then(canvas => {      
+      html2canvas(el).then((canvas) => {
         const link = document.createElement('a');
         link.download = 'startrek_avatar.png';
         link.href = canvas.toDataURL('image/png');
