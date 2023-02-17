@@ -461,158 +461,87 @@ export class AvatarComponent implements OnInit {
   nextPart(part: string, up: boolean): void {
     switch (part) {
       case 'uniform':
-        if (up === true && this.uniformIndex < this.allUniforms.length - 1) {
-          this.uniformIndex++;
-        } else if (up === false && this.uniformIndex > 0) {
-          this.uniformIndex--;
-        }
+        this.uniformIndex = up 
+        ? (this.uniformIndex < this.allUniforms.length - 1 ? this.uniformIndex + 1 : 0) 
+        : (this.uniformIndex > 0 ? this.uniformIndex - 1 : this.allUniforms.length - 1);
         this.onChangePart();
-
         break;
       case 'head':
-        if (up === true && this.headIndex < this.allHeads.length - 1) {
-          this.headIndex++;
-        } else if (up === true && this.headIndex === this.allHeads.length - 1) {
-          this.headIndex = 0;
-        } else if (up === false && this.headIndex > 0) {
-          this.headIndex--;
-        }
+        this.headIndex = up 
+        ? (this.headIndex < this.allHeads.length - 1 ? this.headIndex + 1 : 0) 
+        : (this.headIndex > 0 ? this.headIndex - 1 : this.allHeads.length - 1);
         this.onChangePart();
         break;
       case 'eyes':
-        if (up === true && this.eyeIndex < this.allEyes.length - 1) {
-          this.eyeIndex++;
-        } else if (up === false && this.eyeIndex > 0) {
-          this.eyeIndex--;
-        }
+        this.eyeIndex = up 
+        ? (this.eyeIndex < this.allEyes.length - 1 ? this.eyeIndex + 1 : 0) 
+        : (this.eyeIndex > 0 ? this.eyeIndex - 1 : this.allEyes.length - 1);
         this.onChangePart();
         break;
       case 'hair':
-        if (up === true && this.hairIndex < this.allHairs.length - 1) {
-          this.hairIndex++;
-        } else if (up === false && this.hairIndex > 0) {
-          this.hairIndex--;
-        }
+        this.hairIndex = up 
+          ? (this.hairIndex < this.allHairs.length - 1 ? this.hairIndex + 1 : 0) 
+          : (this.hairIndex > 0 ? this.hairIndex - 1 : this.allHairs.length - 1);
         this.onChangePart();
         break;
       case 'nose':
-        if (up === true && this.noseIndex < this.allNoses.length - 1) {
-          this.noseIndex++;
-        } else if (up === false && this.noseIndex > 0) {
-          this.noseIndex--;
-        }
+        this.noseIndex = up 
+        ? (this.noseIndex < this.allNoses.length - 1 ? this.noseIndex + 1 : 0) 
+        : (this.noseIndex > 0 ? this.noseIndex - 1 : this.allNoses.length - 1);
         this.onChangePart();
         break;
       case 'mouth':
-        if (up === true && this.mouthIndex < this.allMouths.length - 1) {
-          this.mouthIndex++;
-        } else if (up === false && this.mouthIndex > 0) {
-          this.mouthIndex--;
-        }
+        this.mouthIndex = up 
+        ? (this.mouthIndex < this.allMouths.length - 1 ? this.mouthIndex + 1 : 0) 
+        : (this.mouthIndex > 0 ? this.mouthIndex - 1 : this.allMouths.length - 1);
         this.onChangePart();
         break;
       case 'eyebrow':
-        if (up === true && this.eyebrowIndex < this.allEyebrows.length - 1) {
-          this.eyebrowIndex++;
-        } else if (up === false && this.eyebrowIndex > 0) {
-          this.eyebrowIndex--;
-        }
+        this.eyebrowIndex = up 
+        ? (this.eyebrowIndex < this.allEyebrows.length - 1 ? this.eyebrowIndex + 1 : 0) 
+        : (this.eyebrowIndex > 0 ? this.eyebrowIndex - 1 : this.allEyebrows.length - 1);
         this.onChangePart();
         break;
       case 'ears':
-        if (up === true && this.earsIndex < this.allEars.length - 1) {
-          this.earsIndex++;
-        } else if (up === false && this.earsIndex > 0) {
-          this.earsIndex--;
-        }
+        this.earsIndex = up 
+        ? (this.earsIndex < this.allEars.length - 1 ? this.earsIndex + 1 : 0) 
+        : (this.earsIndex > 0 ? this.earsIndex - 1 : this.allEars.length - 1);
         this.onChangePart();
         break;
       case 'skinColor':
-        if (
-          up === true &&
-          this.skinColorIndex < this.allSkinColors.length - 1
-        ) {
-          this.skinColorIndex++;
-        } else if (up === false && this.skinColorIndex > 0) {
-          this.skinColorIndex--;
-        }
+        this.skinColorIndex = up 
+        ? (this.skinColorIndex < this.allSkinColors.length - 1 ? this.skinColorIndex + 1 : 0) 
+        : (this.skinColorIndex > 0 ? this.skinColorIndex - 1 : this.allSkinColors.length - 1);
         this.onChangePart();
         break;
       case 'headDeco':
-        if (up === true && this.headDecoIndex < this.allHeadDeco.length - 1) {
-          this.headDecoIndex++;
-        } else if (up === false && this.headDecoIndex > 0) {
-          this.headDecoIndex--;
-        }
+        this.headDecoIndex = up 
+        ? (this.headDecoIndex < this.allHeadDeco.length - 1 ? this.headDecoIndex + 1 : 0) 
+        : (this.headDecoIndex > 0 ? this.headDecoIndex - 1 : this.allHeadDeco.length - 1);
         this.onChangePart();
         break;
       case 'hairColor':
-        if (
-          up === true &&
-          this.hairColorIndex < this.allHairColors.length - 1
-        ) {
-          this.hairColorIndex++;
-        } else if (
-          up === true &&
-          this.hairColorIndex === this.allHairColors.length - 1
-        ) {
-          this.headIndex = 0;
-        } else if (up === false && this.hairColorIndex > 0) {
-          this.hairColorIndex--;
-        } else {
-          this.hairColorIndex = this.allHairColors.length - 1;
-        }
+        this.hairColorIndex = up 
+        ? (this.hairColorIndex < this.allHairColors.length - 1 ? this.hairColorIndex + 1 : 0) 
+        : (this.hairColorIndex > 0 ? this.hairColorIndex - 1 : this.allHairColors.length - 1);
         this.onChangePart();
         break;
       case 'background':
-        if (
-          up === true &&
-          this.backgroundIndex < this.allBackgrounds.length - 1
-        ) {
-          this.backgroundIndex++;
-        } else if (
-          up === true &&
-          this.backgroundIndex === this.allBackgrounds.length - 1
-        ) {
-          this.backgroundIndex = 0;
-        } else if (up === false && this.backgroundIndex > 0) {
-          this.backgroundIndex--;
-        } else {
-          this.backgroundIndex = this.allBackgrounds.length - 1;
-        }
+        this.backgroundIndex = up 
+        ? (this.backgroundIndex < this.allBackgrounds.length - 1 ? this.backgroundIndex + 1 : 0) 
+        : (this.backgroundIndex > 0 ? this.backgroundIndex - 1 : this.allBackgrounds.length - 1);
         this.onChangePart();
         break;
       case 'headRacial':
-        if (
-          up === true &&
-          this.headRacialIndex < this.allHeadRacial.length - 1
-        ) {
-          this.headRacialIndex++;
-        } else if (
-          up === true &&
-          this.headRacialIndex === this.allHeadRacial.length - 1
-        ) {
-          this.headRacialIndex = 0;
-        } else if (up === false && this.headRacialIndex > 0) {
-          this.headRacialIndex--;
-        } else {
-          this.headRacialIndex = this.allHeadRacial.length - 1;
-        }
+        this.headRacialIndex = up 
+        ? (this.headRacialIndex < this.allHeadRacial.length - 1 ? this.headRacialIndex + 1 : 0) 
+        : (this.headRacialIndex > 0 ? this.headRacialIndex - 1 : this.allHeadRacial.length - 1);
         this.onChangePart();
         break;
       case 'beard':
-        if (up === true && this.beardIndex < this.allBeards.length - 1) {
-          this.beardIndex++;
-        } else if (
-          up === true &&
-          this.beardIndex === this.allBeards.length - 1
-        ) {
-          this.beardIndex = 0;
-        } else if (up === false && this.beardIndex > 0) {
-          this.beardIndex--;
-        } else {
-          this.beardIndex = this.allBeards.length - 1;
-        }
+        this.beardIndex = up 
+        ? (this.beardIndex < this.allBeards.length - 1 ? this.beardIndex + 1 : 0) 
+        : (this.beardIndex > 0 ? this.beardIndex - 1 : this.allBeards.length - 1);
         this.onChangePart();
         break;
       default:
