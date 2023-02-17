@@ -81,6 +81,7 @@ export class ColorService {
           case 'hair_shade_long':
           case 'eyebrows_left':
           case 'eyebrows_right':
+          case 'beard':
             this.changeColorOfStyle(element, 'fill', color.shadeColor);
             break;
           default:

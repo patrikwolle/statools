@@ -182,7 +182,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedBeard"
-              [(ngModel)]="selectedBeard.name"
+              [(ngModel)]="selectedBeard.file"
               pInputText
             />
           </div>
@@ -535,6 +535,7 @@
         class="headRacial"
         [innerHTML]="headRacialSVG"
       ></div>
+      <div #beardID id="beardID" class="beardID" [innerHTML]="beardSVG"></div>
     </div>
   </div>
 </div>

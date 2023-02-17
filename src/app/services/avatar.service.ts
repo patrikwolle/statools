@@ -91,5 +91,6 @@ export const idsSvg = {
     'hair_shade_long',
     'eyebrows_left',
     'eyebrows_right',
+    'beard',
   ],
 };

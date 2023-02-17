@@ -175,11 +175,17 @@ export class AvatarComponent implements OnInit {
       this.selectedRace,
       this.selectedGender
     );
+    this.allBeards = this.avatar.loadPart(
+      imageParts.beard,
+      this.selectedRace,
+      this.selectedGender
+    );
     this.allSkinColors = this.avatar.loadSkinColor(this.selectedRace);
 
     this.allHairColors = this.avatar.loadHairColor(this.selectedRace);
     this.allBackgrounds = backgrounds;
     this.onChangePart();
+    console.log(this.allBeards);
   }
 
   changeRace(sr: string) {
@@ -308,6 +314,16 @@ export class AvatarComponent implements OnInit {
           }, 1);
         });
     }
+    if (this.selectedBeard) {
+      this.avatar.loadPartBySelection(this.selectedBeard).subscribe((res) => {
+        this.beardSVG = this.sanitizer.bypassSecurityTrustHtml(
+          this.changeSizeOfSVG(res)
+        );
+        setTimeout(() => {
+          this.avatar.setHairColor(this.selectedHairColor);
+        }, 1);
+      });
+    }
 
     this.avatar.loadPartBySelection(this.selectedEars).subscribe((res) => {
       this.earsSVG = this.sanitizer.bypassSecurityTrustHtml(
@@ -399,6 +415,7 @@ export class AvatarComponent implements OnInit {
     this.selectedHeadDeco = this.allHeadDeco[this.headDecoIndex];
     this.selectedHairColor = this.allHairColors[this.hairColorIndex];
     this.selectedHeadRacial = this.allHeadRacial[this.headRacialIndex];
+    this.selectedBeard = this.allBeards[this.beardIndex];
   }
 
   random() {
@@ -583,7 +600,21 @@ export class AvatarComponent implements OnInit {
         }
         this.onChangePart();
         break;
-
+      case 'beard':
+        if (up === true && this.beardIndex < this.allBeards.length - 1) {
+          this.beardIndex++;
+        } else if (
+          up === true &&
+          this.beardIndex === this.allBeards.length - 1
+        ) {
+          this.beardIndex = 0;
+        } else if (up === false && this.beardIndex > 0) {
+          this.beardIndex--;
+        } else {
+          this.beardIndex = this.allBeards.length - 1;
+        }
+        this.onChangePart();
+        break;
       default:
         break;
     }
