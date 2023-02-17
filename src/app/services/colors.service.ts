@@ -51,6 +51,7 @@ export class ColorService {
     els.push(document.getElementById('ear_right'));
     els.push(document.getElementById('neck'));
     els.push(document.getElementById('marks'));
+    els.push(document.getElementById('nose'));
     if (document.getElementById('antenna')) {
       els.push(document.getElementById('antenna'));
     }
