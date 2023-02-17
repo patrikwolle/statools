@@ -694,6 +694,20 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'no_beard.svg',
+    tags: {
+      imagePart: imageParts.beard,
+      gender: [gender.male],
+      race: [
+        alienRaceList.andorian,
+        alienRaceList.betazoid,
+        alienRaceList.human,
+        alienRaceList.trill,
+        alienRaceList.vulcan,
+      ],
+    },
+  },
+  {
     file: 'beard_schnauzer.svg',
     tags: {
       imagePart: imageParts.beard,
