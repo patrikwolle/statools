@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="2.9540685"
-     inkscape:cx="425.34559"
-     inkscape:cy="388.9551"
+     inkscape:zoom="8.3553675"
+     inkscape:cx="419.07193"
+     inkscape:cy="443.06848"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="1912"
@@ -102,9 +102,9 @@
      id="layer1">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 106.36247,91.22974 c 0,0 -1.58015,1.869252 -2.37022,2.803879 -0.79007,0.934627 -1.49268,1.040475 -2.37023,2.80388 -0.87755,1.763405 -1.19447,5.298151 -1.791707,7.947221 -0.597237,2.64907 -2.756712,6.47894 -1.791711,7.94721 0.742836,0.86198 3.111348,0.85088 4.707808,0.88666 0.89893,0.0202 2.67058,-0.38 2.67058,-0.38 l 3.06217,-1.20332"
+       d="m 106.36247,91.22974 c 0,0 -1.58015,1.869252 -2.37022,2.803879 -0.79007,0.934627 -1.49268,1.040475 -2.37023,2.80388 -0.87755,1.763405 -1.19447,5.298151 -1.791707,7.947221 -0.597237,2.64907 -2.756712,6.47894 -1.791711,7.94721 0.742836,0.86198 3.111348,0.85088 4.707808,0.88666 0.89893,0.0202 2.67058,-0.38 2.67058,-0.38 l 3.33003,-1.31723 3.29677,-2.24926"
        id="nose"
-       sodipodi:nodetypes="czzzcacc"
+       sodipodi:nodetypes="czzzcaccc"
        class="UnoptimicedTransforms"
        inkscape:label="nose" />
   </g>
