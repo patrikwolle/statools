@@ -185,7 +185,6 @@ export class AvatarComponent implements OnInit {
     this.allHairColors = this.avatar.loadHairColor(this.selectedRace);
     this.allBackgrounds = backgrounds;
     this.onChangePart();
-    console.log(this.allBeards);
   }
 
   changeRace(sr: string) {
@@ -421,7 +420,7 @@ export class AvatarComponent implements OnInit {
   random() {
     this.uniformIndex = this.randomInt(this.allUniforms.length);
     this.headIndex = this.randomInt(this.allHeads.length);
-    this.eyeIndex = this.randomInt(this.allHeads.length);
+    this.eyeIndex = this.randomInt(this.allEyes.length);
     this.hairIndex = this.randomInt(this.allHairs.length);
     this.noseIndex = this.randomInt(this.allNoses.length);
     this.mouthIndex = this.randomInt(this.allMouths.length);
@@ -461,87 +460,143 @@ export class AvatarComponent implements OnInit {
   nextPart(part: string, up: boolean): void {
     switch (part) {
       case 'uniform':
-        this.uniformIndex = up 
-        ? (this.uniformIndex < this.allUniforms.length - 1 ? this.uniformIndex + 1 : 0) 
-        : (this.uniformIndex > 0 ? this.uniformIndex - 1 : this.allUniforms.length - 1);
+        this.uniformIndex = up
+          ? this.uniformIndex < this.allUniforms.length - 1
+            ? this.uniformIndex + 1
+            : 0
+          : this.uniformIndex > 0
+          ? this.uniformIndex - 1
+          : this.allUniforms.length - 1;
         this.onChangePart();
         break;
       case 'head':
-        this.headIndex = up 
-        ? (this.headIndex < this.allHeads.length - 1 ? this.headIndex + 1 : 0) 
-        : (this.headIndex > 0 ? this.headIndex - 1 : this.allHeads.length - 1);
+        this.headIndex = up
+          ? this.headIndex < this.allHeads.length - 1
+            ? this.headIndex + 1
+            : 0
+          : this.headIndex > 0
+          ? this.headIndex - 1
+          : this.allHeads.length - 1;
         this.onChangePart();
         break;
       case 'eyes':
-        this.eyeIndex = up 
-        ? (this.eyeIndex < this.allEyes.length - 1 ? this.eyeIndex + 1 : 0) 
-        : (this.eyeIndex > 0 ? this.eyeIndex - 1 : this.allEyes.length - 1);
+        this.eyeIndex = up
+          ? this.eyeIndex < this.allEyes.length - 1
+            ? this.eyeIndex + 1
+            : 0
+          : this.eyeIndex > 0
+          ? this.eyeIndex - 1
+          : this.allEyes.length - 1;
         this.onChangePart();
         break;
       case 'hair':
-        this.hairIndex = up 
-          ? (this.hairIndex < this.allHairs.length - 1 ? this.hairIndex + 1 : 0) 
-          : (this.hairIndex > 0 ? this.hairIndex - 1 : this.allHairs.length - 1);
+        this.hairIndex = up
+          ? this.hairIndex < this.allHairs.length - 1
+            ? this.hairIndex + 1
+            : 0
+          : this.hairIndex > 0
+          ? this.hairIndex - 1
+          : this.allHairs.length - 1;
         this.onChangePart();
         break;
       case 'nose':
-        this.noseIndex = up 
-        ? (this.noseIndex < this.allNoses.length - 1 ? this.noseIndex + 1 : 0) 
-        : (this.noseIndex > 0 ? this.noseIndex - 1 : this.allNoses.length - 1);
+        this.noseIndex = up
+          ? this.noseIndex < this.allNoses.length - 1
+            ? this.noseIndex + 1
+            : 0
+          : this.noseIndex > 0
+          ? this.noseIndex - 1
+          : this.allNoses.length - 1;
         this.onChangePart();
         break;
       case 'mouth':
-        this.mouthIndex = up 
-        ? (this.mouthIndex < this.allMouths.length - 1 ? this.mouthIndex + 1 : 0) 
-        : (this.mouthIndex > 0 ? this.mouthIndex - 1 : this.allMouths.length - 1);
+        this.mouthIndex = up
+          ? this.mouthIndex < this.allMouths.length - 1
+            ? this.mouthIndex + 1
+            : 0
+          : this.mouthIndex > 0
+          ? this.mouthIndex - 1
+          : this.allMouths.length - 1;
         this.onChangePart();
         break;
       case 'eyebrow':
-        this.eyebrowIndex = up 
-        ? (this.eyebrowIndex < this.allEyebrows.length - 1 ? this.eyebrowIndex + 1 : 0) 
-        : (this.eyebrowIndex > 0 ? this.eyebrowIndex - 1 : this.allEyebrows.length - 1);
+        this.eyebrowIndex = up
+          ? this.eyebrowIndex < this.allEyebrows.length - 1
+            ? this.eyebrowIndex + 1
+            : 0
+          : this.eyebrowIndex > 0
+          ? this.eyebrowIndex - 1
+          : this.allEyebrows.length - 1;
         this.onChangePart();
         break;
       case 'ears':
-        this.earsIndex = up 
-        ? (this.earsIndex < this.allEars.length - 1 ? this.earsIndex + 1 : 0) 
-        : (this.earsIndex > 0 ? this.earsIndex - 1 : this.allEars.length - 1);
+        this.earsIndex = up
+          ? this.earsIndex < this.allEars.length - 1
+            ? this.earsIndex + 1
+            : 0
+          : this.earsIndex > 0
+          ? this.earsIndex - 1
+          : this.allEars.length - 1;
         this.onChangePart();
         break;
       case 'skinColor':
-        this.skinColorIndex = up 
-        ? (this.skinColorIndex < this.allSkinColors.length - 1 ? this.skinColorIndex + 1 : 0) 
-        : (this.skinColorIndex > 0 ? this.skinColorIndex - 1 : this.allSkinColors.length - 1);
+        this.skinColorIndex = up
+          ? this.skinColorIndex < this.allSkinColors.length - 1
+            ? this.skinColorIndex + 1
+            : 0
+          : this.skinColorIndex > 0
+          ? this.skinColorIndex - 1
+          : this.allSkinColors.length - 1;
         this.onChangePart();
         break;
       case 'headDeco':
-        this.headDecoIndex = up 
-        ? (this.headDecoIndex < this.allHeadDeco.length - 1 ? this.headDecoIndex + 1 : 0) 
-        : (this.headDecoIndex > 0 ? this.headDecoIndex - 1 : this.allHeadDeco.length - 1);
+        this.headDecoIndex = up
+          ? this.headDecoIndex < this.allHeadDeco.length - 1
+            ? this.headDecoIndex + 1
+            : 0
+          : this.headDecoIndex > 0
+          ? this.headDecoIndex - 1
+          : this.allHeadDeco.length - 1;
         this.onChangePart();
         break;
       case 'hairColor':
-        this.hairColorIndex = up 
-        ? (this.hairColorIndex < this.allHairColors.length - 1 ? this.hairColorIndex + 1 : 0) 
-        : (this.hairColorIndex > 0 ? this.hairColorIndex - 1 : this.allHairColors.length - 1);
+        this.hairColorIndex = up
+          ? this.hairColorIndex < this.allHairColors.length - 1
+            ? this.hairColorIndex + 1
+            : 0
+          : this.hairColorIndex > 0
+          ? this.hairColorIndex - 1
+          : this.allHairColors.length - 1;
         this.onChangePart();
         break;
       case 'background':
-        this.backgroundIndex = up 
-        ? (this.backgroundIndex < this.allBackgrounds.length - 1 ? this.backgroundIndex + 1 : 0) 
-        : (this.backgroundIndex > 0 ? this.backgroundIndex - 1 : this.allBackgrounds.length - 1);
+        this.backgroundIndex = up
+          ? this.backgroundIndex < this.allBackgrounds.length - 1
+            ? this.backgroundIndex + 1
+            : 0
+          : this.backgroundIndex > 0
+          ? this.backgroundIndex - 1
+          : this.allBackgrounds.length - 1;
         this.onChangePart();
         break;
       case 'headRacial':
-        this.headRacialIndex = up 
-        ? (this.headRacialIndex < this.allHeadRacial.length - 1 ? this.headRacialIndex + 1 : 0) 
-        : (this.headRacialIndex > 0 ? this.headRacialIndex - 1 : this.allHeadRacial.length - 1);
+        this.headRacialIndex = up
+          ? this.headRacialIndex < this.allHeadRacial.length - 1
+            ? this.headRacialIndex + 1
+            : 0
+          : this.headRacialIndex > 0
+          ? this.headRacialIndex - 1
+          : this.allHeadRacial.length - 1;
         this.onChangePart();
         break;
       case 'beard':
-        this.beardIndex = up 
-        ? (this.beardIndex < this.allBeards.length - 1 ? this.beardIndex + 1 : 0) 
-        : (this.beardIndex > 0 ? this.beardIndex - 1 : this.allBeards.length - 1);
+        this.beardIndex = up
+          ? this.beardIndex < this.allBeards.length - 1
+            ? this.beardIndex + 1
+            : 0
+          : this.beardIndex > 0
+          ? this.beardIndex - 1
+          : this.allBeards.length - 1;
         this.onChangePart();
         break;
       default:

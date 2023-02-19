@@ -56,6 +56,23 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'uniform_male4_oneArm.svg',
+    name: 'Male One Arm',
+    tags: {
+      imagePart: imageParts.uniform,
+      gender: [gender.male],
+      race: [
+        alienRaceList.andorian,
+        alienRaceList.betazoid,
+        alienRaceList.denobulan,
+        alienRaceList.ferengi,
+        alienRaceList.human,
+        alienRaceList.orion,
+        alienRaceList.trill,
+      ],
+    },
+  },
+  {
     file: 'uniform_female1.svg',
     name: 'Female Uniform 1',
     tags: {
@@ -708,7 +725,7 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
-    file: 'beard_schnauzer.svg',
+    file: 'beard_stache.svg',
     tags: {
       imagePart: imageParts.beard,
       gender: [gender.male],

@@ -50,9 +50,6 @@ export class SkinColorService {
       case alienRaceList.efrosian: {
         return [...pinkSkin.fair, ...pinkSkin.dark];
       }
-      case alienRaceList.cardassian: {
-        return brownSkin.fair;
-      }
       case alienRaceList.orion: {
         return greenSkin;
       }

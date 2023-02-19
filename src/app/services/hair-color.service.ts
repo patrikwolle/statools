@@ -35,7 +35,6 @@ export class hairColorService {
         return this.getHairColorWithHighlightColor(normaleHair);
       }
       case alienRaceList.klingon:
-      case alienRaceList.cardassian:
       case alienRaceList.tellarite: {
         return this.getHairColorWithHighlightColor(darkGrayHair);
       }

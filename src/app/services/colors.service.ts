@@ -44,7 +44,6 @@ export class ColorService {
   }
 
   setSkinColor(color: SkinColor, race: alienRaceList) {
-    console.log('color:', color);
     let els = [];
     els.push(document.getElementById('head'));
     els.push(document.getElementById('ear_left'));
