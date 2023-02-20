@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ColorHex, SkinColor } from '../interfaces/color.interface';
 import { ColorConversionService } from './color-converter.service';
-import { alienRaceList } from '../enums/avatar.enum';
+import { alienSpeciesList } from '../enums/avatar.enum';
 import {
   blueSkin,
   brownSkin,
@@ -23,48 +23,55 @@ import { hairColorService } from './hair-color.service';
 export class SkinColorService {
   constructor(private colorConverter: ColorConversionService) {}
 
-  getSkinColors(race: alienRaceList): ColorHex[] {
-    switch (race) {
-      case alienRaceList.human:
-      case alienRaceList.vulcan:
-      case alienRaceList.bajoran: {
+  getSkinColors(species: alienSpeciesList): ColorHex[] {
+    switch (species) {
+      case alienSpeciesList.human:
+      case alienSpeciesList.vulcan:
+      case alienSpeciesList.bajoran: {
         return fleshySkin;
       }
-      case alienRaceList.klingon:
-      case alienRaceList.ferengi: {
+      case alienSpeciesList.klingon:
+      case alienSpeciesList.ferengi: {
         return darkSkin;
       }
-      case alienRaceList.andorian:
-      case alienRaceList.bolian:
-      case alienRaceList.benzite: {
+      case alienSpeciesList.andorian:
+      case alienSpeciesList.bolian:
+      case alienSpeciesList.benzite: {
         return blueSkin;
       }
-      case alienRaceList.betazoid:
-      case alienRaceList.trill:
-      case alienRaceList.denobulan:
-      case alienRaceList.grazerite:
-      case alienRaceList.ktarian: {
+      case alienSpeciesList.betazoid:
+      case alienSpeciesList.trill:
+      case alienSpeciesList.denobulan:
+      case alienSpeciesList.grazerite:
+      case alienSpeciesList.ktarian: {
         return fairSkin;
       }
-      case alienRaceList.tellarite:
-      case alienRaceList.efrosian: {
+      case alienSpeciesList.tellarite:
+      case alienSpeciesList.efrosian: {
         return [...pinkSkin.fair, ...pinkSkin.dark];
       }
-      case alienRaceList.orion: {
+      case alienSpeciesList.orion: {
         return greenSkin;
       }
       default:
-        throw new Error('Could not parse race');
+        throw new Error('Could not parse species');
     }
   }
 
-  generateSkinColors(basicColor: ColorHex): SkinColor {
+  generateSkinColors(
+    basicColor: ColorHex,
+    species: alienSpeciesList
+  ): SkinColor {
     const baseColor = this.colorConverter.lightnessVariation(
       basicColor,
       this.ranNum(5)
     );
-    const marks = this.colorConverter.lightnessVariation(basicColor, -20);
+    let marks = baseColor;
+    if (species === alienSpeciesList.trill) {
+      marks = this.colorConverter.lightnessVariation(basicColor, -20);
+    }
     return {
+      kind: 'skinColor',
       baseColor: baseColor,
       marks: marks,
     };

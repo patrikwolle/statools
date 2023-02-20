@@ -7,7 +7,7 @@ import {
   orionHair,
   whiteHair,
 } from '../data/hair-colors';
-import { alienRaceList } from '../enums/avatar.enum';
+import { alienSpeciesList } from '../enums/avatar.enum';
 import { ColorHex, HairColor } from '../interfaces/color.interface';
 import { ColorConversionService } from './color-converter.service';
 
@@ -21,50 +21,51 @@ import { ColorConversionService } from './color-converter.service';
 export class hairColorService {
   constructor(private colorConverter: ColorConversionService) {}
 
-  getHairColor(race: alienRaceList): HairColor[] {
-    switch (race) {
-      case alienRaceList.human:
-      case alienRaceList.betazoid:
-      case alienRaceList.trill: {
+  getHairColor(species: alienSpeciesList): HairColor[] {
+    switch (species) {
+      case alienSpeciesList.human:
+      case alienSpeciesList.betazoid:
+      case alienSpeciesList.trill: {
         return this.getHairColorWithHighlightColor(normaleAndColeredHair);
       }
-      case alienRaceList.vulcan:
-      case alienRaceList.denobulan:
-      case alienRaceList.bajoran:
-      case alienRaceList.ktarian: {
+      case alienSpeciesList.vulcan:
+      case alienSpeciesList.denobulan:
+      case alienSpeciesList.bajoran:
+      case alienSpeciesList.ktarian: {
         return this.getHairColorWithHighlightColor(normaleHair);
       }
-      case alienRaceList.klingon:
-      case alienRaceList.tellarite: {
+      case alienSpeciesList.klingon:
+      case alienSpeciesList.tellarite: {
         return this.getHairColorWithHighlightColor(darkGrayHair);
       }
-      case alienRaceList.andorian: {
+      case alienSpeciesList.andorian: {
         return this.getHairColorWithHighlightColor(
           Object.assign(whiteHair, grayHair)
         );
       }
-      case alienRaceList.bolian:
-      case alienRaceList.ferengi:
-      case alienRaceList.grazerite:
+      case alienSpeciesList.bolian:
+      case alienSpeciesList.ferengi:
+      case alienSpeciesList.grazerite:
       /*case "benzite": { //TODO: Rassen und Frisuren ohne Haare
         return null;
       }*/
       // eslint-disable-next-line no-fallthrough
-      case alienRaceList.efrosian: {
+      case alienSpeciesList.efrosian: {
         return this.getHairColorWithHighlightColor(whiteHair);
       }
-      case alienRaceList.orion: {
+      case alienSpeciesList.orion: {
         return this.getHairColorWithHighlightColor(orionHair);
       }
       default:
-        throw new Error('Could not parse race');
+        throw new Error('Could not parse species');
     }
   }
 
   getHairColorWithHighlightColor(hairColorArr: ColorHex[]): HairColor[] {
     let hairColors: HairColor[] = [];
     hairColorArr.forEach((hc) => {
-      let hairColor = {
+      let hairColor: HairColor = {
+        kind: 'hairColor',
         baseColor: hc,
         highlightColor: this.colorConverter.lightnessVariation(hc, 10),
         shadeColor: this.colorConverter.lightnessVariation(hc, -10),

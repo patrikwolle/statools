@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-import { alienRaceList, ranks, roles } from '../enums/avatar.enum';
+import { alienSpeciesList, ranks, roles } from '../enums/avatar.enum';
 import {
   ColorHex,
   HairColor,
   HairColorsProbability,
   SkinColor,
-  SkinColorHexObject,
 } from '../interfaces/color.interface';
 import { idsSvg } from './avatar.service';
 
@@ -42,19 +41,15 @@ export class ColorService {
     }
   }
 
-  setSkinColor(color: SkinColor, race: alienRaceList) {
+  setSkinColor(color: SkinColor) {
     let els = [];
     els.push(document.getElementById('head'));
-    els.push(document.getElementById('ear_left'));
-    els.push(document.getElementById('ear_right'));
+    els.push(document.getElementById('ears'));
     els.push(document.getElementById('neck'));
-    els.push(document.getElementById('marks'));
     els.push(document.getElementById('nose'));
-    if (document.getElementById('antenna')) {
-      els.push(document.getElementById('antenna'));
-    }
-    if (document.getElementById('head_racial')) {
-      els.push(document.getElementById('head_racial'));
+
+    if (document.getElementById('species_special')) {
+      els.push(document.getElementById('species_special'));
     }
     els.forEach((el) => {
       if (el) {
@@ -62,7 +57,7 @@ export class ColorService {
       }
     });
     let marks = document.getElementById('marks');
-    if (marks && race == alienRaceList.trill) {
+    if (marks) {
       this.changeColorOfStyle(marks, 'fill', color.marks);
     }
   }
@@ -78,8 +73,7 @@ export class ColorService {
             break;
           case 'hair_shade':
           case 'hair_shade_long':
-          case 'eyebrows_left':
-          case 'eyebrows_right':
+          case 'eyebrows':
           case 'beard':
             this.changeColorOfStyle(element, 'fill', color.shadeColor);
             break;

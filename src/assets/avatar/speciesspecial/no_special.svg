@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 210 297"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="eyebrows_passive.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="no_beard.svg">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -25,16 +38,16 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="1.4770342"
-     inkscape:cx="345.62504"
-     inkscape:cy="434.6548"
-     inkscape:window-width="1920"
-     inkscape:window-height="1094"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:zoom="1.0444209"
+     inkscape:cx="227.39874"
+     inkscape:cy="377.24255"
+     inkscape:window-width="5120"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="892"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:pageshadow="2">
+     inkscape:document-rotation="0">
     <inkscape:grid
        type="xygrid"
        id="grid9" />
@@ -100,10 +113,5 @@
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       id="eyebrows"
-       style="fill:#552200;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 117.90947,77.522916 c -1.87077,-1.023926 -2.05556,-2.853246 -1.05833,-3.704166 2.07991,-1.705112 9.31728,0.184696 13.7584,1.587501 4.44113,1.402805 12.17091,7.408334 12.17091,7.408334 0,0 -7.92948,-3.979192 -12.17091,-4.762501 -4.24142,-0.783309 -10.64103,0.4847 -12.70007,-0.529168 z m -18.69072,0 c 1.87076,-1.023926 2.05555,-2.853246 1.05833,-3.704166 -2.079899,-1.705112 -9.317233,0.184696 -13.758329,1.587501 -4.441096,1.402805 -12.170834,7.408334 -12.170834,7.408334 0,0 7.929432,-3.979192 12.170834,-4.762501 4.241402,-0.783309 10.640974,0.4847 12.699999,-0.529168 z" />
-  </g>
+     id="layer1" />
 </svg>

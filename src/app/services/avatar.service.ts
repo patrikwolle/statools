@@ -2,9 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { avatarSvgList } from '../data/svgArray';
-import { alienRaceList, imageParts, gender } from '../enums/avatar.enum';
+import { alienSpeciesList, imageParts, gender } from '../enums/avatar.enum';
 import { avatarList } from '../interfaces/avatar.interface';
-import { ColorHex, HairColor, SkinColor } from '../interfaces/color.interface';
+import {
+  Color,
+  ColorHex,
+  HairColor,
+  SkinColor,
+} from '../interfaces/color.interface';
 import { ColorService } from './colors.service';
 import { hairColorService } from './hair-color.service';
 import { SkinColorService } from './skin-color.service';
@@ -33,22 +38,22 @@ export class AvatarService {
    */
   loadPart(
     part: imageParts,
-    race: alienRaceList,
+    species: alienSpeciesList,
     gender: gender,
     era?: string
   ): avatarList[] {
     return avatarSvgList
       .filter((av) => av.tags.imagePart === part)
-      .filter((av) => av.tags.race.includes(race))
+      .filter((av) => av.tags.species.includes(species))
       .filter((av) => av.tags.gender.includes(gender));
   }
 
-  loadSkinColor(race: alienRaceList): ColorHex[] {
-    return this.skinColor.getSkinColors(race);
+  loadSkinColor(species: alienSpeciesList): ColorHex[] {
+    return this.skinColor.getSkinColors(species);
   }
 
-  loadHairColor(race: alienRaceList) {
-    return this.hairColor.getHairColor(race);
+  loadHairColor(species: alienSpeciesList) {
+    return this.hairColor.getHairColor(species);
   }
 
   loadInsignia(officer: boolean): Observable<string> {
@@ -57,11 +62,15 @@ export class AvatarService {
     });
   }
 
-  setHairColor(hc: HairColor) {
-    this.color.setHairColor(hc);
-  }
-  setSkinColor(sc: SkinColor, race: alienRaceList) {
-    this.color.setSkinColor(sc, race);
+  setColor(col: Color) {
+    switch (col.kind) {
+      case 'hairColor':
+        return this.color.setHairColor(col);
+      case 'skinColor':
+        return this.color.setSkinColor(col);
+      default:
+        console.debug('Color not defined');
+    }
   }
 
   /**
@@ -81,7 +90,7 @@ export class AvatarService {
 
 export const idsSvg = {
   uniform: ['uniform_right', 'uniform_left'],
-  skin: ['head', 'ear_left', 'ear_right', 'neck', 'antenna', 'head_racial'],
+  skin: ['head', 'ears', 'neck', 'species_special'],
   hair: [
     'hair',
     'hair_long',
@@ -89,8 +98,7 @@ export const idsSvg = {
     'hair_highlight_long',
     'hair_shade',
     'hair_shade_long',
-    'eyebrows_left',
-    'eyebrows_right',
+    'eyebrows',
     'beard',
   ],
 };

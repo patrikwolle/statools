@@ -1,4 +1,4 @@
-export enum alienRaceList {
+export enum alienSpeciesList {
   andorian = 'andorian',
   betazoid = 'betazoid',
   bolian = 'bolian' /* */,
@@ -27,7 +27,7 @@ export enum imageParts {
   ears = 'ears',
   hair = 'hair',
   headDeco = 'headDeco',
-  headRacial = 'headRacial',
+  speciesSpecial = 'speciesSpecial',
   beard = 'beard',
 }
 export enum gender {

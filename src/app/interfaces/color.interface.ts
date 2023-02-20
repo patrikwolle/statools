@@ -33,12 +33,16 @@ export interface HairColorsProbability {
 }
 
 export interface HairColor {
+  kind: 'hairColor';
   baseColor: ColorHex;
   highlightColor: ColorHex;
   shadeColor: ColorHex;
 }
 
 export interface SkinColor {
+  kind: 'skinColor';
   baseColor: ColorHex;
   marks: ColorHex;
 }
+
+export type Color = SkinColor | HairColor;
