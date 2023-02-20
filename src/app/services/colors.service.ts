@@ -38,7 +38,6 @@ export class ColorService {
   setUniformColor(element: HTMLElement | null, role: roles) {
     if (element !== null) {
       let color = disciplineColors.find((dc) => dc.role === role)?.color;
-
       this.changeColorOfStyle(element, 'fill', color);
     }
   }
@@ -138,8 +137,6 @@ export class ColorService {
     let newString = `${firstPart}${value};${lastPart}`;
     el.setAttribute('style', newString);
   }
-
-  replaceColor() {}
 }
 
 export const disciplineColors = [
