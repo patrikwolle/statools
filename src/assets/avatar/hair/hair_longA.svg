@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="840"
+   height="880"
+   viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    sodipodi:docname="hair_longA.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -26,15 +26,17 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.4770342"
-     inkscape:cx="310.75787"
+     inkscape:cx="310.41935"
      inkscape:cy="326.32961"
-     inkscape:window-width="2560"
-     inkscape:window-height="1369"
-     inkscape:window-x="2552"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:pageshadow="2">
+     inkscape:pageshadow="2"
+     width="840mm"
+     units="px">
     <inkscape:grid
        type="xygrid"
        id="grid9" />
@@ -109,7 +111,7 @@
     <path
        id="hair_highlight"
        style="fill:#a05a2c;stroke:none;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="M 107.08804 29.089181 C 92.696558 29.167388 77.821762 36.350621 67.46875 46.302083 C 64.881934 48.788568 62.633217 51.862853 60.998344 55.212134 C 63.134515 53.280156 69.871011 47.282946 74.219242 44.603996 C 81.509123 40.112693 89.227394 35.675062 97.63125 34.035132 C 101.09693 33.358838 104.66947 33.051878 108.24456 33.096171 C 112.84109 33.153119 117.44195 33.790605 121.82616 34.969442 C 129.44265 37.017388 136.12091 41.746909 142.73909 46.036983 C 146.17491 48.264164 151.68326 52.794928 154.28051 54.969771 C 152.88241 52.770204 151.24731 50.730485 149.48958 48.947917 C 138.82683 38.134465 123.66006 29.510973 108.47917 29.104167 C 108.0161 29.091758 107.55228 29.086658 107.08804 29.089181 z " />
+       d="m 107.08804,29.089181 c -14.391482,0.07821 -29.266278,7.26144 -39.61929,17.212902 -2.586816,2.486485 -4.835533,5.56077 -6.470406,8.910051 2.136171,-1.931978 8.872667,-7.929188 13.220898,-10.608138 7.289881,-4.491303 15.008152,-8.928934 23.412008,-10.568864 3.46568,-0.676294 7.03822,-0.983254 10.61331,-0.938961 4.59653,0.05695 9.19739,0.694434 13.5816,1.873271 7.61649,2.047946 14.29475,6.777467 20.91293,11.067541 3.43582,2.227181 8.94417,6.757945 11.54142,8.932788 -1.3981,-2.199567 -3.0332,-4.239286 -4.79093,-6.021854 -10.66275,-10.813452 -25.82952,-19.436944 -41.01041,-19.84375 -0.46307,-0.01241 -0.92689,-0.01751 -1.39113,-0.01499 z" />
     <path
        id="path4251"
        style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"

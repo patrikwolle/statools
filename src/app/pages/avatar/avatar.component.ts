@@ -414,6 +414,7 @@ export class AvatarComponent implements OnInit {
     this.mouthIndex = this.randomInt(this.allMouths.length);
     this.eyebrowIndex = this.randomInt(this.allEyebrows.length);
     this.earsIndex = this.randomInt(this.allEars.length);
+    this.beardIndex = this.randomInt(this.allBeards.length);
     this.speciesSpecialIndex = this.randomInt(this.allSpeciesSpecial.length);
     this.selectedHeadDeco = this.randomInt(this.allHeadDeco.length);
     this.hairColorIndex = this.randomInt(this.allHairColors.length);
