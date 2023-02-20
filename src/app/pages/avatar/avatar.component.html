@@ -1,0 +1,547 @@
+<h1>Avatar</h1>
+<div class="grid" [ngStyle]="{ width: '75vw' }">
+  <div class="col-12 md:col-6 lg:col-3">
+    <div>Gender</div>
+    <p-dropdown
+      [style]="{ width: '100%' }"
+      [options]="allGenders"
+      [(ngModel)]="selectedTestGender"
+      optionLabel="name"
+      (onChange)="changeGender(selectedTestGender.value)"
+    ></p-dropdown>
+  </div>
+  <div class="col-12 md:col-6 lg:col-3">
+    <div>Species</div>
+    <p-dropdown
+      [style]="{ width: '100%' }"
+      [options]="allSpecies"
+      [(ngModel)]="selectedTestSpecies"
+      optionLabel="name"
+      (onChange)="changeSpecies(selectedTestSpecies.value)"
+    ></p-dropdown>
+  </div>
+  <div class="col-12 md:col-6 lg:col-3">
+    <div>Role</div>
+    <p-dropdown
+      [style]="{ width: '100%' }"
+      [options]="allRoles"
+      [(ngModel)]="selectedTestRole"
+      optionLabel="name"
+      (onChange)="changeRole(selectedTestRole.value)"
+    ></p-dropdown>
+  </div>
+  <div class="col-12 md:col-6 lg:col-3">
+    <div>Rank</div>
+    <p-dropdown
+      [style]="{ width: '100%' }"
+      [options]="allRanks"
+      [(ngModel)]="selectedTestRank"
+      optionLabel="name"
+      (onChange)="changeRank(selectedTestRank.value)"
+    ></p-dropdown>
+  </div>
+</div>
+<div class="bar-panel">
+  <div class="bar-1"></div>
+  <div class="bar-2"></div>
+  <div class="bar-3"></div>
+  <div class="bar-4"></div>
+  <div class="bar-5"></div>
+</div>
+<div class="grid" style="width: 75vw">
+  <div class="col-12 md:col-6 lg:col-6">
+    <div class="grid">
+      <div class="col-12 md:col-6 lg:col-6">
+        <div>Hair</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('hair', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedHair"
+              [(ngModel)]="selectedHair.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('hair', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div>Head</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('head', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedHead"
+              [(ngModel)]="selectedHead.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('head', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div>Eyebrows</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyebrow', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [(ngModel)]="selectedEyebrows.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyebrow', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div>Eyes</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyes', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedEyes"
+              [(ngModel)]="selectedEyes.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyes', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div *ngIf="selectedGender === 'male'">Beard</div>
+        <div *ngIf="selectedGender === 'male'" class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('beard', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedBeard"
+              [(ngModel)]="selectedBeard.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('beard', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div>Body</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('uniform', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedUniform"
+              [(ngModel)]="selectedUniform.name"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('uniform', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div *ngIf="selectedHeadDeco">HeadDeco</div>
+        <div *ngIf="selectedHeadDeco" class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('headDeco', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [(ngModel)]="selectedHeadDeco.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('headDeco', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-6">
+        <div>Haircolor</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-warning"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('hairColor', false)"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [ngStyle]="{
+                'background-color': selectedHairColor.baseColor,
+                color: selectedHairColor.baseColor
+              }"
+              *ngIf="selectedHairColor"
+              [(ngModel)]="selectedHairColor.baseColor"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-help"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('hairColor', true)"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div>Skincolor</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-warning"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('skinColor', false)"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [ngStyle]="{
+                'background-color': selectedSkinColor,
+                color: selectedSkinColor
+              }"
+              *ngIf="selectedSkinColor"
+              [(ngModel)]="selectedSkinColor"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-help"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('skinColor', true)"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div>Mouth</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-warning"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('mouth', false)"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [(ngModel)]="selectedMouth.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('mouth', true)"
+              icon="pi pi-angle-right"
+              class="p-button-help"
+            ></button>
+          </div>
+        </div>
+        <div>Nose</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('nose', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [(ngModel)]="selectedNose.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('nose', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div>Ears</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('ears', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [(ngModel)]="selectedEars.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('ears', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div *ngIf="selectedSpeciesSpecial">SpeciesSpecial</div>
+        <div *ngIf="selectedSpeciesSpecial" class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('SpeciesSpecial', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [(ngModel)]="selectedSpeciesSpecial.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('SpeciesSpecial', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div>Background</div>
+        <div *ngIf="selectedBackground" class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('background', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [(ngModel)]="selectedBackground.name"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('background', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid" style="width: 75vw">
+        <div class="col-12 md:col-6 lg:col-6">
+          <button
+            pButton
+            [style]="{ width: '100%' }"
+            class="p-button-warning"
+            (click)="random()"
+          >
+            Random Character
+          </button>
+        </div>
+        <div class="col-12 md:col-6 lg:col-6">
+          <button
+            pButton
+            [style]="{ width: '100%' }"
+            class="p-button-help"
+            (click)="print()"
+          >
+            Save Picture
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 md:col-6 lg:col-6">
+    <div id="avatar" class="wrapper">
+      <img
+        id="background"
+        class="backgroundImage"
+        src="assets/background/Space1.png"
+      />
+      <div
+        #allSVGS
+        id="allSVGs"
+        [ngStyle]="{ visibility: loading === true ? 'hidden' : 'visible' }"
+      >
+        <div
+          #uniform
+          id="uniform "
+          class="uniform"
+          [innerHTML]="uniformSVG"
+        ></div>
+        <div #head id="head " class="head" [innerHTML]="headSVG"></div>
+        <div #eyes id="eyes " class="eyes" [innerHTML]="eyesSVG"></div>
+        <div #hair id="hair " class="hair" [innerHTML]="hairSVG"></div>
+        <div
+          #longHair
+          id="longHair "
+          class="longHair"
+          [innerHTML]="longHairSVG"
+        ></div>
+        <div #nose id="nose " class="nose" [innerHTML]="noseSVG"></div>
+        <div #mouth id="mouth " class="mouth" [innerHTML]="mouthSVG"></div>
+        <div
+          #eyebrows
+          id="eyebrows "
+          class="eyebrows"
+          [innerHTML]="eyebrowsSVG"
+        ></div>
+        <div #ears id="ears " class="ears" [innerHTML]="earsSVG"></div>
+        <div
+          #ears
+          id="insignia "
+          class="insignia"
+          [innerHTML]="insigniaSVG"
+        ></div>
+        <div
+          #ears
+          id="headDeco "
+          class="headDeco"
+          [innerHTML]="headDecoSVG"
+        ></div>
+        <div
+          #speciesSpecial
+          id="speciesSpecial "
+          class="speciesSpecial"
+          [innerHTML]="speciesSpecialSVG"
+        ></div>
+        <div #beardID id="beardID" class="beardID" [innerHTML]="beardSVG"></div>
+      </div>
+    </div>
+  </div>
+</div>
