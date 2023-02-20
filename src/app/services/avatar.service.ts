@@ -76,7 +76,7 @@ export class AvatarService {
   /**
    * Load a selected svg from the assets folder
    * @param part selected part from the editor
-   * @returns Observable of the loaded svg
+   * @returns Observable of the loaded svg or if the seletected Part is undefined, return an Obserfable of an empty string
    */
   loadPartBySelection(part: avatarList): Observable<string> {
     if (part) {

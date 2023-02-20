@@ -464,7 +464,9 @@ export class AvatarComponent implements OnInit {
     position: absolute;
     z-index: 1;
     width: ${document.getElementById('avatar')?.offsetWidth}px;
-    height: ${document.getElementById('avatar')?.offsetWidth! * 1.2}px`
+    height: ${
+      document.getElementById('avatar')?.offsetWidth! * 1.047619047619048
+    }px`
     );
   }
 
