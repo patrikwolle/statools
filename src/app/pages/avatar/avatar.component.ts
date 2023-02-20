@@ -642,7 +642,7 @@ export class AvatarComponent implements OnInit {
     let width = document.getElementById('avatar')?.offsetWidth;
     let height = 0;
     if (width) {
-      height = width * 1.2;
+      height = width * 1.047619047619048;
     }
     if (input) {
       let image = `${
