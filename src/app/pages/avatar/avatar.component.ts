@@ -23,7 +23,7 @@ import { SkinColorService } from 'src/app/services/skin-color.service';
 })
 export class AvatarComponent implements OnInit {
   /** Main selections */
-  allSpeciess: unknown[] = [];
+  allSpecies: unknown[] = [];
   selectedTestSpecies = { name: 'human', value: 'human' };
   selectedSpecies: alienSpeciesList = alienSpeciesList.human;
   allGenders: unknown[] = [];
