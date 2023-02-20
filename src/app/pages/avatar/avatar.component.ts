@@ -4,7 +4,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ColorService } from 'src/app/services/colors.service';
 import { PrintService } from 'src/app/services/print.service';
 import {
-  alienRaceList,
+  alienSpeciesList,
   ranks,
   roles,
   gender,
@@ -23,9 +23,9 @@ import { SkinColorService } from 'src/app/services/skin-color.service';
 })
 export class AvatarComponent implements OnInit {
   /** Main selections */
-  allRaces: unknown[] = [];
-  selectedTestRace = { name: 'human', value: 'human' };
-  selectedRace: alienRaceList = alienRaceList.human;
+  allSpeciess: unknown[] = [];
+  selectedTestSpecies = { name: 'human', value: 'human' };
+  selectedSpecies: alienSpeciesList = alienSpeciesList.human;
   allGenders: unknown[] = [];
   selectedTestGender = { name: 'female', value: 'female' };
   selectedGender: gender = gender.female;
@@ -109,8 +109,8 @@ export class AvatarComponent implements OnInit {
 
   /** Load all the informations from the arrays, because of the fact thats a sync call we can do this by simple calls directly in the onInit */
   ngOnInit(): void {
-    for (const value in alienRaceList) {
-      this.allRaces.push({ name: value, value: value });
+    for (const value in alienSpeciesList) {
+      this.allSpeciess.push({ name: value, value: value });
     }
     for (const g in gender) {
       this.allGenders.push({ name: g, value: g });
@@ -127,69 +127,69 @@ export class AvatarComponent implements OnInit {
   loadArrays() {
     this.allUniforms = this.avatar.loadPart(
       imageParts.uniform,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allHeads = this.avatar.loadPart(
       imageParts.head,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allEyes = this.avatar.loadPart(
       imageParts.eyes,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allHairs = this.avatar.loadPart(
       imageParts.hair,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allEyebrows = this.avatar.loadPart(
       imageParts.eyebrows,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allNoses = this.avatar.loadPart(
       imageParts.nose,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allMouths = this.avatar.loadPart(
       imageParts.mouth,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allEars = this.avatar.loadPart(
       imageParts.ears,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allHeadDeco = this.avatar.loadPart(
       imageParts.headDeco,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allSpeciesSpecial = this.avatar.loadPart(
       imageParts.speciesSpecial,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
     this.allBeards = this.avatar.loadPart(
       imageParts.beard,
-      this.selectedRace,
+      this.selectedSpecies,
       this.selectedGender
     );
-    this.allSkinColors = this.avatar.loadSkinColor(this.selectedRace);
+    this.allSkinColors = this.avatar.loadSkinColor(this.selectedSpecies);
 
-    this.allHairColors = this.avatar.loadHairColor(this.selectedRace);
+    this.allHairColors = this.avatar.loadHairColor(this.selectedSpecies);
     this.allBackgrounds = backgrounds;
     this.onChangePart();
   }
 
-  changeRace(sr: string) {
+  changeSpecies(sr: string) {
     this.headDecoSVG = '';
-    this.selectedRace = <alienRaceList>sr;
+    this.selectedSpecies = <alienSpeciesList>sr;
 
     this.uniformIndex = 0;
     this.headIndex = 0;
@@ -317,7 +317,7 @@ export class AvatarComponent implements OnInit {
         this.avatar.setColor(
           this.skinColor.generateSkinColors(
             this.selectedSkinColor,
-            this.selectedRace
+            this.selectedSpecies
           )
         );
       }, 1);
@@ -328,7 +328,7 @@ export class AvatarComponent implements OnInit {
         tags: {
           imagePart: imageParts.hair,
           gender: [gender.male, gender.female],
-          race: [alienRaceList.human],
+          species: [alienSpeciesList.human],
         },
       };
 
@@ -345,7 +345,7 @@ export class AvatarComponent implements OnInit {
         tags: {
           imagePart: imageParts.hair,
           gender: [gender.male, gender.female],
-          race: [alienRaceList.human],
+          species: [alienSpeciesList.human],
         },
       };
 

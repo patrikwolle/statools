@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { avatarSvgList } from '../data/svgArray';
-import { alienRaceList, imageParts, gender } from '../enums/avatar.enum';
+import { alienSpeciesList, imageParts, gender } from '../enums/avatar.enum';
 import { avatarList } from '../interfaces/avatar.interface';
 import {
   Color,
@@ -38,22 +38,22 @@ export class AvatarService {
    */
   loadPart(
     part: imageParts,
-    race: alienRaceList,
+    species: alienSpeciesList,
     gender: gender,
     era?: string
   ): avatarList[] {
     return avatarSvgList
       .filter((av) => av.tags.imagePart === part)
-      .filter((av) => av.tags.race.includes(race))
+      .filter((av) => av.tags.species.includes(species))
       .filter((av) => av.tags.gender.includes(gender));
   }
 
-  loadSkinColor(race: alienRaceList): ColorHex[] {
-    return this.skinColor.getSkinColors(race);
+  loadSkinColor(species: alienSpeciesList): ColorHex[] {
+    return this.skinColor.getSkinColors(species);
   }
 
-  loadHairColor(race: alienRaceList) {
-    return this.hairColor.getHairColor(race);
+  loadHairColor(species: alienSpeciesList) {
+    return this.hairColor.getHairColor(species);
   }
 
   loadInsignia(officer: boolean): Observable<string> {
@@ -90,7 +90,7 @@ export class AvatarService {
 
 export const idsSvg = {
   uniform: ['uniform_right', 'uniform_left'],
-  skin: ['head', 'ear_left', 'ear_right', 'neck','species_special'],
+  skin: ['head', 'ear_left', 'ear_right', 'neck', 'species_special'],
   hair: [
     'hair',
     'hair_long',

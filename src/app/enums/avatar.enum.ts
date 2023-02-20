@@ -1,4 +1,4 @@
-export enum alienRaceList {
+export enum alienSpeciesList {
   andorian = 'andorian',
   betazoid = 'betazoid',
   bolian = 'bolian' /* */,

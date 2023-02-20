@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { alienRaceList, ranks, roles } from '../enums/avatar.enum';
+import { alienSpeciesList, ranks, roles } from '../enums/avatar.enum';
 import {
   ColorHex,
   HairColor,

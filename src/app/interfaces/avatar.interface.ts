@@ -1,4 +1,4 @@
-import { alienRaceList, gender, imageParts } from '../enums/avatar.enum';
+import { alienSpeciesList, gender, imageParts } from '../enums/avatar.enum';
 
 export interface avatarList {
   file: string | string[];
@@ -6,7 +6,7 @@ export interface avatarList {
   tags: {
     imagePart: imageParts;
     gender: gender[];
-    race: alienRaceList[];
+    species: alienSpeciesList[];
   };
 }
 
