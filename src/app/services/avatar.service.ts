@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { avatarSvgList } from '../data/svgArray';
 import { alienSpeciesList, imageParts, gender } from '../enums/avatar.enum';
 import { avatarList } from '../interfaces/avatar.interface';
@@ -76,15 +76,19 @@ export class AvatarService {
   /**
    * Load a selected svg from the assets folder
    * @param part selected part from the editor
-   * @returns Observable of the loaded svg
+   * @returns Observable of the loaded svg or if the seletected Part is undefined, return an Obserfable of an empty string
    */
   loadPartBySelection(part: avatarList): Observable<string> {
-    return this.http.get(
-      `assets/avatar/${part.tags.imagePart.toLowerCase()}/${part.file}`,
-      {
-        responseType: 'text',
-      }
-    );
+    if (part) {
+      return this.http.get(
+        `assets/avatar/${part.tags.imagePart.toLowerCase()}/${part.file}`,
+        {
+          responseType: 'text',
+        }
+      );
+    } else {
+      return of<string>('');
+    }
   }
 }
 

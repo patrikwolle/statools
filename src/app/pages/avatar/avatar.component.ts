@@ -99,6 +99,7 @@ export class AvatarComponent implements OnInit {
   speciesSpecialIndex: number = 0;
   beardIndex: number = 0;
 
+  loading = true;
   constructor(
     public avatar: AvatarService,
     private sanitizer: DomSanitizer,
@@ -188,6 +189,7 @@ export class AvatarComponent implements OnInit {
   }
 
   changeSpecies(sr: string) {
+    this.loading = true;
     this.headDecoSVG = '';
     this.selectedSpecies = <alienSpeciesList>sr;
 
@@ -208,6 +210,7 @@ export class AvatarComponent implements OnInit {
   }
 
   changeGender(sr: string) {
+    this.loading = true;
     this.selectedGender = <gender>sr;
     this.uniformIndex = 0;
     this.headIndex = 0;
@@ -226,11 +229,13 @@ export class AvatarComponent implements OnInit {
   }
 
   changeRole(sr: string) {
+    this.loading = true;
     this.selectedRole = <roles>sr;
     this.loadArrays();
   }
 
   changeRank(sr: string) {
+    this.loading = true;
     this.selectedRank = <ranks>sr;
     this.loadArrays();
   }
@@ -249,137 +254,153 @@ export class AvatarComponent implements OnInit {
       this.uniformSVG = this.sanitizer.bypassSecurityTrustHtml(
         this.changeSizeOfSVG(res)
       );
-      setTimeout(() => {
-        this.color.setUniformColor(
-          document.getElementById('uniform_right'),
-          this.selectedRole
+      this.avatar.loadPartBySelection(this.selectedHead).subscribe((res) => {
+        this.headSVG = this.sanitizer.bypassSecurityTrustHtml(
+          this.changeSizeOfSVG(res)
         );
-        this.color.setUniformColor(
-          document.getElementById('uniform_left'),
-          this.selectedRole
-        );
-      }, 1);
-    });
-    this.avatar.loadPartBySelection(this.selectedHead).subscribe((res) => {
-      this.headSVG = this.sanitizer.bypassSecurityTrustHtml(
-        this.changeSizeOfSVG(res)
-      );
-    });
-    this.avatar.loadPartBySelection(this.selectedEyes).subscribe((res) => {
-      this.eyesSVG = this.sanitizer.bypassSecurityTrustHtml(
-        this.changeSizeOfSVG(res)
-      );
-    });
-    this.avatar.loadPartBySelection(this.selectedEyebrows).subscribe((res) => {
-      this.eyebrowsSVG = this.sanitizer.bypassSecurityTrustHtml(
-        this.changeSizeOfSVG(res)
-      );
-      setTimeout(() => {
-        this.avatar.setColor(this.selectedHairColor);
-      }, 1);
-    });
-    this.avatar.loadPartBySelection(this.selectedNose).subscribe((res) => {
-      this.noseSVG = this.sanitizer.bypassSecurityTrustHtml(
-        this.changeSizeOfSVG(res)
-      );
-    });
-    this.avatar.loadPartBySelection(this.selectedMouth).subscribe((res) => {
-      this.mouthSVG = this.sanitizer.bypassSecurityTrustHtml(
-        this.changeSizeOfSVG(res)
-      );
-    });
-    if (this.selectedSpeciesSpecial) {
-      this.avatar
-        .loadPartBySelection(this.selectedSpeciesSpecial)
-        .subscribe((res) => {
-          this.speciesSpecialSVG = this.sanitizer.bypassSecurityTrustHtml(
+        this.avatar.loadPartBySelection(this.selectedEyes).subscribe((res) => {
+          this.eyesSVG = this.sanitizer.bypassSecurityTrustHtml(
             this.changeSizeOfSVG(res)
           );
+          this.avatar
+            .loadPartBySelection(this.selectedEyebrows)
+            .subscribe((res) => {
+              this.eyebrowsSVG = this.sanitizer.bypassSecurityTrustHtml(
+                this.changeSizeOfSVG(res)
+              );
+              this.avatar
+                .loadPartBySelection(this.selectedNose)
+                .subscribe((res) => {
+                  this.noseSVG = this.sanitizer.bypassSecurityTrustHtml(
+                    this.changeSizeOfSVG(res)
+                  );
+                  this.avatar
+                    .loadPartBySelection(this.selectedMouth)
+                    .subscribe((res) => {
+                      this.mouthSVG = this.sanitizer.bypassSecurityTrustHtml(
+                        this.changeSizeOfSVG(res)
+                      );
+                      this.avatar
+                        .loadPartBySelection(this.selectedEars)
+                        .subscribe((res) => {
+                          this.earsSVG = this.sanitizer.bypassSecurityTrustHtml(
+                            this.changeSizeOfSVG(res)
+                          );
+                          this.avatar
+                            .loadPartBySelection(this.selectedSpeciesSpecial)
+                            .subscribe((res) => {
+                              this.speciesSpecialSVG =
+                                this.sanitizer.bypassSecurityTrustHtml(
+                                  this.changeSizeOfSVG(res)
+                                );
+                              this.avatar
+                                .loadPartBySelection(this.selectedBeard)
+                                .subscribe((res) => {
+                                  this.beardSVG =
+                                    this.sanitizer.bypassSecurityTrustHtml(
+                                      this.changeSizeOfSVG(res)
+                                    );
+                                  this.avatar
+                                    .loadInsignia(true)
+                                    .subscribe((res) => {
+                                      this.insigniaSVG =
+                                        this.sanitizer.bypassSecurityTrustHtml(
+                                          this.changeSizeOfSVG(res)
+                                        );
+                                      if (
+                                        Array.isArray(this.selectedHair.file)
+                                      ) {
+                                        let file1 = {
+                                          file: this.selectedHair.file[0],
+                                          tags: {
+                                            imagePart: imageParts.hair,
+                                            gender: [
+                                              gender.male,
+                                              gender.female,
+                                            ],
+                                            species: [alienSpeciesList.human],
+                                          },
+                                        };
+
+                                        this.avatar
+                                          .loadPartBySelection(file1)
+                                          .subscribe((res) => {
+                                            this.hairSVG =
+                                              this.sanitizer.bypassSecurityTrustHtml(
+                                                this.changeSizeOfSVG(res)
+                                              );
+                                          });
+                                        let file2 = {
+                                          file: this.selectedHair.file[1],
+                                          tags: {
+                                            imagePart: imageParts.hair,
+                                            gender: [
+                                              gender.male,
+                                              gender.female,
+                                            ],
+                                            species: [alienSpeciesList.human],
+                                          },
+                                        };
+
+                                        this.avatar
+                                          .loadPartBySelection(file2)
+                                          .subscribe((res) => {
+                                            this.longHairSVG =
+                                              this.sanitizer.bypassSecurityTrustHtml(
+                                                this.changeSizeOfSVG(res)
+                                              );
+                                            this.finalizeCharacter();
+                                          });
+                                      } else {
+                                        this.longHairSVG = '';
+                                        this.avatar
+                                          .loadPartBySelection(
+                                            this.selectedHair
+                                          )
+                                          .subscribe((res) => {
+                                            this.hairSVG =
+                                              this.sanitizer.bypassSecurityTrustHtml(
+                                                this.changeSizeOfSVG(res)
+                                              );
+                                            this.finalizeCharacter();
+                                          });
+                                      }
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
         });
-    }
-
-    if (this.selectedBeard) {
-      this.avatar.loadPartBySelection(this.selectedBeard).subscribe((res) => {
-        this.beardSVG = this.sanitizer.bypassSecurityTrustHtml(
-          this.changeSizeOfSVG(res)
-        );
-        setTimeout(() => {
-          this.avatar.setColor(this.selectedHairColor);
-        }, 1);
       });
-    }
-
-    this.avatar.loadPartBySelection(this.selectedEars).subscribe((res) => {
-      this.earsSVG = this.sanitizer.bypassSecurityTrustHtml(
-        this.changeSizeOfSVG(res)
-      );
-      setTimeout(() => {
-        this.avatar.setColor(
-          this.skinColor.generateSkinColors(
-            this.selectedSkinColor,
-            this.selectedSpecies
-          )
-        );
-      }, 1);
     });
-    if (Array.isArray(this.selectedHair.file)) {
-      let file1 = {
-        file: this.selectedHair.file[0],
-        tags: {
-          imagePart: imageParts.hair,
-          gender: [gender.male, gender.female],
-          species: [alienSpeciesList.human],
-        },
-      };
+  }
 
-      this.avatar.loadPartBySelection(file1).subscribe((res) => {
-        this.hairSVG = this.sanitizer.bypassSecurityTrustHtml(
-          this.changeSizeOfSVG(res)
-        );
-        setTimeout(() => {
-          this.avatar.setColor(this.selectedHairColor);
-        }, 1);
-      });
-      let file2 = {
-        file: this.selectedHair.file[1],
-        tags: {
-          imagePart: imageParts.hair,
-          gender: [gender.male, gender.female],
-          species: [alienSpeciesList.human],
-        },
-      };
-
-      this.avatar.loadPartBySelection(file2).subscribe((res) => {
-        this.longHairSVG = this.sanitizer.bypassSecurityTrustHtml(
-          this.changeSizeOfSVG(res)
-        );
-        setTimeout(() => {
-          this.avatar.setColor(this.selectedHairColor);
-        }, 1);
-      });
-    } else {
-      this.longHairSVG = '';
-      this.avatar.loadPartBySelection(this.selectedHair).subscribe((res) => {
-        this.hairSVG = this.sanitizer.bypassSecurityTrustHtml(
-          this.changeSizeOfSVG(res)
-        );
-        setTimeout(() => {
-          this.avatar.setColor(this.selectedHairColor);
-          this.color.setUniformColor(
-            document.getElementById('hair_band'),
-            this.selectedRole
-          );
-        }, 1);
-      });
-    }
-    this.avatar.loadInsignia(true).subscribe((res) => {
-      this.insigniaSVG = this.sanitizer.bypassSecurityTrustHtml(
-        this.changeSizeOfSVG(res)
+  finalizeCharacter() {
+    setTimeout(() => {
+      this.color.setInsigniaColor(this.selectedRank);
+      this.avatar.setColor(
+        this.skinColor.generateSkinColors(
+          this.selectedSkinColor,
+          this.selectedSpecies
+        )
       );
-      setTimeout(() => {
-        this.color.setInsigniaColor(this.selectedRank);
-      }, 1);
-    });
+      this.avatar.setColor(this.selectedHairColor);
+      this.color.setUniformColor(
+        document.getElementById('uniform_right'),
+        this.selectedRole
+      );
+      this.color.setUniformColor(
+        document.getElementById('uniform_left'),
+        this.selectedRole
+      );
+      this.color.setUniformColor(
+        document.getElementById('hair_band'),
+        this.selectedRole
+      );
+      this.loading = false;
+    }, 1);
   }
 
   print() {
@@ -406,6 +427,7 @@ export class AvatarComponent implements OnInit {
   }
 
   random() {
+    this.loading = true;
     this.uniformIndex = this.randomInt(this.allUniforms.length);
     this.headIndex = this.randomInt(this.allHeads.length);
     this.eyeIndex = this.randomInt(this.allEyes.length);
@@ -443,11 +465,14 @@ export class AvatarComponent implements OnInit {
     position: absolute;
     z-index: 1;
     width: ${document.getElementById('avatar')?.offsetWidth}px;
-    height: ${document.getElementById('avatar')?.offsetWidth! * 1.2}px`
+    height: ${
+      document.getElementById('avatar')?.offsetWidth! * 1.047619047619048
+    }px`
     );
   }
 
   nextPart(part: string, up: boolean): void {
+    this.loading = true;
     switch (part) {
       case 'uniform':
         this.uniformIndex = up
