@@ -1,5 +1,5 @@
 <h1>Avatar</h1>
-<div class="grid" style="width: 75vw">
+<div class="grid" [ngStyle]="{ width: '75vw' }">
   <div class="col-12 md:col-6 lg:col-3">
     <div>Gender</div>
     <p-dropdown
@@ -14,7 +14,7 @@
     <div>Species</div>
     <p-dropdown
       [style]="{ width: '100%' }"
-      [options]="all"
+      [options]="allSpecies"
       [(ngModel)]="selectedTestSpecies"
       optionLabel="name"
       (onChange)="changeSpecies(selectedTestSpecies.value)"
@@ -494,48 +494,54 @@
         src="assets/background/Space1.png"
       />
       <div
-        #uniform
-        id="uniform "
-        class="uniform"
-        [innerHTML]="uniformSVG"
-      ></div>
-      <div #head id="head " class="head" [innerHTML]="headSVG"></div>
-      <div #eyes id="eyes " class="eyes" [innerHTML]="eyesSVG"></div>
-      <div #hair id="hair " class="hair" [innerHTML]="hairSVG"></div>
-      <div
-        #longHair
-        id="longHair "
-        class="longHair"
-        [innerHTML]="longHairSVG"
-      ></div>
-      <div #nose id="nose " class="nose" [innerHTML]="noseSVG"></div>
-      <div #mouth id="mouth " class="mouth" [innerHTML]="mouthSVG"></div>
-      <div
-        #eyebrows
-        id="eyebrows "
-        class="eyebrows"
-        [innerHTML]="eyebrowsSVG"
-      ></div>
-      <div #ears id="ears " class="ears" [innerHTML]="earsSVG"></div>
-      <div
-        #ears
-        id="insignia "
-        class="insignia"
-        [innerHTML]="insigniaSVG"
-      ></div>
-      <div
-        #ears
-        id="headDeco "
-        class="headDeco"
-        [innerHTML]="headDecoSVG"
-      ></div>
-      <div
-        #speciesSpecial
-        id="speciesSpecial "
-        class="speciesSpecial"
-        [innerHTML]="speciesSpecialSVG"
-      ></div>
-      <div #beardID id="beardID" class="beardID" [innerHTML]="beardSVG"></div>
+        #allSVGS
+        id="allSVGs"
+        [ngStyle]="{ visibility: loading === true ? 'hidden' : 'visible' }"
+      >
+        <div
+          #uniform
+          id="uniform "
+          class="uniform"
+          [innerHTML]="uniformSVG"
+        ></div>
+        <div #head id="head " class="head" [innerHTML]="headSVG"></div>
+        <div #eyes id="eyes " class="eyes" [innerHTML]="eyesSVG"></div>
+        <div #hair id="hair " class="hair" [innerHTML]="hairSVG"></div>
+        <div
+          #longHair
+          id="longHair "
+          class="longHair"
+          [innerHTML]="longHairSVG"
+        ></div>
+        <div #nose id="nose " class="nose" [innerHTML]="noseSVG"></div>
+        <div #mouth id="mouth " class="mouth" [innerHTML]="mouthSVG"></div>
+        <div
+          #eyebrows
+          id="eyebrows "
+          class="eyebrows"
+          [innerHTML]="eyebrowsSVG"
+        ></div>
+        <div #ears id="ears " class="ears" [innerHTML]="earsSVG"></div>
+        <div
+          #ears
+          id="insignia "
+          class="insignia"
+          [innerHTML]="insigniaSVG"
+        ></div>
+        <div
+          #ears
+          id="headDeco "
+          class="headDeco"
+          [innerHTML]="headDecoSVG"
+        ></div>
+        <div
+          #speciesSpecial
+          id="speciesSpecial "
+          class="speciesSpecial"
+          [innerHTML]="speciesSpecialSVG"
+        ></div>
+        <div #beardID id="beardID" class="beardID" [innerHTML]="beardSVG"></div>
+      </div>
     </div>
   </div>
 </div>

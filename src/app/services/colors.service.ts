@@ -42,6 +42,7 @@ export class ColorService {
   }
 
   setSkinColor(color: SkinColor) {
+    console.log('setSkinColor');
     let els = [];
     els.push(document.getElementById('head'));
     els.push(document.getElementById('ears'));
