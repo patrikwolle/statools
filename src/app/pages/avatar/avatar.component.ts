@@ -189,6 +189,7 @@ export class AvatarComponent implements OnInit {
   }
 
   changeSpecies(sr: string) {
+    this.loading = true;
     this.headDecoSVG = '';
     this.selectedSpecies = <alienSpeciesList>sr;
 
@@ -209,6 +210,7 @@ export class AvatarComponent implements OnInit {
   }
 
   changeGender(sr: string) {
+    this.loading = true;
     this.selectedGender = <gender>sr;
     this.uniformIndex = 0;
     this.headIndex = 0;
@@ -227,11 +229,13 @@ export class AvatarComponent implements OnInit {
   }
 
   changeRole(sr: string) {
+    this.loading = true;
     this.selectedRole = <roles>sr;
     this.loadArrays();
   }
 
   changeRank(sr: string) {
+    this.loading = true;
     this.selectedRank = <ranks>sr;
     this.loadArrays();
   }
