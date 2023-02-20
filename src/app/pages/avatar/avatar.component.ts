@@ -110,7 +110,7 @@ export class AvatarComponent implements OnInit {
   /** Load all the informations from the arrays, because of the fact thats a sync call we can do this by simple calls directly in the onInit */
   ngOnInit(): void {
     for (const value in alienSpeciesList) {
-      this.allSpeciess.push({ name: value, value: value });
+      this.allSpecies.push({ name: value, value: value });
     }
     for (const g in gender) {
       this.allGenders.push({ name: g, value: g });
