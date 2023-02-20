@@ -90,7 +90,7 @@ export class AvatarService {
 
 export const idsSvg = {
   uniform: ['uniform_right', 'uniform_left'],
-  skin: ['head', 'ear_left', 'ear_right', 'neck', 'species_special'],
+  skin: ['head', 'ears', 'neck', 'species_special'],
   hair: [
     'hair',
     'hair_long',
@@ -98,8 +98,7 @@ export const idsSvg = {
     'hair_highlight_long',
     'hair_shade',
     'hair_shade_long',
-    'eyebrows_left',
-    'eyebrows_right',
+    'eyebrows',
     'beard',
   ],
 };

@@ -44,8 +44,7 @@ export class ColorService {
   setSkinColor(color: SkinColor) {
     let els = [];
     els.push(document.getElementById('head'));
-    els.push(document.getElementById('ear_left'));
-    els.push(document.getElementById('ear_right'));
+    els.push(document.getElementById('ears'));
     els.push(document.getElementById('neck'));
     els.push(document.getElementById('nose'));
 
@@ -74,8 +73,7 @@ export class ColorService {
             break;
           case 'hair_shade':
           case 'hair_shade_long':
-          case 'eyebrows_left':
-          case 'eyebrows_right':
+          case 'eyebrows':
           case 'beard':
             this.changeColorOfStyle(element, 'fill', color.shadeColor);
             break;
