@@ -64,7 +64,8 @@ export class hairColorService {
   getHairColorWithHighlightColor(hairColorArr: ColorHex[]): HairColor[] {
     let hairColors: HairColor[] = [];
     hairColorArr.forEach((hc) => {
-      let hairColor = {
+      let hairColor: HairColor = {
+        kind: 'hairColor',
         baseColor: hc,
         highlightColor: this.colorConverter.lightnessVariation(hc, 10),
         shadeColor: this.colorConverter.lightnessVariation(hc, -10),

@@ -4,7 +4,12 @@ import { Observable } from 'rxjs';
 import { avatarSvgList } from '../data/svgArray';
 import { alienRaceList, imageParts, gender } from '../enums/avatar.enum';
 import { avatarList } from '../interfaces/avatar.interface';
-import { ColorHex, HairColor, SkinColor } from '../interfaces/color.interface';
+import {
+  Color,
+  ColorHex,
+  HairColor,
+  SkinColor,
+} from '../interfaces/color.interface';
 import { ColorService } from './colors.service';
 import { hairColorService } from './hair-color.service';
 import { SkinColorService } from './skin-color.service';
@@ -57,11 +62,15 @@ export class AvatarService {
     });
   }
 
-  setHairColor(hc: HairColor) {
-    this.color.setHairColor(hc);
-  }
-  setSkinColor(sc: SkinColor, race: alienRaceList) {
-    this.color.setSkinColor(sc, race);
+  setColor(col: Color) {
+    switch (col.kind) {
+      case 'hairColor':
+        return this.color.setHairColor(col);
+      case 'skinColor':
+        return this.color.setSkinColor(col);
+      default:
+        console.debug('Color not defined');
+    }
   }
 
   /**
@@ -81,7 +90,7 @@ export class AvatarService {
 
 export const idsSvg = {
   uniform: ['uniform_right', 'uniform_left'],
-  skin: ['head', 'ear_left', 'ear_right', 'neck', 'antenna', 'head_racial'],
+  skin: ['head', 'ear_left', 'ear_right', 'neck','species_special'],
   hair: [
     'hair',
     'hair_long',

@@ -405,13 +405,13 @@
             ></button>
           </div>
         </div>
-        <div *ngIf="selectedHeadRacial">HeadRacial</div>
-        <div *ngIf="selectedHeadRacial" class="grid">
+        <div *ngIf="selectedSpeciesSpecial">SpeciesSpecial</div>
+        <div *ngIf="selectedSpeciesSpecial" class="grid">
           <div class="col-2">
             <button
               pButton
               [style]="{ width: '100%' }"
-              (click)="nextPart('headRacial', false)"
+              (click)="nextPart('SpeciesSpecial', false)"
               class="p-button-warning"
               icon="pi pi-angle-left"
             ></button>
@@ -419,7 +419,7 @@
           <div class="col-8">
             <input
               style="width: 100%"
-              [(ngModel)]="selectedHeadRacial.file"
+              [(ngModel)]="selectedSpeciesSpecial.file"
               pInputText
             />
           </div>
@@ -427,7 +427,7 @@
             <button
               pButton
               [style]="{ width: '100%' }"
-              (click)="nextPart('headRacial', true)"
+              (click)="nextPart('SpeciesSpecial', true)"
               class="p-button-help"
               icon="pi pi-angle-right"
             ></button>
@@ -530,10 +530,10 @@
         [innerHTML]="headDecoSVG"
       ></div>
       <div
-        #headRacial
-        id="headRacial "
-        class="headRacial"
-        [innerHTML]="headRacialSVG"
+        #speciesSpecial
+        id="speciesSpecial "
+        class="speciesSpecial"
+        [innerHTML]="speciesSpecialSVG"
       ></div>
       <div #beardID id="beardID" class="beardID" [innerHTML]="beardSVG"></div>
     </div>

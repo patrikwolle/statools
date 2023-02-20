@@ -58,13 +58,17 @@ export class SkinColorService {
     }
   }
 
-  generateSkinColors(basicColor: ColorHex): SkinColor {
+  generateSkinColors(basicColor: ColorHex, species: alienRaceList): SkinColor {
     const baseColor = this.colorConverter.lightnessVariation(
       basicColor,
       this.ranNum(5)
     );
-    const marks = this.colorConverter.lightnessVariation(basicColor, -20);
+    let marks = baseColor;
+    if (species === alienRaceList.trill) {
+      marks = this.colorConverter.lightnessVariation(basicColor, -20);
+    }
     return {
+      kind: 'skinColor',
       baseColor: baseColor,
       marks: marks,
     };

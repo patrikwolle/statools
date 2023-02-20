@@ -672,7 +672,7 @@ export const avatarSvgList: avatarList[] = [
   {
     file: 'antenna_short.svg',
     tags: {
-      imagePart: imageParts.headDeco,
+      imagePart: imageParts.speciesSpecial,
       gender: [gender.male, gender.female],
       race: [alienRaceList.andorian],
     },
@@ -680,7 +680,7 @@ export const avatarSvgList: avatarList[] = [
   {
     file: 'antenna_logerSide.svg',
     tags: {
-      imagePart: imageParts.headDeco,
+      imagePart: imageParts.speciesSpecial,
       gender: [gender.male, gender.female],
       race: [alienRaceList.andorian],
     },
@@ -705,7 +705,7 @@ export const avatarSvgList: avatarList[] = [
   {
     file: 'denobulan_forehead.svg',
     tags: {
-      imagePart: imageParts.headRacial,
+      imagePart: imageParts.speciesSpecial,
       gender: [gender.male, gender.female],
       race: [alienRaceList.denobulan],
     },
