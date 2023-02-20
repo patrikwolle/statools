@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import html2canvas, { Options } from 'html2canvas';
-import * as htmlToImage from 'html-to-image';
-import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
+import html2canvas from 'html2canvas';
 
 /**
  * Service that handels loading colors and managing colors

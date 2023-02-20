@@ -245,7 +245,7 @@ export class AvatarComponent implements OnInit {
       .getElementById('avatar')
       ?.setAttribute(
         'style',
-        `height: ${document.getElementById('avatar')?.offsetWidth! * 1.2}px`
+        `height: ${document.getElementById('avatar')?.offsetWidth!}px`
       );
     this.setSVGs();
     this.setBackground();
