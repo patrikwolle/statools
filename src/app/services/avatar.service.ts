@@ -9,10 +9,12 @@ import {
   ColorHex,
   HairColor,
   SkinColor,
+  EyeColor
 } from '../interfaces/color.interface';
 import { ColorService } from './colors.service';
-import { hairColorService } from './hair-color.service';
+import { HairColorService } from './hair-color.service';
 import { SkinColorService } from './skin-color.service';
+import { EyeColorService } from './eye-color.service';
 
 /**
  * Service that handels loading the svgs, and the svg-config file
@@ -26,7 +28,8 @@ export class AvatarService {
     private http: HttpClient,
     private color: ColorService,
     private skinColor: SkinColorService,
-    private hairColor: hairColorService
+    private hairColor: HairColorService,
+    private eyeColor: EyeColorService
   ) {}
 
   /**
@@ -60,6 +63,10 @@ export class AvatarService {
     return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
       responseType: 'text',
     });
+  }
+
+  loadEyeColor(species: alienSpeciesList) {
+    return this.eyeColor.getEyeColor(species);
   }
 
   setColor(col: Color) {
@@ -105,4 +112,5 @@ export const idsSvg = {
     'eyebrows',
     'beard',
   ],
+  eyes: ['pupil_left', 'pupil_right'],
 };

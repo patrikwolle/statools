@@ -321,6 +321,39 @@
             ></button>
           </div>
         </div>
+        <div>Eyecolor</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-warning"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyeColor', false)"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [ngStyle]="{
+                'background-color': selectedEyeColor,
+                color: selectedEyeColor
+              }"
+              *ngIf="selectedEyeColor"
+              [(ngModel)]="selectedEyeColor"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-help"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyeColor', true)"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
         <div>Mouth</div>
         <div class="grid">
           <div class="col-2">

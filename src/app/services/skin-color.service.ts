@@ -11,7 +11,7 @@ import {
   greenSkin,
   pinkSkin,
 } from '../data/skin-colors';
-import { hairColorService } from './hair-color.service';
+import { HairColorService } from './hair-color.service';
 
 /**
  * Service that handels loading colors and managing colors
