@@ -7,6 +7,7 @@ import {
   SkinColor,
 } from '../interfaces/color.interface';
 import { idsSvg } from './avatar.service';
+import { EyeColor } from '../interfaces/color.interface';
 
 /**
  * Service that handels loading colors and managing colors
@@ -42,7 +43,6 @@ export class ColorService {
   }
 
   setSkinColor(color: SkinColor) {
-    console.log('setSkinColor');
     let els = [];
     els.push(document.getElementById('head'));
     els.push(document.getElementById('ears'));
@@ -85,6 +85,25 @@ export class ColorService {
       }
     });
   }
+
+  setEyeColor(color: EyeColor) {
+    console.log("set Eyecolor", color);
+    idsSvg.eyes.forEach((id) => {
+      let element = document.getElementById(id);
+      if (element !== null && element !== undefined) {
+        switch (id) {
+          case 'pupil_left':
+          case 'pupil_right':
+            this.changeColorOfStyle(element, 'fill', color.baseColor);
+            break;
+          default:
+            this.changeColorOfStyle(element, 'fill', color.baseColor);
+            break;
+        }
+      }
+    });
+  }
+
   setInsigniaColor(rank: ranks) {
     let rankIds = this.insignia.find((i) => i.key === rank);
     let index = 3;
