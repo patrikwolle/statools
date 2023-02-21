@@ -52,7 +52,7 @@
   <div class="col-12 md:col-6 lg:col-6">
     <div class="grid">
       <div class="col-12 md:col-6 lg:col-6">
-        <div>Hair</div>
+        <div class="selectHeader">Hair</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -81,7 +81,7 @@
             ></button>
           </div>
         </div>
-        <div>Head</div>
+        <div class="selectHeader">Head</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -110,7 +110,36 @@
             ></button>
           </div>
         </div>
-        <div>Eyebrows</div>
+        <div class="selectHeader">Head Decoration</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('headDeco', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedHeadDeco"
+              [(ngModel)]="selectedHeadDeco.name"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('headDeco', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div class="selectHeader">Eyebrows</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -138,7 +167,7 @@
             ></button>
           </div>
         </div>
-        <div>Eyes</div>
+        <div class="selectHeader">Eyes</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -167,7 +196,7 @@
             ></button>
           </div>
         </div>
-        <div *ngIf="selectedGender === 'male'">Beard</div>
+        <div class="selectHeader" *ngIf="selectedGender === 'male'">Beard</div>
         <div *ngIf="selectedGender === 'male'" class="grid">
           <div class="col-2">
             <button
@@ -196,7 +225,36 @@
             ></button>
           </div>
         </div>
-        <div>Body</div>
+        <div class="selectHeader">Scars</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('scar', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedScar"
+              [(ngModel)]="selectedScar.name"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('scar', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div class="selectHeader">Body</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -225,37 +283,9 @@
             ></button>
           </div>
         </div>
-        <div *ngIf="selectedHeadDeco">HeadDeco</div>
-        <div *ngIf="selectedHeadDeco" class="grid">
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('headDeco', false)"
-              class="p-button-warning"
-              icon="pi pi-angle-left"
-            ></button>
-          </div>
-          <div class="col-8">
-            <input
-              style="width: 100%"
-              [(ngModel)]="selectedHeadDeco.file"
-              pInputText
-            />
-          </div>
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('headDeco', true)"
-              class="p-button-help"
-              icon="pi pi-angle-right"
-            ></button>
-          </div>
-        </div>
       </div>
       <div class="col-12 md:col-6 lg:col-6">
-        <div>Haircolor</div>
+        <div class="selectHeader">Haircolor</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -288,7 +318,7 @@
             ></button>
           </div>
         </div>
-        <div>Skincolor</div>
+        <div class="selectHeader">Skincolor</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -321,7 +351,36 @@
             ></button>
           </div>
         </div>
-        <div>Mouth</div>
+        <div class="selectHeader">Hair Decoration</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('hairDeco', false)"
+              class="p-button-warning"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedHairDeco"
+              [(ngModel)]="selectedHairDeco.name"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('hairDeco', true)"
+              class="p-button-help"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div class="selectHeader">Mouth</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -349,7 +408,7 @@
             ></button>
           </div>
         </div>
-        <div>Nose</div>
+        <div class="selectHeader">Nose</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -377,7 +436,7 @@
             ></button>
           </div>
         </div>
-        <div>Ears</div>
+        <div class="selectHeader">Ears</div>
         <div class="grid">
           <div class="col-2">
             <button
@@ -405,7 +464,9 @@
             ></button>
           </div>
         </div>
-        <div *ngIf="selectedSpeciesSpecial">SpeciesSpecial</div>
+        <div class="selectHeader" *ngIf="selectedSpeciesSpecial">
+          SpeciesSpecial
+        </div>
         <div *ngIf="selectedSpeciesSpecial" class="grid">
           <div class="col-2">
             <button
@@ -433,7 +494,7 @@
             ></button>
           </div>
         </div>
-        <div>Background</div>
+        <div class="selectHeader">Background</div>
         <div *ngIf="selectedBackground" class="grid">
           <div class="col-2">
             <button

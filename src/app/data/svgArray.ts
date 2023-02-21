@@ -738,4 +738,58 @@ export const avatarSvgList: avatarList[] = [
       ],
     },
   },
+  {
+    file: 'no_scar.svg',
+    name: 'No Scar',
+    tags: {
+      imagePart: imageParts.scar,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        //alienSpeciesList.denobulan,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
+    file: 'no_hairDeco.svg',
+    name: 'No Hair Deco',
+    tags: {
+      imagePart: imageParts.hairDeco,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        //alienSpeciesList.denobulan,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
+    file: 'no_headDeco.svg',
+    name: 'No Head Deco',
+    tags: {
+      imagePart: imageParts.headDeco,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        //alienSpeciesList.denobulan,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
 ];

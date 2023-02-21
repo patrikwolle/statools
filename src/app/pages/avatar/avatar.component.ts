@@ -50,6 +50,8 @@ export class AvatarComponent implements OnInit {
   allHairColors: HairColor[] = [];
   allBackgrounds: any[] = [];
   allBeards: unknown[] = [];
+  allScars: unknown[] = [];
+  allHairDeco: unknown[] = [];
 
   /** Selected elements out of the arrays of the body parts */
   selectedUniform: any;
@@ -66,6 +68,8 @@ export class AvatarComponent implements OnInit {
   selectedHairColor: any;
   selectedBackground: any;
   selectedBeard: any;
+  selectedScar: any;
+  selectedHairDeco: any;
 
   /** Variables to hold the svg information */
   uniformSVG: SafeHtml = '';
@@ -81,6 +85,8 @@ export class AvatarComponent implements OnInit {
   headDecoSVG: SafeHtml = '';
   speciesSpecialSVG: SafeHtml = '';
   beardSVG: SafeHtml = '';
+  scarSVG: SafeHtml = '';
+  hairDecoSVG: SafeHtml = '';
 
   /** Indexes for the selection of an element out of the body part Arrays */
   uniformIndex: number = 0;
@@ -97,6 +103,8 @@ export class AvatarComponent implements OnInit {
   backgroundIndex: number = 0;
   speciesSpecialIndex: number = 0;
   beardIndex: number = 0;
+  scarIndex: number = 0;
+  hairDecoIndex: number = 0;
 
   /** Officer Ranking */
   selectedOfficerRank: number = 1;
@@ -187,6 +195,16 @@ export class AvatarComponent implements OnInit {
       this.selectedSpecies,
       this.selectedGender
     );
+    this.allScars = this.avatar.loadPart(
+      imageParts.scar,
+      this.selectedSpecies,
+      this.selectedGender
+    );
+    this.allHairDeco = this.avatar.loadPart(
+      imageParts.hairDeco,
+      this.selectedSpecies,
+      this.selectedGender
+    );
     this.allSkinColors = this.avatar.loadSkinColor(this.selectedSpecies);
 
     this.allHairColors = this.avatar.loadHairColor(this.selectedSpecies);
@@ -212,6 +230,7 @@ export class AvatarComponent implements OnInit {
     this.hairColorIndex = 0;
     this.backgroundIndex = 0;
     this.speciesSpecialIndex = 0;
+    this.scarIndex = 0;
     this.loadArrays();
   }
 
@@ -231,6 +250,7 @@ export class AvatarComponent implements OnInit {
     this.hairColorIndex = 0;
     this.backgroundIndex = 0;
     this.speciesSpecialIndex = 0;
+    this.scarIndex = 0;
     this.loadArrays();
   }
 
@@ -308,77 +328,92 @@ export class AvatarComponent implements OnInit {
                                   this.changeSizeOfSVG(res)
                                 );
                               this.avatar
-                                .loadPartBySelection(this.selectedBeard)
+                                .loadPartBySelection(this.selectedScar)
                                 .subscribe((res) => {
-                                  this.beardSVG =
+                                  this.scarSVG =
                                     this.sanitizer.bypassSecurityTrustHtml(
                                       this.changeSizeOfSVG(res)
                                     );
+
                                   this.avatar
-                                    .loadInsignia(this.selectedOfficerRank)
+                                    .loadPartBySelection(this.selectedBeard)
                                     .subscribe((res) => {
-                                      this.insigniaSVG =
+                                      this.beardSVG =
                                         this.sanitizer.bypassSecurityTrustHtml(
                                           this.changeSizeOfSVG(res)
                                         );
-                                      if (
-                                        Array.isArray(this.selectedHair.file)
-                                      ) {
-                                        let file1 = {
-                                          file: this.selectedHair.file[0],
-                                          tags: {
-                                            imagePart: imageParts.hair,
-                                            gender: [
-                                              gender.male,
-                                              gender.female,
-                                            ],
-                                            species: [alienSpeciesList.human],
-                                          },
-                                        };
+                                      this.avatar
+                                        .loadInsignia(this.selectedOfficerRank)
+                                        .subscribe((res) => {
+                                          this.insigniaSVG =
+                                            this.sanitizer.bypassSecurityTrustHtml(
+                                              this.changeSizeOfSVG(res)
+                                            );
+                                          if (
+                                            Array.isArray(
+                                              this.selectedHair.file
+                                            )
+                                          ) {
+                                            let file1 = {
+                                              file: this.selectedHair.file[0],
+                                              tags: {
+                                                imagePart: imageParts.hair,
+                                                gender: [
+                                                  gender.male,
+                                                  gender.female,
+                                                ],
+                                                species: [
+                                                  alienSpeciesList.human,
+                                                ],
+                                              },
+                                            };
 
-                                        this.avatar
-                                          .loadPartBySelection(file1)
-                                          .subscribe((res) => {
-                                            this.hairSVG =
-                                              this.sanitizer.bypassSecurityTrustHtml(
-                                                this.changeSizeOfSVG(res)
-                                              );
-                                          });
-                                        let file2 = {
-                                          file: this.selectedHair.file[1],
-                                          tags: {
-                                            imagePart: imageParts.hair,
-                                            gender: [
-                                              gender.male,
-                                              gender.female,
-                                            ],
-                                            species: [alienSpeciesList.human],
-                                          },
-                                        };
+                                            this.avatar
+                                              .loadPartBySelection(file1)
+                                              .subscribe((res) => {
+                                                this.hairSVG =
+                                                  this.sanitizer.bypassSecurityTrustHtml(
+                                                    this.changeSizeOfSVG(res)
+                                                  );
+                                              });
+                                            let file2 = {
+                                              file: this.selectedHair.file[1],
+                                              tags: {
+                                                imagePart: imageParts.hair,
+                                                gender: [
+                                                  gender.male,
+                                                  gender.female,
+                                                ],
+                                                species: [
+                                                  alienSpeciesList.human,
+                                                ],
+                                              },
+                                            };
 
-                                        this.avatar
-                                          .loadPartBySelection(file2)
-                                          .subscribe((res) => {
-                                            this.longHairSVG =
-                                              this.sanitizer.bypassSecurityTrustHtml(
-                                                this.changeSizeOfSVG(res)
-                                              );
-                                            this.finalizeCharacter();
-                                          });
-                                      } else {
-                                        this.longHairSVG = '';
-                                        this.avatar
-                                          .loadPartBySelection(
-                                            this.selectedHair
-                                          )
-                                          .subscribe((res) => {
-                                            this.hairSVG =
-                                              this.sanitizer.bypassSecurityTrustHtml(
-                                                this.changeSizeOfSVG(res)
-                                              );
-                                            this.finalizeCharacter();
-                                          });
-                                      }
+                                            this.avatar
+                                              .loadPartBySelection(file2)
+                                              .subscribe((res) => {
+                                                this.longHairSVG =
+                                                  this.sanitizer.bypassSecurityTrustHtml(
+                                                    this.changeSizeOfSVG(res)
+                                                  );
+                                                this.finalizeCharacter();
+                                              });
+                                          } else {
+                                            this.longHairSVG = '';
+                                            this.avatar
+                                              .loadPartBySelection(
+                                                this.selectedHair
+                                              )
+                                              .subscribe((res) => {
+                                                this.hairSVG =
+                                                  this.sanitizer.bypassSecurityTrustHtml(
+                                                    this.changeSizeOfSVG(res)
+                                                  );
+                                                this.finalizeCharacter();
+                                              });
+                                          }
+                                        });
                                     });
                                 });
                             });
@@ -447,6 +482,8 @@ export class AvatarComponent implements OnInit {
     this.selectedSpeciesSpecial =
       this.allSpeciesSpecial[this.speciesSpecialIndex];
     this.selectedBeard = this.allBeards[this.beardIndex];
+    this.selectedScar = this.allScars[this.scarIndex];
+    this.selectedHairDeco = this.allHairDeco[this.hairDecoIndex];
   }
 
   random() {
@@ -465,6 +502,8 @@ export class AvatarComponent implements OnInit {
     this.hairColorIndex = this.randomInt(this.allHairColors.length);
     this.skinColorIndex = this.randomInt(this.allSkinColors.length);
     this.backgroundIndex = this.randomInt(this.allBackgrounds.length);
+    this.scarIndex = this.randomInt(this.allScars.length);
+    this.hairDecoIndex = this.randomInt(this.allHairDeco.length);
 
     this.onChangePart();
   }
@@ -636,6 +675,26 @@ export class AvatarComponent implements OnInit {
           : this.beardIndex > 0
           ? this.beardIndex - 1
           : this.allBeards.length - 1;
+        this.onChangePart();
+        break;
+      case 'scar':
+        this.scarIndex = up
+          ? this.scarIndex < this.allScars.length - 1
+            ? this.scarIndex + 1
+            : 0
+          : this.scarIndex > 0
+          ? this.scarIndex - 1
+          : this.allScars.length - 1;
+        this.onChangePart();
+        break;
+      case 'hairDeco':
+        this.hairDecoIndex = up
+          ? this.hairDecoIndex < this.allHairDeco.length - 1
+            ? this.hairDecoIndex + 1
+            : 0
+          : this.hairDecoIndex > 0
+          ? this.hairDecoIndex - 1
+          : this.allHairDeco.length - 1;
         this.onChangePart();
         break;
       default:
