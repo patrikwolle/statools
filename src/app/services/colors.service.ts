@@ -12,7 +12,7 @@ import { idsSvg } from './avatar.service';
 })
 export class ColorService {
   constructor() {}
-  insignia = [
+  insigniaOfficers = [
     //source: https://memory-alpha.fandom.com/de/wiki/Sternenflottenr%C3%A4nge
     //0: hide, 1: show fill, 2: show no fill
     {
@@ -27,6 +27,26 @@ export class ColorService {
     { key: 'lt_commander', value: ['0', '2', '1', '1'] },
     { key: 'commander', value: ['0', '1', '1', '1'] },
     { key: 'captain', value: ['1', '1', '1', '1'] },
+  ];
+
+  insigniaAdmirals = [
+    //source: https://memory-alpha.fandom.com/de/wiki/Sternenflottenr%C3%A4nge
+    //0: hide, 1: show fill, 2: show no fill
+    {
+      key: 'all',
+      value: [
+        '#ens-bobble',
+        '#lt-bobble',
+        '#cmd-bobble',
+        '#captain-bobble',
+        '#admiral-bobble',
+      ],
+    },
+    { key: 'commodore', value: ['0', '0', '1', '0', '0'] },
+    { key: 'rear_admiral', value: ['0', '1', '0', '1', '0'] },
+    { key: 'vice_admiral', value: ['0', '1', '1', '1', '0'] },
+    { key: 'admiral', value: ['1', '1', '1', '1', '0'] },
+    { key: 'fleet_admiral', value: ['1', '1', '1', '1', '1'] },
   ];
 
   setUniformColor(element: HTMLElement | null, role: roles) {
@@ -80,16 +100,32 @@ export class ColorService {
       }
     });
   }
-  setInsigniaColor(rank: ranks) {
-    let rankIds = this.insignia.find((i) => i.key === rank);
-    let index = 3;
-    rankIds?.value.forEach((ins) => {
-      let elId = this.insignia.find((i) => i.key === 'all')?.value[index];
-      if (elId !== undefined) {
-        this.fillInsignia(document.getElementById(elId.split('#')[1]), ins);
-      }
-      index--;
-    });
+  setInsigniaColor(rank: ranks, officer: number) {
+    if (officer === 1) {
+      let rankIds = this.insigniaOfficers.find((i) => i.key === rank);
+      let index = 3;
+      rankIds?.value.forEach((ins) => {
+        let elId = this.insigniaOfficers.find((i) => i.key === 'all')?.value[
+          index
+        ];
+        if (elId !== undefined) {
+          this.fillInsignia(document.getElementById(elId.split('#')[1]), ins);
+        }
+        index--;
+      });
+    } else if (officer === 2) {
+      let rankIds = this.insigniaAdmirals.find((i) => i.key === rank);
+      let index = 4;
+      rankIds?.value.forEach((ins) => {
+        let elId = this.insigniaAdmirals.find((i) => i.key === 'all')?.value[
+          index
+        ];
+        if (elId !== undefined) {
+          this.fillInsignia(document.getElementById(elId.split('#')[1]), ins);
+        }
+        index--;
+      });
+    }
   }
 
   fillInsignia(insignia: HTMLElement | null, fillValue: string) {
