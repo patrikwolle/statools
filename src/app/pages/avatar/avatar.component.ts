@@ -99,6 +99,10 @@ export class AvatarComponent implements OnInit {
   speciesSpecialIndex: number = 0;
   beardIndex: number = 0;
 
+  eyesZIndex = 10;
+  noseZIndex = 10;
+  eyebrowZIndex = 10;
+
   loading = true;
   constructor(
     public avatar: AvatarService,
@@ -400,6 +404,15 @@ export class AvatarComponent implements OnInit {
         this.selectedRole
       );
       this.loading = false;
+      if (this.selectedSpecies === alienSpeciesList.denobulan) {
+        this.eyesZIndex = 15;
+        this.eyebrowZIndex = 15;
+        this.noseZIndex = 15;
+      } else {
+        this.eyesZIndex = 10;
+        this.eyebrowZIndex = 10;
+        this.noseZIndex = 10;
+      }
     }, 1);
   }
 
@@ -452,6 +465,7 @@ export class AvatarComponent implements OnInit {
 
   setColors(): void {
     this.selectedSkinColor = this.allSkinColors[this.skinColorIndex];
+    console.log(this.selectedSkinColor);
   }
 
   setBackground(): void {

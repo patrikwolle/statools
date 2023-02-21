@@ -707,7 +707,7 @@ export const avatarSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
-        alienSpeciesList.denobulan,
+        //alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,

@@ -505,7 +505,13 @@
           [innerHTML]="uniformSVG"
         ></div>
         <div #head id="head " class="head" [innerHTML]="headSVG"></div>
-        <div #eyes id="eyes " class="eyes" [innerHTML]="eyesSVG"></div>
+        <div
+          #eyes
+          id="eyes "
+          class="eyes"
+          [ngStyle]="{ 'z-Index': eyesZIndex }"
+          [innerHTML]="eyesSVG"
+        ></div>
         <div #hair id="hair " class="hair" [innerHTML]="hairSVG"></div>
         <div
           #longHair
@@ -513,12 +519,19 @@
           class="longHair"
           [innerHTML]="longHairSVG"
         ></div>
-        <div #nose id="nose " class="nose" [innerHTML]="noseSVG"></div>
+        <div
+          #nose
+          id="nose "
+          class="nose"
+          [ngStyle]="{ 'z-Index': noseZIndex }"
+          [innerHTML]="noseSVG"
+        ></div>
         <div #mouth id="mouth " class="mouth" [innerHTML]="mouthSVG"></div>
         <div
           #eyebrows
           id="eyebrows "
           class="eyebrows"
+          [ngStyle]="{ 'z-Index': eyebrowZIndex }"
           [innerHTML]="eyebrowsSVG"
         ></div>
         <div #ears id="ears " class="ears" [innerHTML]="earsSVG"></div>
@@ -529,7 +542,7 @@
           [innerHTML]="insigniaSVG"
         ></div>
         <div
-          #ears
+          #head
           id="headDeco "
           class="headDeco"
           [innerHTML]="headDecoSVG"
