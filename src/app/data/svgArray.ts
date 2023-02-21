@@ -669,6 +669,7 @@ export const avatarSvgList: avatarList[] = [
       ],
     },
   },
+  /*
   {
     file: 'no_special.svg',
     tags: {
@@ -683,6 +684,7 @@ export const avatarSvgList: avatarList[] = [
       ],
     },
   },
+  */
   {
     file: 'antenna_short.svg',
     tags: {
