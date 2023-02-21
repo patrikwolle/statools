@@ -51,10 +51,29 @@ export class AvatarService {
     return this.hairColor.getHairColor(species);
   }
 
-  loadInsignia(officer: boolean): Observable<string> {
-    return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
-      responseType: 'text',
-    });
+  loadInsignia(officer: number): Observable<string> {
+    switch (officer) {
+      case 0:
+        return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
+          responseType: 'text',
+        });
+        break;
+      case 1:
+        return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
+          responseType: 'text',
+        });
+        break;
+      case 2:
+        return this.http.get(`assets/avatar/insignia/insignia_admiral.svg`, {
+          responseType: 'text',
+        });
+        break;
+      default:
+        return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
+          responseType: 'text',
+        });
+        break;
+    }
   }
 
   setColor(col: Color) {

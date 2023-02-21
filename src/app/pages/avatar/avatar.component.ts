@@ -98,6 +98,9 @@ export class AvatarComponent implements OnInit {
   speciesSpecialIndex: number = 0;
   beardIndex: number = 0;
 
+  /** Officer Ranking */
+  selectedOfficerRank: number = 1;
+
   eyesZIndex = 10;
   noseZIndex = 10;
   eyebrowZIndex = 10;
@@ -240,6 +243,14 @@ export class AvatarComponent implements OnInit {
   changeRank(sr: string) {
     this.loading = true;
     this.selectedRank = <ranks>sr;
+    if (
+      this.selectedRank.includes('admiral') ||
+      this.selectedRank.includes('commodore')
+    ) {
+      this.selectedOfficerRank = 2;
+    } else {
+      this.selectedOfficerRank = 1;
+    }
     this.loadArrays();
   }
 
@@ -304,7 +315,7 @@ export class AvatarComponent implements OnInit {
                                       this.changeSizeOfSVG(res)
                                     );
                                   this.avatar
-                                    .loadInsignia(true)
+                                    .loadInsignia(this.selectedOfficerRank)
                                     .subscribe((res) => {
                                       this.insigniaSVG =
                                         this.sanitizer.bypassSecurityTrustHtml(
@@ -382,7 +393,7 @@ export class AvatarComponent implements OnInit {
 
   finalizeCharacter() {
     setTimeout(() => {
-      this.color.setInsigniaColor(this.selectedRank);
+      this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank);
       this.avatar.setColor(
         this.skinColor.generateSkinColors(
           this.selectedSkinColor,

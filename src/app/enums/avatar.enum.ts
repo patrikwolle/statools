@@ -53,4 +53,9 @@ export enum ranks {
   lt_commander = 'lt_commander',
   commander = 'commander',
   captain = 'captain',
+  commodore = 'commodore',
+  rear_admiral = 'rear_admiral',
+  vice_admiral = 'vice_admiral',
+  admiral = 'admiral',
+  fleet_admiral = 'fleet_admiral',
 }
