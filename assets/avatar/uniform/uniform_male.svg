@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="840"
+   height="880"
+   viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -34,7 +34,8 @@
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="g865"
-     inkscape:pageshadow="2">
+     inkscape:pageshadow="2"
+     units="px">
     <inkscape:grid
        type="xygrid"
        id="grid9" />
@@ -101,11 +102,11 @@
        d="m 95.25,145.52083 -2.645833,9.525 c 0,0 -0.23208,2.05954 -25.135417,6.87917 -7.804908,1.51051 -18.745571,3.04127 -22.489583,10.05417 -3.062373,5.73611 -2.645834,33.30631 -2.645834,50.27083 v 10.58333 H 60.854167 L 63.5,206.375 68.791667,232.83333 H 111.125 l -5.29167,-83.34375 z"
        sodipodi:nodetypes="ccsssccccccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 60.983889,193.17178 7.9375,39.6875"
        id="path3409" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 63.499999,206.375 -2.645833,26.45833"
        id="path3415" />
     <path
@@ -139,11 +140,11 @@
        id="path4875"
        sodipodi:nodetypes="ccscccccccccccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 161.39583,193.14583 -7.9375,39.6875"
        id="path3411" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 158.75,206.375 2.64583,26.45833"
        id="path3417" />
     <path

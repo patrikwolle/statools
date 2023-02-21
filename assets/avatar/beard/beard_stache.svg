@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="840"
+   height="880"
+   viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="beard_schnauzer.svg">
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="beard_stache.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata13">
     <rdf:RDF>
@@ -37,16 +37,18 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="1.0444209"
-     inkscape:cx="227.39874"
-     inkscape:cy="377.24255"
-     inkscape:window-width="5120"
-     inkscape:window-height="1369"
-     inkscape:window-x="-8"
-     inkscape:window-y="892"
+     inkscape:zoom="5.9081368"
+     inkscape:cx="400.21077"
+     inkscape:cy="421.62192"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:document-rotation="0">
+     inkscape:document-rotation="0"
+     inkscape:pageshadow="2"
+     units="px">
     <inkscape:grid
        type="xygrid"
        id="grid9" />
@@ -114,9 +116,9 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="opacity:0.99;fill:#ffff00;stroke:#000000;stroke-width:0.529;stroke-dasharray:none"
-       d="m 105.83306,111.12529 c 0,0 -5.23568,0.85938 -7.331697,1.93501 -2.975366,1.5269 -6.517346,5.77699 -6.517346,5.77699 0,0 3.147778,3.16878 5.467849,3.71698 7.024954,1.6599 15.089654,2.07931 21.964534,-0.3583 1.73061,-0.61362 4.09476,-2.64219 4.09476,-2.64219 0,0 -3.41035,-3.99114 -4.70221,-5.01568 -2.22114,-1.76153 -5.95611,-3.14827 -5.95611,-3.14827 l -7.01978,-0.26458"
+       style="opacity:0.99;fill:#ffff00;stroke:#000000;stroke-width:0.529;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 98.501363,113.0603 c -2.559206,1.37047 -6.517346,5.77699 -6.517346,5.77699 0,0 0.904055,2.35329 5.467849,3.71698 4.563794,1.36369 17.683904,0.94091 21.964534,-0.3583 4.28063,-1.29921 4.09476,-2.64219 4.09476,-2.64219 0,0 -2.86485,-3.64597 -4.70221,-5.01568 -1.77954,-1.32661 -3.81268,-2.40084 -5.95611,-2.97737 -2.26396,-0.60894 -4.68661,-0.66495 -7.01978,-0.43546 -2.51545,0.24742 -5.10349,0.74182 -7.331697,1.93503 z"
        id="beard"
-       sodipodi:nodetypes="cscsscscc" />
+       sodipodi:nodetypes="aczzcaaaa" />
   </g>
 </svg>
