@@ -10,6 +10,6 @@ export const whitePupil: ColorHex[] = ['#a0a0a0'];
 export const normalEyeColors: ColorHex[] = [
   ...blackPupil,
   ...bluePupil,
-  ...greenPupil,
+  ...[greenPupil[0]],
   ...whitePupil,
 ];
