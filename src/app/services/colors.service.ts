@@ -1,11 +1,6 @@
 import { Injectable } from '@angular/core';
 import { alienSpeciesList, ranks, roles } from '../enums/avatar.enum';
-import {
-  ColorHex,
-  HairColor,
-  HairColorsProbability,
-  SkinColor,
-} from '../interfaces/color.interface';
+import { ColorHex, HairColor, SkinColor } from '../interfaces/color.interface';
 import { idsSvg } from './avatar.service';
 
 /**
