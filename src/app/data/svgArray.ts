@@ -669,22 +669,6 @@ export const avatarSvgList: avatarList[] = [
       ],
     },
   },
-  /*
-  {
-    file: 'no_special.svg',
-    tags: {
-      imagePart: imageParts.speciesSpecial,
-      gender: [gender.female, gender.male],
-      species: [
-        alienSpeciesList.betazoid,
-        alienSpeciesList.human,
-        alienSpeciesList.orion,
-        alienSpeciesList.trill,
-        alienSpeciesList.vulcan,
-      ],
-    },
-  },
-  */
   {
     file: 'antenna_short.svg',
     tags: {
