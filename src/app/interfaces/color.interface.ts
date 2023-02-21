@@ -27,11 +27,6 @@ export interface SkinColorHexObject {
   dark: ColorHex[];
 }
 
-export interface HairColorsProbability {
-  HairColors: ColorHex[];
-  probability: number;
-}
-
 export interface HairColor {
   kind: 'hairColor';
   baseColor: ColorHex;

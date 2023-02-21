@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AvatarService } from 'src/app/services/avatar.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ColorService } from 'src/app/services/colors.service';
@@ -11,9 +11,8 @@ import {
   imageParts,
 } from 'src/app/enums/avatar.enum';
 import { avatarList } from 'src/app/interfaces/avatar.interface';
-import { HairColor, SkinColor } from 'src/app/interfaces/color.interface';
+import { HairColor } from 'src/app/interfaces/color.interface';
 import { backgrounds } from 'src/app/data/backgroundsImg';
-import { randomInt } from 'crypto';
 import { SkinColorService } from 'src/app/services/skin-color.service';
 
 @Component({

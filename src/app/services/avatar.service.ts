@@ -4,12 +4,7 @@ import { Observable, of } from 'rxjs';
 import { avatarSvgList } from '../data/svgArray';
 import { alienSpeciesList, imageParts, gender } from '../enums/avatar.enum';
 import { avatarList } from '../interfaces/avatar.interface';
-import {
-  Color,
-  ColorHex,
-  HairColor,
-  SkinColor,
-} from '../interfaces/color.interface';
+import { Color, ColorHex } from '../interfaces/color.interface';
 import { ColorService } from './colors.service';
 import { hairColorService } from './hair-color.service';
 import { SkinColorService } from './skin-color.service';

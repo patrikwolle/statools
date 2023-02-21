@@ -4,14 +4,12 @@ import { ColorConversionService } from './color-converter.service';
 import { alienSpeciesList } from '../enums/avatar.enum';
 import {
   blueSkin,
-  brownSkin,
   darkSkin,
   fairSkin,
   fleshySkin,
   greenSkin,
   pinkSkin,
 } from '../data/skin-colors';
-import { hairColorService } from './hair-color.service';
 
 /**
  * Service that handels loading colors and managing colors
