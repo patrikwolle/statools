@@ -11,7 +11,11 @@ import {
   imageParts,
 } from 'src/app/enums/avatar.enum';
 import { avatarList } from 'src/app/interfaces/avatar.interface';
-import { HairColor, SkinColor, EyeColor } from 'src/app/interfaces/color.interface';
+import {
+  HairColor,
+  SkinColor,
+  EyeColor,
+} from 'src/app/interfaces/color.interface';
 import { backgrounds } from 'src/app/data/backgroundsImg';
 import { SkinColorService } from 'src/app/services/skin-color.service';
 import { ColorHex } from '../../interfaces/color.interface';
@@ -40,7 +44,7 @@ export class AvatarComponent implements OnInit {
   allUniforms: avatarList[] = [];
   allHeads: avatarList[] = [];
   allEyes: avatarList[] = [];
-  allEyeColors: ColorHex[] = [];
+  allEyeColors: EyeColor[] = [];
   allEyebrows: avatarList[] = [];
   allHairs: avatarList[] = [];
   allNoses: avatarList[] = [];
@@ -393,6 +397,7 @@ export class AvatarComponent implements OnInit {
         )
       );
       this.avatar.setColor(this.selectedHairColor);
+      this.avatar.setColor(this.selectedEyeColor);
       this.color.setUniformColor(
         document.getElementById('uniform_right'),
         this.selectedRole
@@ -426,7 +431,6 @@ export class AvatarComponent implements OnInit {
     this.selectedEyebrows = this.allEyebrows[this.eyebrowIndex];
     this.selectedEars = this.allEars[this.earsIndex];
     this.selectedHeadDeco = this.allHeadDeco[this.headDecoIndex];
-    this.selectedHairColor = this.allHairColors[this.hairColorIndex];
     this.selectedSpeciesSpecial =
       this.allSpeciesSpecial[this.speciesSpecialIndex];
     this.selectedBeard = this.allBeards[this.beardIndex];
@@ -458,6 +462,8 @@ export class AvatarComponent implements OnInit {
 
   setColors(): void {
     this.selectedSkinColor = this.allSkinColors[this.skinColorIndex];
+    this.selectedHairColor = this.allHairColors[this.hairColorIndex];
+    this.selectedEyeColor = this.allEyeColors[this.eyeColorIndex];
   }
 
   setBackground(): void {

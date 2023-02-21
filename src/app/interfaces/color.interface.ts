@@ -51,4 +51,4 @@ export interface EyeColor {
   alternateColor: ColorHex;
 }
 
-export type Color = SkinColor | HairColor;
+export type Color = SkinColor | HairColor | EyeColor;

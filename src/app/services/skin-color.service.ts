@@ -77,11 +77,6 @@ export class SkinColorService {
     };
   }
 
-  getRandomElement(colorArr: ColorHex[]): ColorHex {
-    let color = colorArr[Math.floor(Math.random() * colorArr.length)];
-    return color;
-  }
-
   ranNum(max: number) {
     return (
       Math.ceil(Math.random() * (max - 1)) *

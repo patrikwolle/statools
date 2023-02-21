@@ -9,7 +9,7 @@ import {
   ColorHex,
   HairColor,
   SkinColor,
-  EyeColor
+  EyeColor,
 } from '../interfaces/color.interface';
 import { ColorService } from './colors.service';
 import { HairColorService } from './hair-color.service';
@@ -66,11 +66,15 @@ export class AvatarService {
   }
 
   loadEyeColor(species: alienSpeciesList) {
+    console.log('colorload');
     return this.eyeColor.getEyeColor(species);
   }
 
   setColor(col: Color) {
+    console.log('color', col);
     switch (col.kind) {
+      case 'eyeColor':
+        return this.color.setEyeColor(col);
       case 'hairColor':
         return this.color.setHairColor(col);
       case 'skinColor':

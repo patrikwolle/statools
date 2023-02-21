@@ -336,11 +336,11 @@
             <input
               style="width: 100%"
               [ngStyle]="{
-                'background-color': selectedEyeColor,
-                color: selectedEyeColor
+                'background-color': selectedEyeColor.baseColor,
+                color: selectedEyeColor.baseColor
               }"
               *ngIf="selectedEyeColor"
-              [(ngModel)]="selectedEyeColor"
+              [(ngModel)]="selectedEyeColor.baseColor"
               pInputText
             />
           </div>

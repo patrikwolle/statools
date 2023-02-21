@@ -7,7 +7,7 @@
    viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="eyes_dull_f.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -26,14 +26,14 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.9540684"
-     inkscape:cx="346.47133"
-     inkscape:cy="282.32251"
-     inkscape:window-width="1920"
-     inkscape:window-height="1094"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:cx="286.55396"
+     inkscape:cy="282.66102"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2618"
      inkscape:pageshadow="2"
      units="px">
     <inkscape:grid
@@ -111,8 +111,8 @@
          d="m 117.38126,93.520746 c -0.1021,-4.867213 7.13152,-8.338482 11.99979,-8.325065 4.84833,0.01336 12.10153,3.492428 11.90478,8.356731 -0.0975,2.411583 -2.39528,4.559637 -4.43139,5.974769 -2.27977,1.584479 -5.22405,2.379099 -7.99972,2.318639 -2.60234,-0.0567 -5.42737,-0.78066 -7.5104,-2.341553 -1.8967,-1.421269 -3.91559,-3.720504 -3.96306,-5.983521 z"
          sodipodi:nodetypes="sasssss" />
       <circle
-         style="fill:#000000;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         id="circle2614"
+         style="fill:#000000;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="pupil_left"
          cx="-129.03423"
          cy="93.183167"
          r="2.0310938"
@@ -132,8 +132,8 @@
          d="m 117.38126,93.520746 c -0.1021,-4.867213 7.13152,-8.338482 11.99979,-8.325065 4.84833,0.01336 12.10153,3.492428 11.90478,8.356731 -0.0975,2.411583 -2.39528,4.559637 -4.43139,5.974769 -2.27977,1.584479 -5.22405,2.379099 -7.99972,2.318639 -2.60234,-0.0567 -5.42737,-0.78066 -7.5104,-2.341553 -1.8967,-1.421269 -3.91559,-3.720504 -3.96306,-5.983521 z"
          sodipodi:nodetypes="sasssss" />
       <circle
-         style="fill:#000000;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         id="circle14903"
+         style="fill:#000000;stroke:none;stroke-width:0.52916698;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="pupil_right"
          cx="-129.03423"
          cy="93.183167"
          r="2.0310938"
