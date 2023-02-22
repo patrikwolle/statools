@@ -77,6 +77,17 @@
   position: absolute;
   z-index: 11;
 }
+.checkbox-wrapper {
+  display: flex;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: small;
+  color: #f70;
+  order: -1;
+}
 
 .bar-panel {
   display: flex;

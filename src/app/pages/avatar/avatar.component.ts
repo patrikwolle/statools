@@ -70,6 +70,7 @@ export class AvatarComponent implements OnInit {
   selectedBeard: any;
   selectedScar: any;
   selectedHairDeco: any;
+  unshaven: boolean = false;
 
   /** Variables to hold the svg information */
   uniformSVG: SafeHtml = '';
@@ -114,6 +115,7 @@ export class AvatarComponent implements OnInit {
   eyebrowZIndex = 10;
 
   loading = true;
+
   constructor(
     public avatar: AvatarService,
     private sanitizer: DomSanitizer,

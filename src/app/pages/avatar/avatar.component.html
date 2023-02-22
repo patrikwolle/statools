@@ -76,7 +76,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('hair', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -105,7 +105,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('head', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -134,7 +134,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('headDeco', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -162,7 +162,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('eyebrow', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -191,12 +191,25 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('eyes', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
         </div>
-        <div class="selectHeader" *ngIf="selectedGender === 'male'">Beard</div>
+        <div class="selectHeader grid" *ngIf="selectedGender === 'male'">
+          <div class="col-2">Beard</div>
+          <div class="col-4"></div>
+          <div class="col-6">
+            <div class="checkbox-wrapper">
+              <p-checkbox
+                inputId="unshavenCheck"
+                value="unshaven"
+                [(ngModel)]="unshaven"
+              ></p-checkbox>
+              <label for="unshavenCheck" class="label">unshaven</label>
+            </div>
+          </div>
+        </div>
         <div *ngIf="selectedGender === 'male'" class="grid">
           <div class="col-2">
             <button
@@ -220,7 +233,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('beard', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -249,7 +262,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('scar', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -278,7 +291,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('uniform', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -311,7 +324,7 @@
           <div class="col-2">
             <button
               pButton
-              class="p-button-help"
+              class="p-button-secondary"
               [style]="{ width: '100%' }"
               (click)="nextPart('hairColor', true)"
               icon="pi pi-angle-right"
@@ -344,7 +357,7 @@
           <div class="col-2">
             <button
               pButton
-              class="p-button-help"
+              class="p-button-secondary"
               [style]="{ width: '100%' }"
               (click)="nextPart('skinColor', true)"
               icon="pi pi-angle-right"
@@ -375,7 +388,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('hairDeco', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -404,7 +417,7 @@
               [style]="{ width: '100%' }"
               (click)="nextPart('mouth', true)"
               icon="pi pi-angle-right"
-              class="p-button-help"
+              class="p-button-secondary"
             ></button>
           </div>
         </div>
@@ -431,7 +444,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('nose', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -459,7 +472,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('ears', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -489,7 +502,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('SpeciesSpecial', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -517,7 +530,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('background', true)"
-              class="p-button-help"
+              class="p-button-secondary"
               icon="pi pi-angle-right"
             ></button>
           </div>
@@ -538,7 +551,7 @@
           <button
             pButton
             [style]="{ width: '100%' }"
-            class="p-button-help"
+            class="p-button-secondary"
             (click)="print()"
           >
             Save Picture

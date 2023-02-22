@@ -1,0 +1,55 @@
+:host ::ng-deep .p-checkbox .p-checkbox-box.p-highlight {
+  border-color: #f70;
+  background: #fff;
+}
+:host ::ng-deep .p-checkbox .p-checkbox-box .p-checkbox-icon {
+  transition-duration: 0.2s;
+  color: #c8f;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+:host ::ng-deep .p-checkbox .p-checkbox-box {
+  border: 2px solid #f70;
+  background: #ffffff;
+  width: 22px;
+  height: 22px;
+  color: #c8f;
+  border-radius: 6px;
+}
+
+:host ::ng-deep .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+  border-color: #f70;
+  box-shadow: 0 0 0 0rem;
+}
+
+:host ::ng-deep .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+  border-color: #f70;
+}
+
+:host
+  ::ng-deep
+  .p-checkbox:not(.p-checkbox-disabled)
+  .p-checkbox-box.p-highlight:hover {
+  border-color: #f70;
+  background: #fff;
+}
+
+:host ::ng-deep .p-button.p-button-secondary,
+.p-buttonset.p-button-secondary > .p-button,
+.p-splitbutton.p-button-secondary > .p-button {
+  color: #ffffff;
+  background: #c8f;
+  border: 1px solid #c8f;
+}
+
+:host ::ng-deep .p-button.p-button-secondary:enabled:focus {
+  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+:host ::ng-deep .p-button.p-button-secondary:enabled:hover,
+.p-buttonset.p-button-secondary > .p-button:enabled:hover,
+.p-splitbutton.p-button-secondary > .p-button:enabled:hover {
+  background: #78f;
+  color: #ffffff;
+  border-color: #78f;
+}
