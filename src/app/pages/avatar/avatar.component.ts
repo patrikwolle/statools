@@ -253,6 +253,7 @@ export class AvatarComponent implements OnInit {
     this.backgroundIndex = 0;
     this.speciesSpecialIndex = 0;
     this.scarIndex = 0;
+    this.unshaven = false;
     this.loadArrays();
   }
 
@@ -510,7 +511,13 @@ export class AvatarComponent implements OnInit {
     this.backgroundIndex = this.randomInt(this.allBackgrounds.length);
     this.scarIndex = this.randomInt(this.allScars.length);
     this.hairDecoIndex = this.randomInt(this.allHairDeco.length);
-    this.unshaven = this.randomInt(2) === 0 ? false : true;
+    this.unshaven =
+      this.selectedGender === gender.female
+        ? false
+        : this.randomInt(2) === 0
+        ? false
+        : true;
+
     this.onChangePart();
   }
 
