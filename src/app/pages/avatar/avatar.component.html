@@ -1,7 +1,7 @@
 <h1>Avatar</h1>
 <div class="grid" [ngStyle]="{ width: '75vw' }">
   <div class="col-12 md:col-6 lg:col-3">
-    <div>Gender</div>
+    <div style="font-size: x-large">Gender</div>
     <p-dropdown
       [style]="{ width: '100%' }"
       [options]="allGenders"
@@ -11,7 +11,7 @@
     ></p-dropdown>
   </div>
   <div class="col-12 md:col-6 lg:col-3">
-    <div>Species</div>
+    <div style="font-size: x-large">Species</div>
     <p-dropdown
       [style]="{ width: '100%' }"
       [options]="allSpecies"
@@ -21,7 +21,7 @@
     ></p-dropdown>
   </div>
   <div class="col-12 md:col-6 lg:col-3">
-    <div>Role</div>
+    <div style="font-size: x-large">Role</div>
     <p-dropdown
       [style]="{ width: '100%' }"
       [options]="allRoles"
@@ -31,7 +31,7 @@
     ></p-dropdown>
   </div>
   <div class="col-12 md:col-6 lg:col-3">
-    <div>Rank</div>
+    <div style="font-size: x-large">Rank</div>
     <p-dropdown
       [style]="{ width: '100%' }"
       [options]="allRanks"
@@ -59,7 +59,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('hair', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -88,7 +88,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('head', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -117,7 +117,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('headDeco', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -146,7 +146,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('eyebrow', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -174,7 +174,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('eyes', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -197,16 +197,21 @@
           </div>
         </div>
         <div class="selectHeader grid" *ngIf="selectedGender === 'male'">
-          <div class="col-2">Beard</div>
-          <div class="col-4"></div>
-          <div class="col-6">
+          <div class="col-2" style="padding-bottom: 0px">Beard</div>
+          <div class="col-4" style="padding-bottom: 0px"></div>
+          <div class="col-6 text-right" style="padding-bottom: 0px">
             <div class="checkbox-wrapper">
               <p-checkbox
                 inputId="unshavenCheck"
                 value="unshaven"
                 [(ngModel)]="unshaven"
               ></p-checkbox>
-              <label for="unshavenCheck" class="label">unshaven</label>
+              <label
+                for="unshavenCheck"
+                class="label"
+                style="padding-right: 5px"
+                >unshaven</label
+              >
             </div>
           </div>
         </div>
@@ -216,7 +221,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('beard', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -245,7 +250,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('scar', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -274,7 +279,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('uniform', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -303,7 +308,7 @@
           <div class="col-2">
             <button
               pButton
-              class="p-button-warning"
+              class="p-button-info"
               [style]="{ width: '100%' }"
               (click)="nextPart('hairColor', false)"
               icon="pi pi-angle-left"
@@ -336,7 +341,7 @@
           <div class="col-2">
             <button
               pButton
-              class="p-button-warning"
+              class="p-button-info"
               [style]="{ width: '100%' }"
               (click)="nextPart('skinColor', false)"
               icon="pi pi-angle-left"
@@ -371,7 +376,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('hairDeco', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -398,7 +403,7 @@
           <div class="col-2">
             <button
               pButton
-              class="p-button-warning"
+              class="p-button-info"
               [style]="{ width: '100%' }"
               (click)="nextPart('mouth', false)"
               icon="pi pi-angle-left"
@@ -428,7 +433,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('nose', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -456,7 +461,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('ears', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -486,7 +491,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('SpeciesSpecial', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -514,7 +519,7 @@
               pButton
               [style]="{ width: '100%' }"
               (click)="nextPart('background', false)"
-              class="p-button-warning"
+              class="p-button-info"
               icon="pi pi-angle-left"
             ></button>
           </div>
@@ -541,7 +546,7 @@
           <button
             pButton
             [style]="{ width: '100%' }"
-            class="p-button-warning"
+            class="p-button-info"
             (click)="random()"
           >
             Random Character

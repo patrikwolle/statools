@@ -77,10 +77,10 @@
   position: absolute;
   z-index: 11;
 }
+
 .checkbox-wrapper {
-  display: flex;
-  align-items: end;
-  margin-bottom: 10px;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .label {

@@ -4,7 +4,7 @@
 }
 :host ::ng-deep .p-checkbox .p-checkbox-box .p-checkbox-icon {
   transition-duration: 0.2s;
-  color: #c8f;
+  color: #c7f;
   font-size: 16px;
   font-weight: 900;
 }
@@ -14,7 +14,7 @@
   background: #ffffff;
   width: 22px;
   height: 22px;
-  color: #c8f;
+  color: #f70;
   border-radius: 6px;
 }
 
@@ -34,22 +34,46 @@
   border-color: #f70;
   background: #fff;
 }
+:host ::ng-deep .p-button {
+  font-family: "Antonio", "Arial Narrow", "Avenir Next Condensed", sans-serif;
+}
+:host ::ng-deep .p-button.p-button:enabled:focus {
+  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
 
+:host ::ng-deep .p-button.p-button:enabled:hover,
+.p-buttonset.p-button > .p-button:enabled:hover,
+.p-splitbutton.p-button > .p-button:enabled:hover {
+  background: #ffaa90;
+  color: #ffffff;
+  border-color: #ffaa90;
+}
+
+:host ::ng-deep .p-button.p-button-info,
+.p-buttonset.p-button-info > .p-button,
+.p-splitbutton.p-button-info > .p-button {
+  color: #ffffff;
+  background: #78f;
+  border: 1px solid #78f;
+}
 :host ::ng-deep .p-button.p-button-secondary,
 .p-buttonset.p-button-secondary > .p-button,
 .p-splitbutton.p-button-secondary > .p-button {
   color: #ffffff;
-  background: #c8f;
-  border: 1px solid #c8f;
+  background: #d44;
+  border: 1px solid #d44;
 }
 
-:host ::ng-deep .p-button.p-button-secondary:enabled:focus {
-  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+:host ::ng-deep .p-inputtext {
+  font-family: "Antonio", "Arial Narrow", "Avenir Next Condensed", sans-serif;
 }
-:host ::ng-deep .p-button.p-button-secondary:enabled:hover,
-.p-buttonset.p-button-secondary > .p-button:enabled:hover,
-.p-splitbutton.p-button-secondary > .p-button:enabled:hover {
-  background: #78f;
-  color: #ffffff;
-  border-color: #78f;
+
+:host
+  ::ng-deep
+  .p-dropdown-panel
+  .p-dropdown-items
+  .p-dropdown-item.p-highlight {
+  color: #ffaa90;
+  background: #fff;
+  font-family: "Antonio", "Arial Narrow", "Avenir Next Condensed", sans-serif;
 }
