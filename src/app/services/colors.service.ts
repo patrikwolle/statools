@@ -57,7 +57,6 @@ export class ColorService {
   }
 
   setSkinColor(color: SkinColor) {
-    console.log('setSkinColor');
     let els = [];
     els.push(document.getElementById('head'));
     els.push(document.getElementById('ears'));
@@ -76,8 +75,15 @@ export class ColorService {
     if (marks) {
       this.changeColorOfStyle(marks, 'fill', color.marks);
     }
+    let shavenElement = document.getElementById('unshaven');
+    if (shavenElement && !this.unshaven) {
+      this.changeColorOfStyle(shavenElement, 'fill', color.baseColor);
+    }
   }
-
+  unshaven = false;
+  setUnshaven(v: boolean) {
+    this.unshaven = v;
+  }
   setHairColor(color: HairColor) {
     idsSvg.hair.forEach((id) => {
       let element = document.getElementById(id);
@@ -92,6 +98,11 @@ export class ColorService {
           case 'eyebrows':
           case 'beard':
             this.changeColorOfStyle(element, 'fill', color.shadeColor);
+            break;
+          case 'unshaven':
+            if (this.unshaven) {
+              this.changeColorOfStyle(element, 'fill', color.shadeColor);
+            }
             break;
           default:
             this.changeColorOfStyle(element, 'fill', color.baseColor);

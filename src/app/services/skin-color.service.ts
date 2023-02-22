@@ -62,7 +62,7 @@ export class SkinColorService {
   ): SkinColor {
     const baseColor = this.colorConverter.lightnessVariation(
       basicColor,
-      this.ranNum(5)
+      this.ranNum(0) //TODO: if number higher then 0 color bug
     );
     let marks = baseColor;
     if (species === alienSpeciesList.trill) {

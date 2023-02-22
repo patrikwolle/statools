@@ -203,8 +203,9 @@
             <div class="checkbox-wrapper">
               <p-checkbox
                 inputId="unshavenCheck"
-                value="unshaven"
+                [binary]="true"
                 [(ngModel)]="unshaven"
+                (onChange)="changeUnshaven()"
               ></p-checkbox>
               <label
                 for="unshavenCheck"
