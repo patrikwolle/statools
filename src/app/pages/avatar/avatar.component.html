@@ -67,6 +67,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedHair"
+              [disabled]="true"
               [(ngModel)]="selectedHair.file"
               pInputText
             />
@@ -96,6 +97,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedHead"
+              [disabled]="true"
               [(ngModel)]="selectedHead.file"
               pInputText
             />
@@ -125,6 +127,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedHeadDeco"
+              [disabled]="true"
               [(ngModel)]="selectedHeadDeco.name"
               pInputText
             />
@@ -153,6 +156,7 @@
           <div class="col-8">
             <input
               style="width: 100%"
+              [disabled]="true"
               [(ngModel)]="selectedEyebrows.file"
               pInputText
             />
@@ -182,6 +186,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedEyes"
+              [disabled]="true"
               [(ngModel)]="selectedEyes.file"
               pInputText
             />
@@ -211,6 +216,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedBeard"
+              [disabled]="true"
               [(ngModel)]="selectedBeard.file"
               pInputText
             />
@@ -240,6 +246,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedScar"
+              [disabled]="true"
               [(ngModel)]="selectedScar.name"
               pInputText
             />
@@ -269,6 +276,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedUniform"
+              [disabled]="true"
               [(ngModel)]="selectedUniform.name"
               pInputText
             />
@@ -304,6 +312,7 @@
                 color: selectedHairColor.baseColor
               }"
               *ngIf="selectedHairColor"
+              [disabled]="true"
               [(ngModel)]="selectedHairColor.baseColor"
               pInputText
             />
@@ -337,6 +346,7 @@
                 color: selectedSkinColor
               }"
               *ngIf="selectedSkinColor"
+              [disabled]="true"
               [(ngModel)]="selectedSkinColor"
               pInputText
             />
@@ -366,6 +376,7 @@
             <input
               style="width: 100%"
               *ngIf="selectedHairDeco"
+              [disabled]="true"
               [(ngModel)]="selectedHairDeco.name"
               pInputText
             />
@@ -394,6 +405,7 @@
           <div class="col-8">
             <input
               style="width: 100%"
+              [disabled]="true"
               [(ngModel)]="selectedMouth.file"
               pInputText
             />
@@ -422,6 +434,7 @@
           <div class="col-8">
             <input
               style="width: 100%"
+              [disabled]="true"
               [(ngModel)]="selectedNose.file"
               pInputText
             />
@@ -450,6 +463,7 @@
           <div class="col-8">
             <input
               style="width: 100%"
+              [disabled]="true"
               [(ngModel)]="selectedEars.file"
               pInputText
             />
@@ -480,6 +494,7 @@
           <div class="col-8">
             <input
               style="width: 100%"
+              [disabled]="true"
               [(ngModel)]="selectedSpeciesSpecial.file"
               pInputText
             />
@@ -508,6 +523,7 @@
           <div class="col-8">
             <input
               style="width: 100%"
+              [disabled]="true"
               [(ngModel)]="selectedBackground.name"
               pInputText
             />
