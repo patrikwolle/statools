@@ -7,7 +7,7 @@
    viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="eyes_dull.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -26,12 +26,12 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.4770342"
-     inkscape:cx="420.0986"
-     inkscape:cy="434.6548"
-     inkscape:window-width="1920"
-     inkscape:window-height="1094"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:cx="291.12393"
+     inkscape:cy="436.00886"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:pageshadow="2"
@@ -118,8 +118,8 @@
        d="m 117.38126,93.520746 c -0.31421,-4.858134 7.1315,-8.325065 11.99979,-8.325065 4.86828,0 12.31353,3.466903 11.99978,8.325065 -0.29019,4.493366 -7.49421,6.207971 -11.99694,6.208407 -4.50441,4.36e-4 -11.7119,-1.713388 -12.00263,-6.208407 z"
        sodipodi:nodetypes="aaaaa" />
     <circle
-       style="fill:#000000;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="circle14903"
+       style="fill:#000000;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="pupil_right"
        cx="-129.03423"
        cy="92.653999"
        r="2.0310938"
@@ -130,10 +130,11 @@
        d="m 75.577299,93.520896 c -0.314215,-4.858133 7.1315,-8.325065 11.999784,-8.325065 4.868284,0 12.31353,3.466902 11.999785,8.325065 -0.290186,4.493366 -7.494215,6.207971 -11.996942,6.208407 -4.50441,4.35e-4 -11.711898,-1.713389 -12.002627,-6.208407 z"
        sodipodi:nodetypes="aaaaa" />
     <circle
-       style="fill:#000000;stroke:#000000;stroke-width:0.270812;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="circle14987"
+       style="fill:#000000;stroke:none;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="pupil_left"
        cx="88.023796"
        cy="92.653999"
-       r="2.0310938" />
+       r="2.0310938"
+       inkscape:label="pupil_left" />
   </g>
 </svg>
