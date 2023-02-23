@@ -733,6 +733,7 @@ export class AvatarComponent implements OnInit {
         this.onChangePart();
         break;
       default:
+        console.warn("Navigation string "+ part +" not found!")
         break;
     }
   }
