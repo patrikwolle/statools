@@ -380,6 +380,40 @@
             ></button>
           </div>
         </div>
+        <div class="selectHeader">Eyecolor</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-bw"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyeColor', false)"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [ngStyle]="{
+                'background-color': selectedEyeColor.baseColor,
+                color: selectedEyeColor.baseColor
+              }"
+              *ngIf="selectedEyeColor"
+              [disabled]="true"
+              [(ngModel)]="selectedEyeColor"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-fw"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyeColor', true)"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
         <div class="selectHeader">Hair Decoration</div>
         <div class="grid">
           <div class="col-2">
