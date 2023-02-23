@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="1.0444209"
-     inkscape:cx="435.16938"
-     inkscape:cy="478.7342"
+     inkscape:zoom="16.710734"
+     inkscape:cx="400.55092"
+     inkscape:cy="405.18866"
      inkscape:window-width="1920"
      inkscape:window-height="1094"
      inkscape:window-x="-11"
@@ -93,9 +93,9 @@
      id="layer1">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 105.23921,96.8375 c 0,0 -1.21506,4.13617 -2.11667,6.08543 -0.73023,1.57877 -3.10306,2.81964 -2.64582,4.49794 0.47736,1.75217 4.76249,2.64584 4.76249,2.64584"
+       d="m 105.23921,96.8375 c 0,0 -1.21506,4.13617 -2.11667,6.08543 -0.73023,1.57877 -3.10306,2.81964 -2.64582,4.49794 0.23868,0.87609 1.4293,1.53755 2.56025,1.97998 0.56548,0.22122 1.0159,0.33542 1.52523,0.49885 1.77013,0.56796 3.10264,-0.17017 3.08365,-1.24214"
        id="nose"
-       sodipodi:nodetypes="caac"
+       sodipodi:nodetypes="casssc"
        inkscape:label="nose" />
   </g>
 </svg>

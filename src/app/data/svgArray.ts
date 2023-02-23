@@ -161,6 +161,23 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'head_round.svg',
+    tags: {
+      imagePart: imageParts.head,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
     file: 'eyes_neutral.svg',
     tags: {
       imagePart: imageParts.eyes,
@@ -429,7 +446,7 @@ export const avatarSvgList: avatarList[] = [
     file: 'nose_pointy.svg',
     tags: {
       imagePart: imageParts.nose,
-      gender: [gender.male, gender.female],
+      gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
@@ -480,7 +497,7 @@ export const avatarSvgList: avatarList[] = [
     file: 'nose_small2.svg',
     tags: {
       imagePart: imageParts.nose,
-      gender: [gender.male, gender.female],
+      gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
@@ -670,20 +687,6 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
-    file: 'no_special.svg',
-    tags: {
-      imagePart: imageParts.speciesSpecial,
-      gender: [gender.female, gender.male],
-      species: [
-        alienSpeciesList.betazoid,
-        alienSpeciesList.human,
-        alienSpeciesList.orion,
-        alienSpeciesList.trill,
-        alienSpeciesList.vulcan,
-      ],
-    },
-  },
-  {
     file: 'antenna_short.svg',
     tags: {
       imagePart: imageParts.speciesSpecial,
@@ -707,7 +710,7 @@ export const avatarSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
-        alienSpeciesList.denobulan,
+        //alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
@@ -747,6 +750,60 @@ export const avatarSvgList: avatarList[] = [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
+    file: 'no_scar.svg',
+    name: 'No Scar',
+    tags: {
+      imagePart: imageParts.scar,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        //alienSpeciesList.denobulan,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
+    file: 'no_hairDeco.svg',
+    name: 'No Hair Deco',
+    tags: {
+      imagePart: imageParts.hairDeco,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        //alienSpeciesList.denobulan,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
+    file: 'no_headDeco.svg',
+    name: 'No Head Deco',
+    tags: {
+      imagePart: imageParts.headDeco,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        //alienSpeciesList.denobulan,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
       ],

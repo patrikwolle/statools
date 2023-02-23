@@ -7,8 +7,8 @@
    viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="nose_hooked.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="insignia_admiral.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,13 +25,13 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="8.3553675"
-     inkscape:cx="419.07193"
-     inkscape:cy="399.02494"
-     inkscape:window-width="1920"
-     inkscape:window-height="1094"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:zoom="11.816274"
+     inkscape:cx="399.49143"
+     inkscape:cy="581.90934"
+     inkscape:window-width="5120"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="1076"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:pageshadow="2"
@@ -42,17 +42,6 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
-    <inkscape:path-effect
-       effect="simplify"
-       id="path-effect4085"
-       is_visible="true"
-       lpeversion="1"
-       steps="1"
-       threshold="0.00243902"
-       smooth_angles="360"
-       helper_size="0"
-       simplify_individual_paths="false"
-       simplify_just_coalesce="false" />
     <inkscape:path-effect
        effect="simplify"
        id="path-effect14166"
@@ -102,12 +91,53 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-       d="m 106.36247,91.22974 c 0,0 -1.58015,1.869252 -2.37022,2.803879 -0.79007,0.934627 -1.49268,1.040475 -2.37023,2.80388 -0.87755,1.763405 -1.19447,5.298151 -1.791707,7.947221 -0.597237,2.64907 -2.756712,6.47894 -1.791711,7.94721 0.742836,0.86198 3.111348,0.85088 4.707808,0.88666 0.89893,0.0202 1.79241,-0.18687 2.67058,-0.38 1.49162,-0.32804 2.95704,-0.78447 4.38836,-1.31723 1.6799,-0.62529 1.86183,-2.69021 1.70927,-3.30759"
-       id="nose"
-       sodipodi:nodetypes="czzzcaasc"
-       class="UnoptimicedTransforms"
-       inkscape:label="nose" />
+    <ellipse
+       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.266313;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="ens-bobble"
+       cx="-96.118019"
+       cy="-150.44534"
+       transform="matrix(-0.99999981,-6.1145477e-4,-0.00166435,-0.99999861,0,0)"
+       rx="0.67215747"
+       ry="0.65947568" />
+    <ellipse
+       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.266313;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="lt-bobble"
+       cx="-97.904579"
+       cy="-151.13293"
+       transform="matrix(-0.99999981,-6.1145477e-4,-0.00166435,-0.99999861,0,0)"
+       rx="0.67215747"
+       ry="0.65947568" />
+    <ellipse
+       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.266313;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="cmd-bobble"
+       cx="-99.691147"
+       cy="-151.82056"
+       transform="matrix(-0.99999981,-6.1145477e-4,-0.00166435,-0.99999861,0,0)"
+       rx="0.67215747"
+       ry="0.65947568" />
+    <ellipse
+       style="fill:none;stroke:#ffcc00;stroke-width:0.266313;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="captain-bobble"
+       cx="-101.52101"
+       cy="-152.50815"
+       transform="matrix(-0.99999981,-6.1145477e-4,-0.00166435,-0.99999861,0,0)"
+       rx="0.67215747"
+       ry="0.65947568" />
+    <ellipse
+       style="fill:none;stroke:#ffcc00;stroke-width:0.266313;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="admiral-bobble"
+       cx="-103.35087"
+       cy="-153.18456"
+       transform="matrix(-0.99999981,-6.1145477e-4,-0.00166435,-0.99999861,0,0)"
+       rx="0.67215747"
+       ry="0.65947568" />
+    <rect
+       style="opacity:0.99;fill:none;stroke:#ffcc00;stroke-width:0.337174"
+       id="admiralBorder"
+       width="10.328458"
+       height="2.3950415"
+       x="-152.83575"
+       y="-108.88153"
+       transform="matrix(-0.93766,-0.34755391,0.35773182,-0.93382437,0,0)" />
   </g>
 </svg>

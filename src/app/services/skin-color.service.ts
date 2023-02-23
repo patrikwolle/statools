@@ -4,14 +4,12 @@ import { ColorConversionService } from './color-converter.service';
 import { alienSpeciesList } from '../enums/avatar.enum';
 import {
   blueSkin,
-  brownSkin,
   darkSkin,
   fairSkin,
   fleshySkin,
   greenSkin,
   pinkSkin,
 } from '../data/skin-colors';
-import { HairColorService } from './hair-color.service';
 
 /**
  * Service that handels loading colors and managing colors
@@ -64,7 +62,7 @@ export class SkinColorService {
   ): SkinColor {
     const baseColor = this.colorConverter.lightnessVariation(
       basicColor,
-      this.ranNum(5)
+      this.ranNum(0) //TODO: if number higher then 0 color bug
     );
     let marks = baseColor;
     if (species === alienSpeciesList.trill) {
