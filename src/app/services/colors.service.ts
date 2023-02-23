@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { ranks, roles } from '../enums/avatar.enum';
 import { ColorHex, HairColor, SkinColor } from '../interfaces/color.interface';
 import { idsSvg } from './avatar.service';
+import { EyeColor } from '../interfaces/color.interface';
 
 /**
  * Service that handels loading colors and managing colors
@@ -111,6 +112,25 @@ export class ColorService {
       }
     });
   }
+
+  setEyeColor(color: EyeColor) {
+    console.log("set Eyecolor", color);
+    idsSvg.eyes.forEach((id) => {
+      let element = document.getElementById(id);
+      if (element !== null && element !== undefined) {
+        switch (id) {
+          case 'pupil_left':
+          case 'pupil_right':
+            this.changeColorOfStyle(element, 'fill', color.baseColor);
+            break;
+          default:
+            this.changeColorOfStyle(element, 'fill', color.baseColor);
+            break;
+        }
+      }
+    });
+  }
+
   setInsigniaColor(rank: ranks, officer: number) {
     if (officer === 1) {
       let rankIds = this.insigniaOfficers.find((i) => i.key === rank);

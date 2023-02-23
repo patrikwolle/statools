@@ -4,10 +4,17 @@ import { Observable, of } from 'rxjs';
 import { avatarSvgList } from '../data/svgArray';
 import { alienSpeciesList, imageParts, gender } from '../enums/avatar.enum';
 import { avatarList } from '../interfaces/avatar.interface';
-import { Color, ColorHex } from '../interfaces/color.interface';
+import {
+  Color,
+  ColorHex,
+  HairColor,
+  SkinColor,
+  EyeColor,
+} from '../interfaces/color.interface';
 import { ColorService } from './colors.service';
-import { hairColorService } from './hair-color.service';
+import { HairColorService } from './hair-color.service';
 import { SkinColorService } from './skin-color.service';
+import { EyeColorService } from './eye-color.service';
 
 /**
  * Service that handels loading the svgs, and the svg-config file
@@ -21,7 +28,8 @@ export class AvatarService {
     private http: HttpClient,
     private color: ColorService,
     private skinColor: SkinColorService,
-    private hairColor: hairColorService
+    private hairColor: HairColorService,
+    private eyeColor: EyeColorService
   ) {}
 
   /**
@@ -76,8 +84,15 @@ export class AvatarService {
     }
   }
 
+  loadEyeColor(species: alienSpeciesList) {
+    return this.eyeColor.getEyeColor(species);
+  }
+
   setColor(col: Color) {
+    console.log('color', col);
     switch (col.kind) {
+      case 'eyeColor':
+        return this.color.setEyeColor(col);
       case 'hairColor':
         return this.color.setHairColor(col);
       case 'skinColor':
@@ -120,4 +135,5 @@ export const idsSvg = {
     'beard',
     'unshaven',
   ],
+  eyes: ['pupil_left', 'pupil_right'],
 };

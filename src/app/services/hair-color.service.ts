@@ -18,7 +18,7 @@ import { ColorConversionService } from './color-converter.service';
 @Injectable({
   providedIn: 'root',
 })
-export class hairColorService {
+export class HairColorService {
   constructor(private colorConverter: ColorConversionService) {}
 
   getHairColor(species: alienSpeciesList): HairColor[] {

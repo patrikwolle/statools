@@ -380,32 +380,36 @@
             ></button>
           </div>
         </div>
-        <div class="selectHeader">Hair Decoration</div>
+        <div class="selectHeader">Eyecolor</div>
         <div class="grid">
           <div class="col-2">
             <button
               pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('hairDeco', false)"
               class="p-button-info"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyeColor', false)"
               icon="pi pi-angle-left"
             ></button>
           </div>
           <div class="col-8">
             <input
               style="width: 100%"
-              *ngIf="selectedHairDeco"
+              [ngStyle]="{
+                'background-color': selectedEyeColor.baseColor,
+                color: selectedEyeColor.baseColor
+              }"
+              *ngIf="selectedEyeColor"
               [disabled]="true"
-              [(ngModel)]="selectedHairDeco.name"
+              [(ngModel)]="selectedEyeColor.baseColor"
               pInputText
             />
           </div>
           <div class="col-2">
             <button
               pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('hairDeco', true)"
               class="p-button-secondary"
+              [style]="{ width: '100%' }"
+              (click)="nextPart('eyeColor', true)"
               icon="pi pi-angle-right"
             ></button>
           </div>

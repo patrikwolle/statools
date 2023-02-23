@@ -40,4 +40,10 @@ export interface SkinColor {
   marks: ColorHex;
 }
 
-export type Color = SkinColor | HairColor;
+export interface EyeColor {
+  kind: 'eyeColor';
+  baseColor: ColorHex;
+  alternateColor: ColorHex;
+}
+
+export type Color = SkinColor | HairColor | EyeColor;
