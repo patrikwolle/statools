@@ -75,7 +75,18 @@
 
 .beardID {
   position: absolute;
-  z-index: 11;
+  z-index: 9;
+}
+
+.checkbox-wrapper {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.label {
+  font-size: small;
+  color: #f70;
+  order: -1;
 }
 
 .bar-panel {

@@ -70,6 +70,7 @@ export class AvatarComponent implements OnInit {
   selectedBeard: any;
   selectedScar: any;
   selectedHairDeco: any;
+  unshaven: boolean = false;
 
   /** Variables to hold the svg information */
   uniformSVG: SafeHtml = '';
@@ -114,6 +115,7 @@ export class AvatarComponent implements OnInit {
   eyebrowZIndex = 10;
 
   loading = true;
+
   constructor(
     public avatar: AvatarService,
     private sanitizer: DomSanitizer,
@@ -251,6 +253,7 @@ export class AvatarComponent implements OnInit {
     this.backgroundIndex = 0;
     this.speciesSpecialIndex = 0;
     this.scarIndex = 0;
+    this.unshaven = false;
     this.loadArrays();
   }
 
@@ -425,9 +428,13 @@ export class AvatarComponent implements OnInit {
       });
     });
   }
-
+  changeUnshaven() {
+    this.loading = true;
+    this.finalizeCharacter();
+  }
   finalizeCharacter() {
     setTimeout(() => {
+      this.color.setUnshaven(this.unshaven);
       this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank);
       this.avatar.setColor(
         this.skinColor.generateSkinColors(
@@ -504,6 +511,12 @@ export class AvatarComponent implements OnInit {
     this.backgroundIndex = this.randomInt(this.allBackgrounds.length);
     this.scarIndex = this.randomInt(this.allScars.length);
     this.hairDecoIndex = this.randomInt(this.allHairDeco.length);
+    this.unshaven =
+      this.selectedGender === gender.female
+        ? false
+        : this.randomInt(2) === 0
+        ? false
+        : true;
 
     this.onChangePart();
   }
@@ -514,7 +527,6 @@ export class AvatarComponent implements OnInit {
 
   setColors(): void {
     this.selectedSkinColor = this.allSkinColors[this.skinColorIndex];
-    console.log(this.selectedSkinColor);
   }
 
   setBackground(): void {

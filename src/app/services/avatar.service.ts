@@ -118,5 +118,6 @@ export const idsSvg = {
     'hair_shade_long',
     'eyebrows',
     'beard',
+    'unshaven',
   ],
 };
