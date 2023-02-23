@@ -131,16 +131,32 @@ export class ColorService {
     });
   }
 
-  setInsigniaColor(rank: ranks) {
-    let rankIds = this.insignia.find((i) => i.key === rank);
-    let index = 3;
-    rankIds?.value.forEach((ins) => {
-      let elId = this.insignia.find((i) => i.key === 'all')?.value[index];
-      if (elId !== undefined) {
-        this.fillInsignia(document.getElementById(elId.split('#')[1]), ins);
-      }
-      index--;
-    });
+  setInsigniaColor(rank: ranks, officer: number) {
+    if (officer === 1) {
+      let rankIds = this.insigniaOfficers.find((i) => i.key === rank);
+      let index = 3;
+      rankIds?.value.forEach((ins) => {
+        let elId = this.insigniaOfficers.find((i) => i.key === 'all')?.value[
+          index
+        ];
+        if (elId !== undefined) {
+          this.fillInsignia(document.getElementById(elId.split('#')[1]), ins);
+        }
+        index--;
+      });
+    } else if (officer === 2) {
+      let rankIds = this.insigniaAdmirals.find((i) => i.key === rank);
+      let index = 4;
+      rankIds?.value.forEach((ins) => {
+        let elId = this.insigniaAdmirals.find((i) => i.key === 'all')?.value[
+          index
+        ];
+        if (elId !== undefined) {
+          this.fillInsignia(document.getElementById(elId.split('#')[1]), ins);
+        }
+        index--;
+      });
+    }
   }
 
   fillInsignia(insignia: HTMLElement | null, fillValue: string) {
