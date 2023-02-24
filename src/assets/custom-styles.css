@@ -59,13 +59,75 @@
 :host ::ng-deep .p-button.p-button-secondary,
 .p-buttonset.p-button-secondary > .p-button,
 .p-splitbutton.p-button-secondary > .p-button {
+  text-align: right;
   color: #ffffff;
   background: #d44;
   border: 1px solid #d44;
+  height: 58px;
+}
+
+:host ::ng-deep .p-button.p-button-fw,
+.p-buttonset.p-button-secondary > .p-button,
+.p-splitbutton.p-button-secondary > .p-button {
+  color: #ffffff;
+  background: #d44;
+  border: 1px solid #d44;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+:host ::ng-deep .p-button.p-button-bw,
+.p-buttonset.p-button-secondary > .p-button,
+.p-splitbutton.p-button-secondary > .p-button {
+  color: #ffffff;
+  background: #78f;
+  border: 1px solid #78f;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+:host ::ng-deep .p-dropdown-trigger {
+  background-color: #d44;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+:host ::ng-deep .p-dropdown-trigger-icon {
+  color: #fff;
+}
+
+:host ::ng-deep .p-dropdown {
+  background-color: black;
+  border: 0;
+  border-color: black;
+}
+
+:host ::ng-deep .p-dropdown-open {
+  background-color: black;
+  border-color: black;
+}
+
+:host ::ng-deep .p-dropdown-items {
+  font-family: "Antonio", "Arial Narrow", "Avenir Next Condensed", sans-serif;
+}
+
+:host ::ng-deep .p-dropdown-items-wrapper {
+  background-color: black;
 }
 
 :host ::ng-deep .p-inputtext {
   font-family: "Antonio", "Arial Narrow", "Avenir Next Condensed", sans-serif;
+  background-color: black;
+  color: #f70;
+  opacity: 100%;
+  border: black;
+  text-align: center;
 }
 
 :host
