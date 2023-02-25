@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="840"
+   height="880"
+   viewBox="0 0 222.24999 232.83334"
+   version="1.1"
+   id="mySVG"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="hair_iro.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="2.0888418"
+     inkscape:cx="353.06647"
+     inkscape:cy="275.27216"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2"
+     units="px"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9" />
+    <sodipodi:guide
+       position="71.437497,125.67709"
+       orientation="0,-1"
+       id="guide1575"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect4085"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect14166"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect2574"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect441"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect437"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="hair"
+       style="fill:#501616;stroke:#000000;stroke-width:0.688534;stroke-linecap:square"
+       d="m 98.087847,24.779489 h 19.915083 c 0.52218,0 0.94258,0.423653 0.94258,0.949894 -0.44408,52.221679 -21.954322,49.22054 -21.800225,0 0,-0.526241 0.420386,-0.949894 0.942562,-0.949894 z"
+       sodipodi:nodetypes="ssccs" />
+  </g>
+</svg>

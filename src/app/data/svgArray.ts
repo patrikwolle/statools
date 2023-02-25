@@ -720,6 +720,34 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'hair_iro.svg',
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.human,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
+    file: 'hair_the_boimler.svg',
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.human,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
     file: 'denobulan_forehead.svg',
     tags: {
       imagePart: imageParts.speciesSpecial,
