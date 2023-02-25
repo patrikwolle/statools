@@ -798,6 +798,20 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'beard_goatee.svg',
+    tags: {
+      imagePart: imageParts.beard,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.human,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
     file: 'no_scar.svg',
     name: 'No Scar',
     tags: {
