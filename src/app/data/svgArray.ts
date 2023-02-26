@@ -798,6 +798,20 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'beard_khan.svg',
+    tags: {
+      imagePart: imageParts.beard,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.human,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
     file: 'beard_full_kaiser.svg',
     tags: {
       imagePart: imageParts.beard,

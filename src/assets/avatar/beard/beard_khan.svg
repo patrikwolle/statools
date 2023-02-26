@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="840"
+   height="880"
+   viewBox="0 0 222.24999 232.83334"
+   version="1.1"
+   id="mySVG"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="beard_khan.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="5.9081368"
+     inkscape:cx="361.78919"
+     inkscape:cy="513.86759"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2"
+     units="px"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9" />
+    <sodipodi:guide
+       position="70.93245,122.50804"
+       orientation="0,-1"
+       id="guide1575"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="107.41199,134.22456"
+       orientation="-1,0"
+       id="guide1971"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="envelope"
+       id="path-effect2005"
+       is_visible="true"
+       lpeversion="1"
+       yy="true"
+       xx="true"
+       bendpath1="M 88.931586,121.9133 H 125.58332"
+       bendpath2="m 134.71903,122.182 v 27.50477"
+       bendpath3="M 79.840663,149.68677 H 134.71903"
+       bendpath4="m 79.840663,122.182 v 27.50477"
+       bendpath1-nodetypes="cc" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect4085"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect14166"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect2574"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect441"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect437"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="beard"
+       style="fill:#784421;stroke:#000000;stroke-width:0.491748;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:label="beard"
+       d="M 121.01432 110.46871 C 119.08279 110.4774 117.00935 110.58699 114.78421 110.80254 C 112.25075 111.35758 111.73302 116.74069 115.06429 117.2807 C 147.36728 113.80134 139.9915 144.34278 141.51281 174.30461 C 141.44452 174.4466 143.86785 172.88543 144.7431 161.77772 C 147.0161 132.93132 149.9872 110.33842 121.01432 110.46871 z M 93.926567 110.53175 C 64.953687 110.40146 67.924788 132.99488 70.197782 161.84128 C 71.073032 172.94899 73.496366 174.50964 73.428076 174.36765 C 74.949385 144.40582 67.573603 113.8649 99.876591 117.34426 C 103.20787 116.80425 102.69013 111.42062 100.15668 110.86558 C 97.931536 110.65003 95.858092 110.54044 93.926567 110.53175 z M 86.402478 121.90677 C 86.038685 121.94587 84.14402 123.67473 83.629004 124.34331 C 81.100433 127.6259 79.518542 131.29518 79.838021 135.4832 C 80.128157 139.28659 81.932946 142.86731 84.980343 144.07234 C 89.347032 145.79907 93.505499 147.26902 97.494824 148.28139 C 101.42286 149.27821 105.00663 149.77452 107.35986 149.47925 C 109.70684 149.77457 113.20838 149.27822 117.05797 148.28139 C 120.97392 147.26738 125.04712 145.80088 129.41277 144.07234 C 132.45693 142.86705 134.25213 139.28647 134.53442 135.48269 C 134.84523 131.2946 133.25861 127.6243 130.72794 124.34176 C 130.42715 123.9516 129.7969 123.30419 129.1301 122.72998 C 128.48346 122.17313 127.8983 121.76687 127.89814 121.9507 C 127.89763 122.4846 128.15816 123.67309 127.98547 125.19184 C 127.80795 126.75357 127.21213 128.51675 125.91273 130.42563 C 123.39391 134.12592 118.47011 138.00252 111.68362 139.44007 C 111.50462 139.43996 110.42655 137.00636 109.40469 134.59178 C 108.38262 132.1767 107.45295 129.7745 107.36451 129.87786 C 107.27111 129.77556 106.27051 132.17744 105.16619 134.5923 C 104.06209 137.00667 102.89601 139.43995 102.71724 139.44007 C 95.929656 138.00285 90.99728 134.12596 88.469019 130.42615 C 87.164656 128.51736 86.564094 126.75452 86.382324 125.19288 C 86.205561 123.67424 86.462826 122.4861 86.460356 121.95225 C 86.460203 121.91705 86.440048 121.90329 86.402478 121.90729 L 86.402478 121.90677 z " />
+  </g>
+</svg>
