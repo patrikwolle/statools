@@ -23,10 +23,10 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     showgrid="true"
+     showgrid="false"
      showguides="true"
      inkscape:zoom="2.0888418"
-     inkscape:cx="349.71533"
+     inkscape:cx="321.94875"
      inkscape:cy="351.86963"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
@@ -45,6 +45,13 @@
        orientation="0,-1"
        id="guide1575"
        inkscape:locked="false" />
+    <sodipodi:guide
+       position="108.67865,166.58749"
+       orientation="-1,0"
+       id="guide2462"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
   </sodipodi:namedview>
   <defs
      id="defs2">
