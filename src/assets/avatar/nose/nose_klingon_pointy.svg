@@ -8,7 +8,7 @@
    version="1.1"
    id="mySVG"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="nose_klingon_round.svg"
+   sodipodi:docname="nose_klingon_pointy.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -26,8 +26,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="16.710734"
-     inkscape:cx="411.89093"
-     inkscape:cy="393.45967"
+     inkscape:cx="408.89886"
+     inkscape:cy="417.39639"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="1912"
@@ -118,8 +118,8 @@
     <path
        id="nose"
        style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 100.61234,107.76028 c -1.771921,3.70576 0.0963,7.45686 7.81285,7.68005 7.73488,-0.14141 10.41017,-3.57523 8.77152,-7.58503"
-       sodipodi:nodetypes="ccc"
+       d="m 100.69151,108.39361 c 0,1.38168 -3.205596,4.1468 -1.379466,4.68752 0.342025,0.0974 3.501866,-1.18972 3.783446,-1.07643 3.93075,1.58151 2.34458,4.55088 5.67803,4.52811 3.07493,0 1.3982,-2.63521 4.58429,-4.379 0.4033,-0.22072 4.12143,1.56324 4.68005,1.36794 1.41075,-0.49321 -1.20531,-3.77811 -1.20531,-5.15979"
+       sodipodi:nodetypes="ccscssc"
        inkscape:label="nose" />
     <path
        id="path3749"
@@ -134,7 +134,7 @@
     <path
        id="path10053"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
-       d="m 100.16065,104.73201 c 2.80724,-1.09954 4.29999,-4.57704 8.543,-4.57772 3.90908,-6.4e-4 4.88463,3.24006 9.15255,4.57772"
+       d="m 100.12899,104.85867 c 2.80724,-1.09954 4.20499,-4.59287 8.448,-4.59355 3.90908,-6.4e-4 4.25131,3.19256 8.53506,4.49855"
        sodipodi:nodetypes="csc" />
   </g>
 </svg>

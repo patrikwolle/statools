@@ -348,6 +348,16 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'eyebrows_klingon_wild.svg',
+    tags: {
+      imagePart: imageParts.eyebrows,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.klingon,
+      ],
+    },
+  },
+  {
     file: 'mouth_neutral.svg',
     tags: {
       imagePart: imageParts.mouth,
@@ -479,7 +489,6 @@ export const avatarSvgList: avatarList[] = [
         alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
-        alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
@@ -497,7 +506,6 @@ export const avatarSvgList: avatarList[] = [
         alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
-        alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
@@ -515,7 +523,6 @@ export const avatarSvgList: avatarList[] = [
         alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
-        alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
@@ -533,7 +540,6 @@ export const avatarSvgList: avatarList[] = [
         alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
-        alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
@@ -551,7 +557,6 @@ export const avatarSvgList: avatarList[] = [
         alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
-        alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
@@ -560,6 +565,26 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: 'nose_klingon_sharp.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.klingon,
+      ],
+    },
+  },
+  {
+    file: 'nose_klingon_pointy.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.klingon,
+      ],
+    },
+  },
+  {
+    file: 'nose_klingon_round.svg',
     tags: {
       imagePart: imageParts.nose,
       gender: [gender.male, gender.female],
@@ -608,7 +633,6 @@ export const avatarSvgList: avatarList[] = [
       species: [alienSpeciesList.vulcan],
     },
   },
-
   {
     file: 'hair_vulcan.svg',
     tags: {
@@ -622,6 +646,16 @@ export const avatarSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+      ],
+    },
+  },
+  {
+    file: ['hair_bald_head.svg','hair_klingon_long.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.klingon,
       ],
     },
   },
@@ -802,6 +836,22 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: 'klingon_forehead.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.klingon],
+    },
+  },
+  {
+    file: 'klingon_forehead_connected.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.klingon],
+    },
+  },
+  {
+    file: 'klingon_forehead_no_sides.svg',
     tags: {
       imagePart: imageParts.speciesSpecial,
       gender: [gender.male, gender.female],

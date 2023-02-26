@@ -8,7 +8,7 @@
    version="1.1"
    id="mySVG"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="nose_klingon_round.svg"
+   sodipodi:docname="eyebrows_klingon_wild.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="16.710734"
-     inkscape:cx="411.89093"
-     inkscape:cy="393.45967"
+     inkscape:zoom="4.1776836"
+     inkscape:cx="415.4216"
+     inkscape:cy="336.31077"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="1912"
@@ -49,6 +49,13 @@
        position="108.67865,166.58749"
        orientation="-1,0"
        id="guide2462"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="36.732876,155.94762"
+       orientation="0,1"
+       id="guide11560"
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,134,229)" />
@@ -116,25 +123,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       id="nose"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 100.61234,107.76028 c -1.771921,3.70576 0.0963,7.45686 7.81285,7.68005 7.73488,-0.14141 10.41017,-3.57523 8.77152,-7.58503"
-       sodipodi:nodetypes="ccc"
-       inkscape:label="nose" />
-    <path
-       id="path3749"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.508565;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
-       d="m 102.39749,92.366942 c 2.15617,-0.142304 3.22176,-2.398762 6.2054,-2.399488 2.74883,-6.87e-4 4.54142,2.279323 6.23792,2.399488"
-       sodipodi:nodetypes="csc" />
-    <path
-       id="path10051"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
-       d="m 101.77633,98.464344 c 2.1593,-0.947075 3.60712,-3.106498 6.89723,-3.107212 3.03117,-6.74e-4 4.58674,2.311229 6.8242,3.107212"
-       sodipodi:nodetypes="csc" />
-    <path
-       id="path10053"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
-       d="m 100.16065,104.73201 c 2.80724,-1.09954 4.29999,-4.57704 8.543,-4.57772 3.90908,-6.4e-4 4.88463,3.24006 9.15255,4.57772"
-       sodipodi:nodetypes="csc" />
+       id="eyebrows"
+       style="fill:#803300;stroke:#000000;stroke-width:0.52916667;stroke-linecap:round;stroke-dasharray:none;stroke-linejoin:round"
+       d="M 71.265417 73.525228 C 70.548458 73.563542 74.534284 76.932842 73.577421 76.729683 C 70.440654 76.063703 67.205825 74.443788 66.108626 73.858541 C 63.881149 72.670395 69.41604 80.508351 69.69187 80.812122 C 71.401858 82.695339 78.240397 83.075549 87.847868 83.075549 C 97.455338 83.075549 105.37031 88.648693 105.37031 87.3988 C 105.37031 86.148905 97.455348 78.549211 87.847868 78.549211 C 84.821951 78.549211 75.270606 74.23175 71.34965 73.532463 C 71.316411 73.526535 71.288545 73.523992 71.265417 73.525228 z M 145.91719 73.525228 C 145.89406 73.523992 145.8662 73.526535 145.83296 73.532463 C 141.912 74.23175 132.36066 78.549211 129.33474 78.549211 C 119.72726 78.549211 111.8123 86.148905 111.8123 87.3988 C 111.8123 88.648693 119.72727 83.075549 129.33474 83.075549 C 138.94221 83.075549 145.78075 82.695339 147.49074 80.812122 C 147.76657 80.508351 153.30146 72.670395 151.07398 73.858541 C 149.97678 74.443788 146.74195 76.063703 143.60519 76.729683 C 142.64833 76.932842 146.63415 73.563542 145.91719 73.525228 z " />
   </g>
 </svg>
