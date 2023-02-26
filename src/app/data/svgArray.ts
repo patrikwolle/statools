@@ -559,6 +559,16 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'nose_klingon_sharp.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.klingon,
+      ],
+    },
+  },
+  {
     file: 'ears_human.svg',
     tags: {
       imagePart: imageParts.ears,
