@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="4.1776836"
-     inkscape:cx="388.61248"
-     inkscape:cy="521.82027"
+     inkscape:zoom="8.3553672"
+     inkscape:cx="414.64366"
+     inkscape:cy="145.5352"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="1912"
@@ -122,12 +122,6 @@
        sodipodi:nodetypes="ccsssccccsccc"
        inkscape:label="hair_long" />
     <path
-       id="hair_band"
-       style="fill:#800000;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 108.73925,32.12052 c -8.5695,0 -16.254454,2.566372 -16.254454,2.951125 0,0.384753 7.653284,-1.21609 16.222784,-1.216089 8.56951,0 19.14353,2.593145 19.14353,2.208393 0,-0.384754 -10.54235,-3.943429 -19.11186,-3.943429 z m -0.004,113.39111 c -0.0775,1.28605 3.9233,-1.83009 10.89944,-1.61544 4.82228,0.14837 11.38098,3.03072 10.3389,1.38641 -0.68966,-1.08821 -6.94537,-2.60747 -9.2706,-2.78531 -2.84789,-0.32372 -11.53021,0.48101 -11.96774,3.01434 z"
-       inkscape:label="hair_band"
-       sodipodi:nodetypes="ssssscsscc" />
-    <path
        id="hair_highlight"
        style="fill:#666666;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        inkscape:label="shade"
@@ -135,9 +129,15 @@
        sodipodi:nodetypes="sccccsscsscscsccccscccccccccc" />
     <path
        id="path7682"
-       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:none;stroke:#000000;stroke-width:0.52916667;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 89.116331,33.732134 c 0.02008,2.520628 5.787284,0.676402 8.511582,0.600702 -26.847044,4.091476 -35.851597,28.690899 -33.877056,55.300501 0.72947,9.830594 3.06192,23.484213 8.531134,30.561383 14.459399,18.71048 36.530519,14.23815 36.583779,27.15285 0.0317,7.67972 -20.524844,10.11239 -18.015007,14.82806 3.150825,5.08981 24.847167,3.68924 28.814777,0.99528 3.99875,2.68873 12.488,4.79827 15.6357,-0.2865 2.50984,-4.71567 -5.23881,-9.52185 -5.20711,-17.20156 5.0492,-18.40457 21.30053,-31.93063 22.39331,-56.729008 1.17469,-26.65689 -5.71462,-50.537281 -32.56166,-54.628757 2.72429,0.0757 10.32814,2.996579 10.34822,0.47595 C 128.2865,23.127502 90.053571,24.301792 89.116331,33.732134 Z"
        sodipodi:nodetypes="ccsssccccsccc"
        inkscape:label="kontur" />
+    <path
+       id="hair_band"
+       style="fill:#800000;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 108.73925,32.12052 c -8.5695,0 -16.254454,2.566372 -16.254454,2.951125 0,0.384753 7.653284,-1.21609 16.222784,-1.216089 8.56951,0 19.14353,2.593145 19.14353,2.208393 0,-0.384754 -10.54235,-3.943429 -19.11186,-3.943429 z m -0.004,113.39111 c -0.0775,1.28605 3.9233,-1.83009 10.89944,-1.61544 4.82228,0.14837 11.38098,3.03072 10.3389,1.38641 -0.68966,-1.08821 -6.94537,-2.60747 -9.2706,-2.78531 -2.84789,-0.32372 -11.53021,0.48101 -11.96774,3.01434 z"
+       inkscape:label="hair_band"
+       sodipodi:nodetypes="ssssscsscc" />
   </g>
 </svg>
