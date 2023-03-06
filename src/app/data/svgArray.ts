@@ -358,6 +358,16 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'eyebrows_klingon_pointy.svg',
+    tags: {
+      imagePart: imageParts.eyebrows,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.klingon,
+      ],
+    },
+  },
+  {
     file: 'mouth_neutral.svg',
     tags: {
       imagePart: imageParts.mouth,
@@ -651,6 +661,16 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: ['hair_bald_head.svg','hair_klingon_long.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.klingon,
+      ],
+    },
+  },
+  {
+    file: ['hair_bald_head.svg','hair_klingon_tail.svg'],
     tags: {
       imagePart: imageParts.hair,
       gender: [gender.male, gender.female],
