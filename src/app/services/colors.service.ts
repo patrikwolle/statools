@@ -57,12 +57,40 @@ export class ColorService {
     }
   }
 
+  setSpeciesColors(color: SkinColor) {
+    let specialEls = [];
+    specialEls.push(document.getElementById('eye_left'));
+    specialEls.push(document.getElementById('eye_right'));
+    let specialDarkEls = [];
+    specialDarkEls.push(document.getElementById('nose_special_dark'));
+    let specialLightEls = [];
+    specialLightEls.push(document.getElementById('nose_special_light'));
+
+    specialEls.forEach((el) => {
+      if (el) {
+        this.changeColorOfStyle(el, 'fill', color.special)
+      }
+    });
+    specialDarkEls.forEach((el) => {
+      if (el) {
+        this.changeColorOfStyle(el, 'fill', color.specialDark)
+      }
+    });
+    specialLightEls.forEach((el) => {
+      if (el) {
+        this.changeColorOfStyle(el, 'fill', color.specialLight)
+      }
+    });
+  }
+
   setSkinColor(color: SkinColor) {
     let els = [];
     els.push(document.getElementById('head'));
     els.push(document.getElementById('ears'));
     els.push(document.getElementById('neck'));
     els.push(document.getElementById('nose'));
+
+    this.setSpeciesColors(color);
 
     if (document.getElementById('species_special')) {
       els.push(document.getElementById('species_special'));

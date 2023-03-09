@@ -38,6 +38,9 @@ export interface SkinColor {
   kind: 'skinColor';
   baseColor: ColorHex;
   marks: ColorHex;
+  special: ColorHex;
+  specialDark: ColorHex;
+  specialLight: ColorHex;
 }
 
 export interface EyeColor {

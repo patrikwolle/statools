@@ -136,4 +136,5 @@ export const idsSvg = {
     'unshaven',
   ],
   eyes: ['pupil_left', 'pupil_right'],
+  species: ['eye_left', 'eye_right', 'nose_special_dark', 'nose_special_light'],
 };
