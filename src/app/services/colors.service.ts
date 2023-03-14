@@ -120,6 +120,7 @@ export class ColorService {
         switch (id) {
           case 'hair_highlight':
           case 'hair_highlight_long':
+          case 'beard_highlight':
             this.changeColorOfStyle(element, 'fill', color.highlightColor);
             break;
           case 'hair_shade':

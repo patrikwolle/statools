@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="840"
+   height="880"
+   viewBox="0 0 222.24999 232.83334"
+   version="1.1"
+   id="mySVG"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="beard_full.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="4.1776836"
+     inkscape:cx="407.52248"
+     inkscape:cy="519.4266"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2"
+     units="px"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9" />
+    <sodipodi:guide
+       position="71.437497,125.67709"
+       orientation="0,-1"
+       id="guide1575"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="108.67865,166.58749"
+       orientation="-1,0"
+       id="guide2462"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect4085"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect14166"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect2574"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect441"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect437"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="beard_highlight"
+       style="fill:#aa4400;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 156.03888,160.00991 c 1.36218,2.31752 4.37041,17.01872 -12.64755,25.21252 -12.65219,6.09176 -25.98393,1.30944 -27.94338,1.67975 -16.630507,7.08813 -37.013196,0.19313 -38.808597,-6.99176 -10.778959,2.01719 -25.094229,-15.88751 -18.749628,-31.05054 -2.536574,0.65208 -6.89821,-1.73854 -7.829289,-5.04324 -1.547661,-11.6437 6.779825,-12.32109 18.010029,-23.5339 1.049419,-1.0478 3.073989,-9.06093 6.333046,-9.1881 6.786852,-1.05526 2.722516,7.50145 6.58367,8.99033 1.841553,0.71011 2.152584,-0.001 1.383611,-3.0459 3.672086,6.88832 48.732418,5.99086 51.664658,-0.22857 -0.47539,3.07487 -0.2681,4.41231 0.93328,3.52549 1.6677,-0.7183 1.37033,-10.87963 8.0248,-9.38173 1.58274,0.44643 1.96753,3.99387 3.11462,5.28298 5.10793,5.74038 14.77411,11.67121 19.30682,21.78312 3.54084,11.2056 -2.81529,15.68412 -9.37609,21.98955 z"
+       sodipodi:nodetypes="csccccscsccccscc"
+       inkscape:label="beard_highlight" />
+    <path
+       id="rect7974"
+       style="fill:#803300;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
+       d="m 65.948848,141.13145 c -5.825275,3.98625 -0.692058,12.34666 5.35322,9.80394 2.608274,-1.09708 2.512481,-1.58045 2.956408,-1.28106 2.598147,1.75225 4.956208,2.43487 9.0273,1.36179 6.952373,-2.71607 10.564654,-10.96665 13.801518,-26.24841 6.885116,-1.14134 13.962376,-1.09636 21.940276,0.19013 2.32569,14.56307 3.92096,23.40886 13.35819,26.24841 2.59052,0.77775 6.49248,0.45379 8.58397,-1.67845 0.37495,-0.38226 0.34813,0.18398 2.95641,1.28106 6.04527,2.54271 12.00183,-3.66492 5.92321,-8.79114 -17.86089,-9.81323 -22.95373,-28.67325 -41.26639,-28.89948 -18.115779,0.0384 -29.895702,20.46252 -42.634112,28.01321 z"
+       sodipodi:nodetypes="cssccccssccc" />
+    <path
+       id="beard"
+       style="fill:#803300;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
+       d="m 65.948848,141.13145 c -5.825275,3.98625 -0.692058,12.34666 5.35322,9.80394 2.608274,-1.09708 2.512481,-1.58045 2.956408,-1.28106 2.598147,1.75225 4.956208,2.43487 9.0273,1.36179 6.952373,-2.71607 10.564654,-10.96665 13.801518,-26.24841 6.885116,-1.14134 13.962376,-1.09636 21.940276,0.19013 2.32569,14.56307 3.92096,23.40886 13.35819,26.24841 2.59052,0.77775 6.49248,0.45379 8.58397,-1.67845 0.37495,-0.38226 0.34813,0.18398 2.95641,1.28106 6.04527,2.54271 12.00183,-3.66492 5.92321,-8.79114 -17.86089,-9.81323 -22.95373,-28.67325 -41.26639,-28.89948 -19.445762,0.10173 -28.692384,19.38587 -42.634112,28.01321 z"
+       sodipodi:nodetypes="cssccccssccc"
+       inkscape:label="beard" />
+  </g>
+</svg>

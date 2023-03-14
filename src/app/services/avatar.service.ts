@@ -133,6 +133,7 @@ export const idsSvg = {
     'hair_shade_long',
     'eyebrows',
     'beard',
+    'beard_highlight',
     'unshaven',
   ],
   eyes: ['pupil_left', 'pupil_right'],
