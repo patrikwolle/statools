@@ -68,8 +68,8 @@ export class SkinColorService {
     if (species === alienSpeciesList.trill) {
       marks = this.colorConverter.lightnessVariation(basicColor, -20);
     }
-    let special = this.colorConverter.lightnessVariation(basicColor, -15);
-    let specialDark = this.colorConverter.lightnessVariation(basicColor, -40);
+    let special = this.colorConverter.lightnessVariation(basicColor, -10);
+    let specialDark = this.colorConverter.lightnessVariation(basicColor, -15);
     let specialLight = this.colorConverter.lightnessVariation(basicColor, -20)
     return {
       kind: 'skinColor',
