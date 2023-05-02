@@ -62,23 +62,23 @@ export class ColorService {
     specialEls.push(document.getElementById('eye_left'));
     specialEls.push(document.getElementById('eye_right'));
     let specialDarkEls = [];
-    specialDarkEls.push(document.getElementById('nose_special_dark'));
+    specialDarkEls.push(document.getElementById('nose_special'));
     let specialLightEls = [];
-    specialLightEls.push(document.getElementById('nose_special_light'));
+    specialLightEls.push(document.getElementById('nose_special_front'));
 
     specialEls.forEach((el) => {
       if (el) {
-        this.changeColorOfStyle(el, 'fill', color.special)
+        this.changeColorOfStyle(el, 'fill', color.special);
       }
     });
     specialDarkEls.forEach((el) => {
       if (el) {
-        this.changeColorOfStyle(el, 'fill', color.specialDark)
+        this.changeColorOfStyle(el, 'fill', color.specialDark);
       }
     });
     specialLightEls.forEach((el) => {
       if (el) {
-        this.changeColorOfStyle(el, 'fill', color.specialLight)
+        this.changeColorOfStyle(el, 'fill', color.specialLight);
       }
     });
   }
@@ -143,7 +143,6 @@ export class ColorService {
   }
 
   setEyeColor(color: EyeColor) {
-    console.log("set Eyecolor", color);
     idsSvg.eyes.forEach((id) => {
       let element = document.getElementById(id);
       if (element !== null && element !== undefined) {

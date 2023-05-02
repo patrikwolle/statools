@@ -89,7 +89,6 @@ export class AvatarService {
   }
 
   setColor(col: Color) {
-    console.log('color', col);
     switch (col.kind) {
       case 'eyeColor':
         return this.color.setEyeColor(col);
@@ -137,5 +136,5 @@ export const idsSvg = {
     'unshaven',
   ],
   eyes: ['pupil_left', 'pupil_right'],
-  species: ['eye_left', 'eye_right', 'nose_special_dark', 'nose_special_light'],
+  species: ['eye_left', 'eye_right', 'nose_special_front', 'nose_special'],
 };

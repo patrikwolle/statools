@@ -60,25 +60,52 @@ export class SkinColorService {
     basicColor: ColorHex,
     species: alienSpeciesList
   ): SkinColor {
-    const baseColor = this.colorConverter.lightnessVariation(
-      basicColor,
-      this.ranNum(0) //TODO: if number higher then 0 color bug
-    );
-    let marks = baseColor;
-    if (species === alienSpeciesList.trill) {
-      marks = this.colorConverter.lightnessVariation(basicColor, -20);
-    }
-    let special = this.colorConverter.lightnessVariation(basicColor, -10);
-    let specialDark = this.colorConverter.lightnessVariation(basicColor, -15);
-    let specialLight = this.colorConverter.lightnessVariation(basicColor, -20)
-    return {
+    let skinColorObject: SkinColor = {
       kind: 'skinColor',
-      baseColor: baseColor,
-      marks: marks,
-      special: special,
-      specialDark: specialDark,
-      specialLight: specialLight,
+      baseColor: basicColor,
+      marks: basicColor,
+      special: basicColor,
+      specialDark: basicColor,
+      specialLight: basicColor,
     };
+    if (species === alienSpeciesList.trill) {
+      skinColorObject.marks = this.colorConverter.baseColorVariation(
+        basicColor,
+        { lightnessVariation: -20 }
+      );
+    }
+    skinColorObject.special = this.colorConverter.baseColorVariation(
+      basicColor,
+      { lightnessVariation: -10 }
+    );
+    skinColorObject.specialDark = this.colorConverter.baseColorVariation(
+      basicColor,
+      { lightnessVariation: -15 }
+    );
+    skinColorObject.specialLight = this.colorConverter.baseColorVariation(
+      basicColor,
+      { lightnessVariation: -20 }
+    );
+    if (species === alienSpeciesList.tellarite) {
+      skinColorObject.special = this.colorConverter.baseColorVariation(
+        basicColor,
+        { lightnessVariation: -15, saturationVariation: -20 }
+      );
+      skinColorObject.specialLight = this.colorConverter.baseColorVariation(
+        basicColor,
+        {
+          lightnessVariation: -10,
+          saturationVariation: -20,
+          colorVariation: { r: 60, g: 0, b: 0 },
+        }
+      );
+      skinColorObject.specialDark = this.colorConverter.baseColorVariation(
+        basicColor,
+        { lightnessVariation: -40, saturationVariation: -30 }
+      );
+    }
+
+    return skinColorObject;
   }
 
   ranNum(max: number) {
