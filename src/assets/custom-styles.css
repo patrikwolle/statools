@@ -55,6 +55,7 @@
   color: #ffffff;
   background: #78f;
   border: 1px solid #78f;
+  height: 58px;
 }
 :host ::ng-deep .p-button.p-button-secondary,
 .p-buttonset.p-button-secondary > .p-button,
