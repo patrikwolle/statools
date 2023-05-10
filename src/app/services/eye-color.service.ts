@@ -5,7 +5,6 @@ import { greenPupil, normalEyeColors } from '../data/eye-colors';
 
 /**
  * Service that handels loading eyeColors and managing eyeColors
- * @author fabl
  */
 @Injectable({
   providedIn: 'root',

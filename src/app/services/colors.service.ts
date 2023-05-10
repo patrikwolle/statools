@@ -6,7 +6,6 @@ import { EyeColor } from '../interfaces/color.interface';
 
 /**
  * Service that handels loading colors and managing colors
- * @author patrikwolle
  */
 @Injectable({
   providedIn: 'root',

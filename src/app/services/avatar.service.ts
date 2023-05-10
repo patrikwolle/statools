@@ -18,7 +18,6 @@ import { EyeColorService } from './eye-color.service';
 
 /**
  * Service that handels loading the svgs, and the svg-config file
- * @author patrikwolle
  */
 @Injectable({
   providedIn: 'root',

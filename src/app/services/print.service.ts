@@ -3,7 +3,6 @@ import html2canvas from 'html2canvas';
 
 /**
  * Service that handels loading colors and managing colors
- * @author patrikwolle
  */
 @Injectable({
   providedIn: 'root',
