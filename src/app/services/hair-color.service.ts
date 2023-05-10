@@ -31,11 +31,11 @@ export class HairColorService {
       case alienSpeciesList.vulcan:
       case alienSpeciesList.denobulan:
       case alienSpeciesList.bajoran:
-      case alienSpeciesList.ktarian: {
+      case alienSpeciesList.ktarian:
+      case alienSpeciesList.tellarite: {
         return this.getHairColorWithHighlightColor(normaleHair);
       }
-      case alienSpeciesList.klingon:
-      case alienSpeciesList.tellarite: {
+      case alienSpeciesList.klingon: {
         return this.getHairColorWithHighlightColor(darkGrayHair);
       }
       case alienSpeciesList.andorian: {

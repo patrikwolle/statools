@@ -23,9 +23,9 @@ export class SkinColorService {
 
   getSkinColors(species: alienSpeciesList): ColorHex[] {
     switch (species) {
+      case alienSpeciesList.bajoran:
       case alienSpeciesList.human:
-      case alienSpeciesList.vulcan:
-      case alienSpeciesList.bajoran: {
+      case alienSpeciesList.vulcan: {
         return fleshySkin;
       }
       case alienSpeciesList.klingon:
