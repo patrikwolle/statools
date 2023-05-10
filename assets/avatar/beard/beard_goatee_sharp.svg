@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="840"
+   height="880"
+   viewBox="0 0 222.24999 232.83334"
+   version="1.1"
+   id="mySVG"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="beard_goatee_sharp.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="2.9540684"
+     inkscape:cx="354.93423"
+     inkscape:cy="517.92978"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2"
+     units="px"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9" />
+    <sodipodi:guide
+       position="70.93245,122.50804"
+       orientation="0,-1"
+       id="guide1575"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="108.17199,116.74478"
+       orientation="-1,0"
+       id="guide1971"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="envelope"
+       id="path-effect2005"
+       is_visible="true"
+       lpeversion="1"
+       yy="true"
+       xx="true"
+       bendpath1="M 88.931586,121.9133 H 125.58332"
+       bendpath2="m 134.71903,122.182 v 27.50477"
+       bendpath3="M 79.840663,149.68677 H 134.71903"
+       bendpath4="m 79.840663,122.182 v 27.50477"
+       bendpath1-nodetypes="cc" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect4085"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect14166"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect2574"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect441"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect437"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="beard"
+       style="fill:#784421;stroke:#000000;stroke-width:0.49186;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:label="beard"
+       d="m 87.289246,122.03338 c -0.363793,0.0391 -2.258459,1.76796 -2.773475,2.43654 -2.528568,3.28259 -4.110461,6.95187 -3.790983,11.13989 0.290136,3.80339 2.094928,7.38411 5.142322,8.58914 4.366685,1.72673 8.525161,3.19668 12.514482,4.20905 3.928038,0.99681 7.511808,1.49313 9.865028,1.19786 2.34698,0.29532 5.84853,-0.20104 9.69812,-1.19786 3.91594,-1.01401 7.98915,-2.48051 12.3548,-4.20905 3.04416,-1.20529 4.83936,-4.78588 5.12165,-8.58966 0.31081,-4.18808 -1.27582,-7.85838 -3.80648,-11.14092 -0.30079,-0.39016 -0.93104,-1.03758 -1.59784,-1.61179 -0.64664,-0.55685 -1.23181,-0.96311 -1.23197,-0.77928 -5.1e-4,0.5339 0.26006,1.7224 0.0873,3.24115 -0.17752,1.56173 -0.77335,3.32491 -2.07274,5.23379 -2.51882,3.70028 -7.44263,7.57689 -14.22911,9.01443 -0.179,-1.1e-4 -1.25707,-2.4337 -2.27893,-4.84828 -1.02207,-2.41508 -1.95175,-4.81728 -2.04019,-4.71392 -0.0934,-0.1023 -1.09399,2.29958 -2.19831,4.71444 -1.1041,2.41437 -2.27018,4.84764 -2.44895,4.84776 -6.787579,-1.43721 -11.719965,-5.31411 -14.248224,-9.01392 -1.304362,-1.90878 -1.904924,-3.67163 -2.086694,-5.23327 -0.176763,-1.51864 0.0805,-2.70678 0.07803,-3.24063 -1.53e-4,-0.0352 -0.02031,-0.049 -0.05788,-0.045 z"
+       sodipodi:nodetypes="ccssscsssssccscscscssscc" />
+  </g>
+</svg>
