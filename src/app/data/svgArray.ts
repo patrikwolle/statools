@@ -339,6 +339,14 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: 'eyes_tellarite_tense.svg',
+    tags: {
+      imagePart: imageParts.eyes,
+      gender: [gender.male],
+      species: [alienSpeciesList.tellarite],
+    },
+  },
+  {
     file: 'eyes_tellarite_dull_f.svg',
     tags: {
       imagePart: imageParts.eyes,
@@ -348,6 +356,14 @@ export const avatarSvgList: avatarList[] = [
   },
   {
     file: 'eyes_tellarite_annoyed_f.svg',
+    tags: {
+      imagePart: imageParts.eyes,
+      gender: [gender.female],
+      species: [alienSpeciesList.tellarite],
+    },
+  },
+  {
+    file: 'eyes_tellarite_smaller_f.svg',
     tags: {
       imagePart: imageParts.eyes,
       gender: [gender.female],
