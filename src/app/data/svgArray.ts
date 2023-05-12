@@ -773,6 +773,14 @@ export const avatarSvgList: avatarList[] = [
     },
   },
   {
+    file: ['hair_bald_head.svg', 'hair_klingon_long_smooth.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.klingon, alienSpeciesList.tellarite],
+    },
+  },
+  {
     file: ['hair_bald_head.svg', 'hair_tail.svg'],
     tags: {
       imagePart: imageParts.hair,
