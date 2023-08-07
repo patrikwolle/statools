@@ -117,10 +117,11 @@ export class AvatarComponent implements OnInit {
 
   /** Officer Ranking */
   selectedOfficerRank: number = 1;
-
+  hairZIndex = 12;
   eyesZIndex = 10;
   noseZIndex = 10;
   eyebrowZIndex = 10;
+  speciesSpecialZIndex = 12;
 
   loading = true;
 
@@ -468,14 +469,22 @@ export class AvatarComponent implements OnInit {
         this.selectedRole
       );
       this.loading = false;
-      if (this.selectedSpecies === alienSpeciesList.denobulan) {
-        this.eyesZIndex = 15;
-        this.eyebrowZIndex = 15;
-        this.noseZIndex = 15;
-      } else {
-        this.eyesZIndex = 10;
-        this.eyebrowZIndex = 10;
-        this.noseZIndex = 10;
+      switch (this.selectedSpecies) {
+        case alienSpeciesList.denobulan:
+          this.eyesZIndex = 15;
+          this.eyebrowZIndex = 15;
+          this.noseZIndex = 15;
+          break;
+        case alienSpeciesList.efrosian:
+          this.speciesSpecialZIndex = 10;
+          break;
+        default:
+          this.hairZIndex = 12;
+          this.eyesZIndex = 10;
+          this.eyebrowZIndex = 10;
+          this.noseZIndex = 10;
+          this.speciesSpecialZIndex = 12;
+          break;
       }
     }, 1);
   }
@@ -733,7 +742,7 @@ export class AvatarComponent implements OnInit {
         this.onChangePart();
         break;
       default:
-        console.warn("Navigation string "+ part +" not found!")
+        console.warn('Navigation string ' + part + ' not found!');
         break;
     }
   }
