@@ -479,6 +479,7 @@ export class AvatarComponent implements OnInit {
           break;
         case alienSpeciesList.efrosian:
           this.speciesSpecialZIndex = 10;
+          this.eyebrowZIndex = 13;
           break;
         case alienSpeciesList.ferengi:
           this.longHairZIndex = 12;
