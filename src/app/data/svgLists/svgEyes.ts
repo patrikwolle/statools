@@ -182,4 +182,23 @@ export const eyesSvgList: avatarList[] = [
       species: [alienSpeciesList.tellarite],
     },
   },
+  {
+    file: 'eyes_angry.svg',
+    tags: {
+      imagePart: imageParts.eyes,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+      ],
+    },
+  },
 ];
