@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ColorHex, EyeColor } from '../interfaces/color.interface';
 import { alienSpeciesList } from '../enums/avatar.enum';
-import { greenPupil, normalEyeColors } from '../data/eye-colors';
+import { bluePupil, greenPupil, normalEyeColors } from '../data/eye-colors';
 
 /**
  * Service that handels loading eyeColors and managing eyeColors
@@ -37,7 +37,7 @@ export class EyeColorService {
         return this.getSecondEyeColor(normalEyeColors);
       }
       case alienSpeciesList.efrosian: {
-        return this.getSecondEyeColor(normalEyeColors);
+        return this.getSecondEyeColor(bluePupil);
       }
       case alienSpeciesList.orion: {
         return this.getSecondEyeColor(greenPupil);

@@ -1,0 +1,136 @@
+import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
+import { avatarList } from '../../interfaces/avatar.interface';
+
+export const mouthSvgList: avatarList[] = [
+  {
+    file: 'mouth_neutral.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+        alienSpeciesList.tellarite,
+      ],
+    },
+  },
+  {
+    file: 'mouth_neutral_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+        alienSpeciesList.tellarite,
+      ],
+    },
+  },
+  {
+    file: 'mouth_neutral_red_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+        alienSpeciesList.tellarite,
+      ],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappy.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+      ],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappy_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+      ],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappy_red_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+      ],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappy_darkred_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+      ],
+    },
+  },
+];

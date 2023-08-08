@@ -641,7 +641,13 @@
           [ngStyle]="{ 'z-Index': eyesZIndex }"
           [innerHTML]="eyesSVG"
         ></div>
-        <div #hair id="hair " class="hair" [innerHTML]="hairSVG"></div>
+        <div
+          #hair
+          id="hair "
+          class="hair"
+          [ngStyle]="{ 'z-Index': hairZIndex }"
+          [innerHTML]="hairSVG"
+        ></div>
         <div
           #longHair
           id="longHair "
@@ -680,6 +686,7 @@
           #speciesSpecial
           id="speciesSpecial "
           class="speciesSpecial"
+          [ngStyle]="{ 'z-Index': speciesSpecialZIndex }"
           [innerHTML]="speciesSpecialSVG"
         ></div>
         <div #beardID id="beardID" class="beardID" [innerHTML]="beardSVG"></div>
