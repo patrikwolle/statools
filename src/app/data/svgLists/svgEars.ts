@@ -46,4 +46,12 @@ export const earsSvgList: avatarList[] = [
       species: [alienSpeciesList.vulcan],
     },
   },
+  {
+    file: 'no_ears.svg',
+    tags: {
+      imagePart: imageParts.ears,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
 ];

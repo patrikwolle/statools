@@ -53,7 +53,7 @@ export class AvatarComponent implements OnInit {
   allSkinColors: any[] = [];
   allHeadDeco: avatarList[] = [];
   allSpeciesSpecial: avatarList[] = [];
-  allHairColors: HairColor[] = [];
+  allHairColors: HairColor[] | 'skinColor' = [];
   allBackgrounds: any[] = [];
   allBeards: unknown[] = [];
   allScars: unknown[] = [];
@@ -118,6 +118,7 @@ export class AvatarComponent implements OnInit {
   /** Officer Ranking */
   selectedOfficerRank: number = 1;
   hairZIndex = 12;
+  longHairZIndex = 5;
   eyesZIndex = 10;
   noseZIndex = 10;
   eyebrowZIndex = 10;
@@ -471,11 +472,17 @@ export class AvatarComponent implements OnInit {
       this.loading = false;
       switch (this.selectedSpecies) {
         case alienSpeciesList.denobulan:
+          this.speciesSpecialZIndex = 13;
           this.eyesZIndex = 15;
           this.eyebrowZIndex = 15;
           this.noseZIndex = 15;
           break;
         case alienSpeciesList.efrosian:
+          this.speciesSpecialZIndex = 10;
+          break;
+        case alienSpeciesList.ferengi:
+          this.longHairZIndex = 12;
+          this.hairZIndex = 5;
           this.speciesSpecialZIndex = 10;
           break;
         default:
@@ -484,6 +491,7 @@ export class AvatarComponent implements OnInit {
           this.eyebrowZIndex = 10;
           this.noseZIndex = 10;
           this.speciesSpecialZIndex = 12;
+          this.longHairZIndex = 5;
           break;
       }
     }, 1);
@@ -547,7 +555,17 @@ export class AvatarComponent implements OnInit {
 
   setColors(): void {
     this.selectedSkinColor = this.allSkinColors[this.skinColorIndex];
-    this.selectedHairColor = this.allHairColors[this.hairColorIndex];
+    console.log('+++ selectedSkinColor:', this.selectedSkinColor);
+    this.selectedHairColor =
+      this.allHairColors === 'skinColor'
+        ? {
+            baseColor: this.selectedSkinColor,
+            highlightColor: 'this.selectedSkinColor',
+            kind: 'hairColor',
+            shadeColor: this.selectedSkinColor,
+          }
+        : this.allHairColors[this.hairColorIndex];
+    console.log('--- selectedHairColor', this.selectedHairColor);
     this.selectedEyeColor = this.allEyeColors[this.eyeColorIndex];
   }
 
