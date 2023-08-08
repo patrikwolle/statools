@@ -39,6 +39,16 @@
       (onChange)="changeRank(selectedTestRank.value)"
     ></p-dropdown>
   </div>
+  <div class="col-12 md:col-6 lg:col-3">
+    <div style="font-size: x-large">Era</div>
+    <p-dropdown
+            [style]="{ width: '100%' }"
+            [options]="allEras"
+            [(ngModel)]="selectedEra"
+            optionLabel="name"
+            (onChange)="changeEra(selectedEra)"
+    ></p-dropdown>
+  </div>
 </div>
 <div class="bar-panel">
   <div class="bar-1"></div>

@@ -1,14 +1,14 @@
 import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
 import { avatarList } from '../../interfaces/avatar.interface';
 
-export const uniformSvgList: avatarList[] = [
+export const uniformSvg2380List: avatarList[] = [
   {
     file: 'uniform_male.svg',
     name: 'Male Uniform 1',
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.male],
-
+      era: '2380',
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
@@ -30,6 +30,7 @@ export const uniformSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.male],
+      era: '2380',
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
@@ -50,6 +51,7 @@ export const uniformSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.male],
+      era: '2380',
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
@@ -70,6 +72,7 @@ export const uniformSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.male],
+      era: '2380',
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
@@ -90,6 +93,7 @@ export const uniformSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.female],
+      era: '2380',
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
@@ -111,6 +115,7 @@ export const uniformSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.female],
+      era: '2380',
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
@@ -132,6 +137,7 @@ export const uniformSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.uniform,
       gender: [gender.female],
+      era: '2380',
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,

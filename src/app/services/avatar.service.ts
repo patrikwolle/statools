@@ -44,10 +44,18 @@ export class AvatarService {
     gender: gender,
     era?: string
   ): avatarList[] {
-    return avatarSvgList
-      .filter((av) => av.tags.imagePart === part)
-      .filter((av) => av.tags.species.includes(species))
-      .filter((av) => av.tags.gender.includes(gender));
+    if(era) {
+      return avatarSvgList
+          .filter((av) => av.tags.imagePart === part)
+          .filter((av) => av.tags.species.includes(species))
+          .filter((av) => av.tags.gender.includes(gender))
+          .filter((av) => av.tags.era?.includes(era));
+    } else {
+      return avatarSvgList
+          .filter((av) => av.tags.imagePart === part)
+          .filter((av) => av.tags.species.includes(species))
+          .filter((av) => av.tags.gender.includes(gender));
+    }
   }
 
   loadSkinColor(species: alienSpeciesList): ColorHex[] {
@@ -58,29 +66,55 @@ export class AvatarService {
     return this.hairColor.getHairColor(species);
   }
 
-  loadInsignia(officer: number): Observable<string> {
-    switch (officer) {
-      case 0:
-        return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
-          responseType: 'text',
-        });
-        break;
-      case 1:
-        return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
-          responseType: 'text',
-        });
-        break;
-      case 2:
-        return this.http.get(`assets/avatar/insignia/insignia_admiral.svg`, {
-          responseType: 'text',
-        });
-        break;
-      default:
-        return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
-          responseType: 'text',
-        });
-        break;
+  loadInsignia(officer: number, era: string): Observable<string> {
+    if(era === '2370') {
+      switch (officer) {
+        case 0:
+          return this.http.get(`assets/avatar/insignia/insignia_all2370.svg`, {
+            responseType: 'text',
+          });
+          break;
+        case 1:
+          return this.http.get(`assets/avatar/insignia/insignia_all2370.svg`, {
+            responseType: 'text',
+          });
+          break;
+        case 2:
+          return this.http.get(`assets/avatar/insignia/insignia_admiral2370.svg`, {
+            responseType: 'text',
+          });
+          break;
+        default:
+          return this.http.get(`assets/avatar/insignia/insignia_all2370.svg`, {
+            responseType: 'text',
+          });
+          break;
+      }
+    } else {
+      switch (officer) {
+        case 0:
+          return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
+            responseType: 'text',
+          });
+          break;
+        case 1:
+          return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
+            responseType: 'text',
+          });
+          break;
+        case 2:
+          return this.http.get(`assets/avatar/insignia/insignia_admiral.svg`, {
+            responseType: 'text',
+          });
+          break;
+        default:
+          return this.http.get(`assets/avatar/insignia/insignia_all.svg`, {
+            responseType: 'text',
+          });
+          break;
+      }
     }
+
   }
 
   loadEyeColor(species: alienSpeciesList) {

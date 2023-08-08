@@ -12,7 +12,8 @@ import { mouthSvgList } from './svgLists/svgMouth';
 import { noseSvgList } from './svgLists/svgNose';
 import { scarSvgList } from './svgLists/svgScar';
 import { speciesSpecialSvgList } from './svgLists/svgSpeciesSpecial';
-import { uniformSvgList } from './svgLists/svgUniform';
+import {uniformSvg2380List} from './svgLists/svgUniform2380';
+import {uniform2370SvgList} from './svgLists/svgUniform2370';
 
 export const avatarSvgList: avatarList[] = [
   ...beardSvgList,
@@ -27,5 +28,6 @@ export const avatarSvgList: avatarList[] = [
   ...noseSvgList,
   ...scarSvgList,
   ...speciesSpecialSvgList,
-  ...uniformSvgList,
+  ...uniform2370SvgList,
+  ...uniformSvg2380List
 ];
