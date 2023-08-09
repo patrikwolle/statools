@@ -67,7 +67,7 @@ export class AvatarService {
   }
 
   loadInsignia(officer: number, era: string): Observable<string> {
-    if(era === '2370') {
+    if(era === '2370' || era === '2365') {
       switch (officer) {
         case 0:
           return this.http.get(`assets/avatar/insignia/insignia_all2370.svg`, {
