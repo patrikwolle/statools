@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="4.1776836"
-     inkscape:cx="408.1209"
-     inkscape:cy="619.8411"
+     inkscape:zoom="16.710734"
+     inkscape:cx="384.06451"
+     inkscape:cy="572.65586"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -97,33 +97,77 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <ellipse
-       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="ens-bobble"
-       cx="106.57987"
-       cy="150.18799"
-       rx="0.98562723"
-       ry="1.047745" />
-    <ellipse
-       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="lt-bobble"
-       cx="103.96087"
-       cy="150.18799"
-       rx="0.98562723"
-       ry="1.047745" />
-    <ellipse
-       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="cmd-bobble"
-       cx="101.34087"
-       cy="150.18799"
-       rx="0.98562723"
-       ry="1.047745" />
-    <ellipse
-       style="fill:none;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="captain-bobble"
-       cx="98.820869"
-       cy="150.18799"
-       rx="0.98562723"
-       ry="1.047745" />
+    <g
+       id="g2"
+       transform="translate(0.20012793)">
+      <ellipse
+         style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="ens-bobble-7"
+         cx="106.57987"
+         cy="150.18799"
+         rx="1.1107376"
+         ry="1.1727377" />
+      <ellipse
+         style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="ens-bobble"
+         cx="106.57987"
+         cy="150.18799"
+         rx="0.98562723"
+         ry="1.047745" />
+    </g>
+    <g
+       id="g1"
+       transform="translate(0.20019641,0.07598877)">
+      <ellipse
+         style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="ens-bobble-7-2"
+         cx="103.9128"
+         cy="150.112"
+         rx="1.1107376"
+         ry="1.1727377" />
+      <ellipse
+         style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="lt-bobble"
+         cx="103.9128"
+         cy="150.112"
+         rx="0.98562723"
+         ry="1.047745" />
+    </g>
+    <g
+       id="g3"
+       transform="translate(0.10012634)">
+      <ellipse
+         style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="ens-bobble-7-2-3"
+         cx="101.34087"
+         cy="150.18799"
+         rx="1.1107376"
+         ry="1.1727377" />
+      <ellipse
+         style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="cmd-bobble"
+         cx="101.34087"
+         cy="150.18799"
+         rx="0.98562723"
+         ry="1.047745" />
+    </g>
+    <g
+       id="g4"
+       transform="translate(0,0.02362061)">
+      <ellipse
+         style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="ens-bobble-7-2-3-8"
+         cx="98.779999"
+         cy="150.16437"
+         rx="1.1107376"
+         ry="1.1727377" />
+      <ellipse
+         style="fill:none;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="captain-bobble"
+         cx="98.779999"
+         cy="150.16437"
+         rx="0.98562723"
+         ry="1.047745" />
+    </g>
   </g>
 </svg>
