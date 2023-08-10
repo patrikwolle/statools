@@ -66,4 +66,28 @@ export const speciesSpecialSvgList: avatarList[] = [
       species: [alienSpeciesList.ferengi],
     },
   },
+  {
+    file: 'ferengi_head_2.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: 'ferengi_head_3.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: 'ferengi_head_4.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
 ];
