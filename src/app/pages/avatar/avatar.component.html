@@ -1,13 +1,9 @@
 <div class="grid" [ngStyle]="{ width: '75vw' }">
-  <div class="col-12 md:col-6 lg:col-3">
+  <div class="col-12 md:col-6 lg:col-2">
     <div style="font-size: x-large">Gender</div>
-    <p-dropdown
-      [style]="{ width: '100%' }"
-      [options]="allGenders"
-      [(ngModel)]="selectedTestGender"
-      optionLabel="name"
-      (onChange)="changeGender(selectedTestGender.value)"
-    ></p-dropdown>
+    <div class="p-fluid">
+      <p-selectButton class="selectButtonGender" [style]="{ width: '100%' }" [options]="allGenders" [(ngModel)]="selectedTestGender" optionLabel="name" (onChange)="changeGender(selectedTestGender.value)"></p-selectButton>
+    </div>
   </div>
   <div class="col-12 md:col-6 lg:col-3">
     <div style="font-size: x-large">Species</div>
@@ -29,7 +25,7 @@
       (onChange)="changeRole(selectedTestRole.value)"
     ></p-dropdown>
   </div>
-  <div class="col-12 md:col-6 lg:col-3">
+  <div class="col-12 md:col-6 lg:col-2">
     <div style="font-size: x-large">Rank</div>
     <p-dropdown
       [style]="{ width: '100%' }"
@@ -39,7 +35,7 @@
       (onChange)="changeRank(selectedTestRank.value)"
     ></p-dropdown>
   </div>
-  <div class="col-12 md:col-6 lg:col-3">
+  <div class="col-12 md:col-6 lg:col-2">
     <div style="font-size: x-large">Era</div>
     <p-dropdown
             [style]="{ width: '100%' }"
