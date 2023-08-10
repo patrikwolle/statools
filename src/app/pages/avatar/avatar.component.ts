@@ -373,7 +373,6 @@ export class AvatarComponent implements OnInit {
                                       this.avatar
                                         .loadInsignia(this.selectedOfficerRank, this.selectedEra.value)
                                         .subscribe((res) => {
-                                          console.log(res)
                                           this.insigniaSVG =
                                             this.sanitizer.bypassSecurityTrustHtml(
                                               this.changeSizeOfSVG(res)
@@ -461,7 +460,7 @@ export class AvatarComponent implements OnInit {
   finalizeCharacter() {
     setTimeout(() => {
       this.color.setUnshaven(this.unshaven);
-      this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank);
+      this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank, this.selectedEra.value, this.selectedRole);
       this.avatar.setColor(
         this.skinColor.generateSkinColors(
           this.selectedSkinColor,

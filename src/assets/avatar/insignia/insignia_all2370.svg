@@ -7,7 +7,7 @@
    viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="insignia_all2370.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -26,11 +26,11 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="16.710734"
-     inkscape:cx="384.06451"
-     inkscape:cy="572.65586"
+     inkscape:cx="383.6157"
+     inkscape:cy="572.62595"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
+     inkscape:window-height="1057"
+     inkscape:window-x="2513"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
@@ -102,11 +102,12 @@
        transform="translate(0.20012793)">
       <ellipse
          style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         id="ens-bobble-7"
+         id="hintergrund-ens-bobble"
          cx="106.57987"
          cy="150.18799"
          rx="1.1107376"
-         ry="1.1727377" />
+         ry="1.1727377"
+         inkscape:label="hintergrund" />
       <ellipse
          style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          id="ens-bobble"
@@ -120,11 +121,12 @@
        transform="translate(0.20019641,0.07598877)">
       <ellipse
          style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         id="ens-bobble-7-2"
+         id="hintergrund-lt-bobble"
          cx="103.9128"
          cy="150.112"
          rx="1.1107376"
-         ry="1.1727377" />
+         ry="1.1727377"
+         inkscape:label="hintergrund" />
       <ellipse
          style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          id="lt-bobble"
@@ -138,11 +140,12 @@
        transform="translate(0.10012634)">
       <ellipse
          style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         id="ens-bobble-7-2-3"
+         id="hintergrund-cmd-bobble"
          cx="101.34087"
          cy="150.18799"
          rx="1.1107376"
-         ry="1.1727377" />
+         ry="1.1727377"
+         inkscape:label="hintergrund" />
       <ellipse
          style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          id="cmd-bobble"
@@ -156,11 +159,12 @@
        transform="translate(0,0.02362061)">
       <ellipse
          style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         id="ens-bobble-7-2-3-8"
+         id="hintergrund-captain-bobble"
          cx="98.779999"
          cy="150.16437"
          rx="1.1107376"
-         ry="1.1727377" />
+         ry="1.1727377"
+         inkscape:label="hintergrund" />
       <ellipse
          style="fill:none;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          id="captain-bobble"
