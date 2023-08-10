@@ -556,7 +556,6 @@ export class AvatarComponent implements OnInit {
 
   setColors(): void {
     this.selectedSkinColor = this.allSkinColors[this.skinColorIndex];
-    console.log('+++ selectedSkinColor:', this.selectedSkinColor);
     this.selectedHairColor =
       this.allHairColors === 'skinColor'
         ? {
@@ -566,7 +565,6 @@ export class AvatarComponent implements OnInit {
             shadeColor: this.selectedSkinColor,
           }
         : this.allHairColors[this.hairColorIndex];
-    console.log('--- selectedHairColor', this.selectedHairColor);
     this.selectedEyeColor = this.allEyeColors[this.eyeColorIndex];
   }
 
