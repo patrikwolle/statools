@@ -48,7 +48,6 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
@@ -66,7 +65,6 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
@@ -84,7 +82,6 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
@@ -97,7 +94,7 @@ export const noseSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.nose,
       gender: [gender.male, gender.female],
-      species: [alienSpeciesList.klingon],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
     },
   },
   {
@@ -105,7 +102,7 @@ export const noseSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.nose,
       gender: [gender.male, gender.female],
-      species: [alienSpeciesList.klingon],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
     },
   },
   {
@@ -113,7 +110,7 @@ export const noseSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.nose,
       gender: [gender.male, gender.female],
-      species: [alienSpeciesList.klingon],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
     },
   },
   {

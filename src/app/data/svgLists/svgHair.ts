@@ -78,7 +78,6 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
@@ -186,8 +185,6 @@ export const hairSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
-        //alienSpeciesList.denobulan,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
@@ -221,6 +218,38 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
       ],
+    },
+  },
+  {
+    file: ['ears_ferengi_standard1.svg', 'ears_ferengi_standard2.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: ['ears_ferengi_variation1.svg', 'ears_ferengi_variation2.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: ['ears_ferengi_small1.svg', 'ears_ferengi_small2.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: ['ears_ferengi_edgy1.svg', 'ears_ferengi_edgy2.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male],
+      species: [alienSpeciesList.ferengi],
     },
   },
 ];

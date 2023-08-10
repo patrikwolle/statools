@@ -20,7 +20,7 @@ import { ColorConversionService } from './color-converter.service';
 export class HairColorService {
   constructor(private colorConverter: ColorConversionService) {}
 
-  getHairColor(species: alienSpeciesList): HairColor[] {
+  getHairColor(species: alienSpeciesList): HairColor[] | 'skinColor' {
     switch (species) {
       case alienSpeciesList.human:
       case alienSpeciesList.betazoid:
@@ -45,10 +45,7 @@ export class HairColorService {
       case alienSpeciesList.bolian:
       case alienSpeciesList.ferengi:
       case alienSpeciesList.grazerite:
-      /*case "benzite": { //TODO: Rassen und Frisuren ohne Haare
-        return null;
-      }*/
-      // eslint-disable-next-line no-fallthrough
+        return 'skinColor';
       case alienSpeciesList.efrosian: {
         return this.getHairColorWithHighlightColor(whiteHair);
       }
