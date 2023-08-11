@@ -44,17 +44,17 @@ export class AvatarService {
     gender: gender,
     era?: string
   ): avatarList[] {
-    if(era) {
+    if (era) {
       return avatarSvgList
-          .filter((av) => av.tags.imagePart === part)
-          .filter((av) => av.tags.species.includes(species))
-          .filter((av) => av.tags.gender.includes(gender))
-          .filter((av) => av.tags.era?.includes(era));
+        .filter((av) => av.tags.imagePart === part)
+        .filter((av) => av.tags.species.includes(species))
+        .filter((av) => av.tags.gender.includes(gender))
+        .filter((av) => av.tags.era?.includes(era));
     } else {
       return avatarSvgList
-          .filter((av) => av.tags.imagePart === part)
-          .filter((av) => av.tags.species.includes(species))
-          .filter((av) => av.tags.gender.includes(gender));
+        .filter((av) => av.tags.imagePart === part)
+        .filter((av) => av.tags.species.includes(species))
+        .filter((av) => av.tags.gender.includes(gender));
     }
   }
 
@@ -67,7 +67,7 @@ export class AvatarService {
   }
 
   loadInsignia(officer: number, era: string): Observable<string> {
-    if(era === '2370' || era === '2365') {
+    if (era === '2370' || era === '2365') {
       switch (officer) {
         case 0:
           return this.http.get(`assets/avatar/insignia/insignia_all2370.svg`, {
@@ -80,9 +80,12 @@ export class AvatarService {
           });
           break;
         case 2:
-          return this.http.get(`assets/avatar/insignia/insignia_admiral2370.svg`, {
-            responseType: 'text',
-          });
+          return this.http.get(
+            `assets/avatar/insignia/insignia_admiral2370.svg`,
+            {
+              responseType: 'text',
+            }
+          );
           break;
         default:
           return this.http.get(`assets/avatar/insignia/insignia_all2370.svg`, {
@@ -114,7 +117,6 @@ export class AvatarService {
           break;
       }
     }
-
   }
 
   loadEyeColor(species: alienSpeciesList) {

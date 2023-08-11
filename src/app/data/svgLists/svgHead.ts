@@ -9,6 +9,7 @@ export const headSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -19,7 +20,7 @@ export const headSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -30,6 +31,7 @@ export const headSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -40,7 +42,7 @@ export const headSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -51,6 +53,7 @@ export const headSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -61,7 +64,7 @@ export const headSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },

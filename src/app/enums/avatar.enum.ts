@@ -17,7 +17,6 @@ export enum alienSpeciesList {
   tellarite = 'tellarite' /* */,
   trill = 'trill',
   vulcan = 'vulcan',
-
 }
 export enum imageParts {
   uniform = 'uniform',

@@ -17,7 +17,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -36,7 +36,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -54,7 +54,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -72,7 +72,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -90,7 +90,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -140,6 +140,14 @@ export const noseSvgList: avatarList[] = [
       imagePart: imageParts.nose,
       gender: [gender.male, gender.female],
       species: [alienSpeciesList.tellarite],
+    },
+  },
+  {
+    file: 'no_nose.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.benzite],
     },
   },
 ];

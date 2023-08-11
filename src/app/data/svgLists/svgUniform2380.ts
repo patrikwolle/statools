@@ -11,6 +11,7 @@ export const uniformSvg2380List: avatarList[] = [
       era: '2380',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -21,7 +22,7 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -34,6 +35,7 @@ export const uniformSvg2380List: avatarList[] = [
       era: '2380',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -43,7 +45,7 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -56,6 +58,7 @@ export const uniformSvg2380List: avatarList[] = [
       era: '2380',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -65,7 +68,7 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -78,6 +81,7 @@ export const uniformSvg2380List: avatarList[] = [
       era: '2380',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -87,7 +91,7 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -100,6 +104,7 @@ export const uniformSvg2380List: avatarList[] = [
       era: '2380',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -110,7 +115,7 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -123,6 +128,7 @@ export const uniformSvg2380List: avatarList[] = [
       era: '2380',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -133,7 +139,7 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -146,6 +152,7 @@ export const uniformSvg2380List: avatarList[] = [
       era: '2380',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -156,7 +163,7 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },

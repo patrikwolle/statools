@@ -11,14 +11,10 @@ import {
   imageParts,
 } from 'src/app/enums/avatar.enum';
 import { avatarList } from 'src/app/interfaces/avatar.interface';
-import {
-  HairColor,
-  SkinColor,
-  EyeColor,
-} from 'src/app/interfaces/color.interface';
+import { HairColor, EyeColor } from 'src/app/interfaces/color.interface';
 import { backgrounds } from 'src/app/data/backgroundsImg';
 import { SkinColorService } from 'src/app/services/skin-color.service';
-import { ColorHex } from '../../interfaces/color.interface';
+import { ColorConversionService } from 'src/app/services/color-converter.service';
 
 @Component({
   selector: 'app-avatar',
@@ -133,7 +129,8 @@ export class AvatarComponent implements OnInit {
     private sanitizer: DomSanitizer,
     private color: ColorService,
     private printService: PrintService,
-    private skinColor: SkinColorService
+    private skinColor: SkinColorService,
+    private colorConversionService: ColorConversionService
   ) {}
 
   /** Load all the informations from the arrays, because of the fact thats a sync call we can do this by simple calls directly in the onInit */
@@ -144,9 +141,9 @@ export class AvatarComponent implements OnInit {
     for (const g in gender) {
       this.allGenders.push({ name: g, value: g });
     }
-    this.allEras.push({name: 'Voyager', value: '2365'})
-    this.allEras.push({name: 'Deep Space Nine', value: '2370'})
-    this.allEras.push({name: 'Lower Decks', value: '2380'})
+    this.allEras.push({ name: 'Voyager', value: '2365' });
+    this.allEras.push({ name: 'Deep Space Nine', value: '2370' });
+    this.allEras.push({ name: 'Lower Decks', value: '2380' });
     for (const r in roles) {
       this.allRoles.push({ name: r, value: r });
     }
@@ -372,7 +369,10 @@ export class AvatarComponent implements OnInit {
                                           this.changeSizeOfSVG(res)
                                         );
                                       this.avatar
-                                        .loadInsignia(this.selectedOfficerRank, this.selectedEra.value)
+                                        .loadInsignia(
+                                          this.selectedOfficerRank,
+                                          this.selectedEra.value
+                                        )
                                         .subscribe((res) => {
                                           this.insigniaSVG =
                                             this.sanitizer.bypassSecurityTrustHtml(
@@ -461,7 +461,12 @@ export class AvatarComponent implements OnInit {
   finalizeCharacter() {
     setTimeout(() => {
       this.color.setUnshaven(this.unshaven);
-      this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank, this.selectedEra.value, this.selectedRole);
+      this.color.setInsigniaColor(
+        this.selectedRank,
+        this.selectedOfficerRank,
+        this.selectedEra.value,
+        this.selectedRole
+      );
       this.avatar.setColor(
         this.skinColor.generateSkinColors(
           this.selectedSkinColor,
@@ -572,10 +577,16 @@ export class AvatarComponent implements OnInit {
     this.selectedHairColor =
       this.allHairColors === 'skinColor'
         ? {
-            baseColor: this.selectedSkinColor,
-            highlightColor: 'this.selectedSkinColor',
             kind: 'hairColor',
-            shadeColor: this.selectedSkinColor,
+            baseColor: this.selectedSkinColor,
+            highlightColor: this.colorConversionService.lightnessVariation(
+              this.selectedSkinColor,
+              10
+            ),
+            shadeColor: this.colorConversionService.lightnessVariation(
+              this.selectedSkinColor,
+              -10
+            ),
           }
         : this.allHairColors[this.hairColorIndex];
     this.selectedEyeColor = this.allEyeColors[this.eyeColorIndex];

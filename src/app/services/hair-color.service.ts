@@ -43,6 +43,7 @@ export class HairColorService {
           Object.assign(whiteHair, grayHair)
         );
       }
+      case alienSpeciesList.benzite:
       case alienSpeciesList.bolian:
       case alienSpeciesList.ferengi:
       case alienSpeciesList.grazerite:

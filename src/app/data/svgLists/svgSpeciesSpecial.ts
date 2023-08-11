@@ -114,4 +114,12 @@ export const speciesSpecialSvgList: avatarList[] = [
       species: [alienSpeciesList.romulan],
     },
   },
+  {
+    file: 'benzite_vaporizer.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.benzite],
+    },
+  },
 ];

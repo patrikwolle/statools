@@ -15,7 +15,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -66,7 +66,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.tellarite,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -191,7 +191,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -203,10 +203,10 @@ export const hairSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
+        alienSpeciesList.efrosian,
         alienSpeciesList.human,
+        alienSpeciesList.tellarite,
         alienSpeciesList.trill,
-        alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
       ],
     },
   },
@@ -221,7 +221,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -255,6 +255,14 @@ export const hairSvgList: avatarList[] = [
       imagePart: imageParts.hair,
       gender: [gender.male],
       species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: 'hair_benzite.svg',
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.benzite],
     },
   },
 ];

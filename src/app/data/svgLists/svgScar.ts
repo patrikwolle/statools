@@ -11,6 +11,7 @@ export const scarSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
+        alienSpeciesList.benzite,
         //alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
         alienSpeciesList.ferengi,
@@ -20,7 +21,7 @@ export const scarSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -33,6 +34,7 @@ export const scarSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
+        alienSpeciesList.benzite,
         //alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
         alienSpeciesList.ferengi,
@@ -41,7 +43,7 @@ export const scarSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -54,13 +56,14 @@ export const scarSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
+        alienSpeciesList.benzite,
         //alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
