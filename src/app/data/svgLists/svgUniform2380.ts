@@ -21,7 +21,8 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -43,7 +44,8 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -65,7 +67,8 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -87,7 +90,8 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -110,7 +114,8 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -133,7 +138,8 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -156,7 +162,8 @@ export const uniformSvg2380List: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },

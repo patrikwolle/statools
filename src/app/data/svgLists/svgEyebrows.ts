@@ -87,7 +87,7 @@ export const eyebrowsSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.eyebrows,
       gender: [gender.male, gender.female],
-      species: [alienSpeciesList.ferengi],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.bolian],
     },
   },
 ];

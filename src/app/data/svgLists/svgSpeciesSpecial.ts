@@ -114,4 +114,12 @@ export const speciesSpecialSvgList: avatarList[] = [
       species: [alienSpeciesList.romulan],
     },
   },
+  {
+    file: 'bolian.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bolian],
+    },
+  },
 ];

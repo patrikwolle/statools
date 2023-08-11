@@ -21,6 +21,8 @@ export const uniform2370SvgList: avatarList[] = [
                 alienSpeciesList.trill,
                 alienSpeciesList.vulcan,
                 alienSpeciesList.tellarite,
+                alienSpeciesList.bolian,
+                alienSpeciesList.romulan
             ],
         },
     },
@@ -43,6 +45,8 @@ export const uniform2370SvgList: avatarList[] = [
                 alienSpeciesList.trill,
                 alienSpeciesList.vulcan,
                 alienSpeciesList.tellarite,
+                alienSpeciesList.bolian,
+                alienSpeciesList.romulan
             ],
         },
     },
@@ -65,6 +69,8 @@ export const uniform2370SvgList: avatarList[] = [
                 alienSpeciesList.trill,
                 alienSpeciesList.vulcan,
                 alienSpeciesList.tellarite,
+                alienSpeciesList.bolian,
+                alienSpeciesList.romulan
             ],
         },
     },
@@ -87,6 +93,8 @@ export const uniform2370SvgList: avatarList[] = [
                 alienSpeciesList.trill,
                 alienSpeciesList.vulcan,
                 alienSpeciesList.tellarite,
+                alienSpeciesList.bolian,
+                alienSpeciesList.romulan
             ],
         },
     },
@@ -109,6 +117,8 @@ export const uniform2370SvgList: avatarList[] = [
                 alienSpeciesList.trill,
                 alienSpeciesList.vulcan,
                 alienSpeciesList.tellarite,
+                alienSpeciesList.bolian,
+                alienSpeciesList.romulan
             ],
         },
     },
@@ -131,6 +141,8 @@ export const uniform2370SvgList: avatarList[] = [
                 alienSpeciesList.trill,
                 alienSpeciesList.vulcan,
                 alienSpeciesList.tellarite,
+                alienSpeciesList.bolian,
+                alienSpeciesList.romulan
             ],
         },
     },
@@ -153,6 +165,8 @@ export const uniform2370SvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+          alienSpeciesList.bolian,
+          alienSpeciesList.romulan
       ],
     },
   }

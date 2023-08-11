@@ -1,5 +1,5 @@
-import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
-import { avatarList } from '../../interfaces/avatar.interface';
+import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
+import {avatarList} from '../../interfaces/avatar.interface';
 
 export const noseSvgList: avatarList[] = [
   {
@@ -17,7 +17,27 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+      ],
+    },
+  },
+  {
+    file: 'nose_bold_1.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.female, gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },

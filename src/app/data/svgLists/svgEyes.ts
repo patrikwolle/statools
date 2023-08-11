@@ -18,7 +18,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -38,7 +39,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -58,7 +60,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -78,7 +81,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -98,7 +102,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -117,7 +122,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -136,6 +142,7 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+        alienSpeciesList.bolian
       ],
     },
   },

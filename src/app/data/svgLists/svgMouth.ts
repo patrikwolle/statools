@@ -1,5 +1,5 @@
-import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
-import { avatarList } from '../../interfaces/avatar.interface';
+import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
+import {avatarList} from '../../interfaces/avatar.interface';
 
 export const mouthSvgList: avatarList[] = [
   {
@@ -40,7 +40,8 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+          alienSpeciesList.bolian
       ],
     },
   },
@@ -61,7 +62,8 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -79,6 +81,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -96,6 +99,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -113,6 +117,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -130,7 +135,9 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
-        alienSpeciesList.trill,
+        alienSpeciesList.trill
+        ,
+        alienSpeciesList.bolian
       ],
     },
   },
