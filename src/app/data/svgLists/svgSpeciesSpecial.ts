@@ -122,4 +122,12 @@ export const speciesSpecialSvgList: avatarList[] = [
       species: [alienSpeciesList.benzite],
     },
   },
+  {
+    file: 'bolian.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bolian],
+    },
+  },
 ];

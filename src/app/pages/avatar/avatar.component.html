@@ -9,8 +9,10 @@
     <div style="font-size: x-large">Species</div>
     <p-dropdown
       [style]="{ width: '100%' }"
+      [filter]="true" filterBy="name"
       [options]="allSpecies"
       [(ngModel)]="selectedTestSpecies"
+      placeholder="Select a Species"
       optionLabel="name"
       (onChange)="changeSpecies(selectedTestSpecies.value)"
     ></p-dropdown>

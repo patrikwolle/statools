@@ -1,9 +1,12 @@
 export enum alienSpeciesList {
   andorian = 'andorian',
-  betazoid = 'betazoid',
-  bolian = 'bolian' /* */,
   benzite = 'benzite' /* */,
   bajoran = 'bajoran' /* */,
+  betazoid = 'betazoid',
+
+
+  bolian = 'bolian' /* */,
+
   //cardassian = 'cardassian' /* */,
   denobulan = 'denobulan' /***/,
   efrosian = 'efrosian',

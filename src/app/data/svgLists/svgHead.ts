@@ -65,6 +65,7 @@ export const headSvgList: avatarList[] = [
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
         alienSpeciesList.romulan,
+        alienSpeciesList.bolian,
       ],
     },
   },
