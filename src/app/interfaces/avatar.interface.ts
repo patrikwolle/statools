@@ -7,6 +7,7 @@ export interface avatarList {
     imagePart: imageParts;
     gender: gender[];
     species: alienSpeciesList[];
+    era?: string;
   };
 }
 

@@ -58,6 +58,7 @@ export class AvatarComponent implements OnInit {
   allBeards: unknown[] = [];
   allScars: unknown[] = [];
   allHairDeco: unknown[] = [];
+  allEras: unknown[] = [];
 
   /** Selected elements out of the arrays of the body parts */
   selectedUniform: any;
@@ -77,6 +78,7 @@ export class AvatarComponent implements OnInit {
   selectedBeard: any;
   selectedScar: any;
   selectedHairDeco: any;
+  selectedEra: any;
   unshaven: boolean = false;
 
   /** Variables to hold the svg information */
@@ -142,12 +144,16 @@ export class AvatarComponent implements OnInit {
     for (const g in gender) {
       this.allGenders.push({ name: g, value: g });
     }
+    this.allEras.push({name: 'Voyager', value: '2365'})
+    this.allEras.push({name: 'Deep Space Nine', value: '2370'})
+    this.allEras.push({name: 'Lower Decks', value: '2380'})
     for (const r in roles) {
       this.allRoles.push({ name: r, value: r });
     }
     for (const r in ranks) {
       this.allRanks.push({ name: r, value: r });
     }
+    this.selectedEra = this.allEras[0];
     this.loadArrays();
   }
 
@@ -155,7 +161,8 @@ export class AvatarComponent implements OnInit {
     this.allUniforms = this.avatar.loadPart(
       imageParts.uniform,
       this.selectedSpecies,
-      this.selectedGender
+      this.selectedGender,
+      this.selectedEra.value
     );
     this.allHeads = this.avatar.loadPart(
       imageParts.head,
@@ -276,6 +283,12 @@ export class AvatarComponent implements OnInit {
     this.loadArrays();
   }
 
+  changeEra(era: any) {
+    this.loading = true;
+    this.selectedEra = era;
+    this.loadArrays();
+  }
+
   changeRank(sr: string) {
     this.loading = true;
     this.selectedRank = <ranks>sr;
@@ -359,7 +372,7 @@ export class AvatarComponent implements OnInit {
                                           this.changeSizeOfSVG(res)
                                         );
                                       this.avatar
-                                        .loadInsignia(this.selectedOfficerRank)
+                                        .loadInsignia(this.selectedOfficerRank, this.selectedEra.value)
                                         .subscribe((res) => {
                                           this.insigniaSVG =
                                             this.sanitizer.bypassSecurityTrustHtml(
@@ -448,7 +461,7 @@ export class AvatarComponent implements OnInit {
   finalizeCharacter() {
     setTimeout(() => {
       this.color.setUnshaven(this.unshaven);
-      this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank);
+      this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank, this.selectedEra.value, this.selectedRole);
       this.avatar.setColor(
         this.skinColor.generateSkinColors(
           this.selectedSkinColor,

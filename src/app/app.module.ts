@@ -17,6 +17,7 @@ import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
 import { MessageService } from 'primeng/api';
 import { CheckboxModule } from 'primeng/checkbox';
+import {SelectButtonModule} from "primeng/selectbutton";
 @NgModule({
   declarations: [AppComponent, AvatarComponent],
   imports: [
@@ -34,6 +35,7 @@ import { CheckboxModule } from 'primeng/checkbox';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    SelectButtonModule,
   ],
   providers: [MessageService],
   bootstrap: [AppComponent],
