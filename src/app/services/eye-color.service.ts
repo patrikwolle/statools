@@ -12,32 +12,24 @@ import { bluePupil, greenPupil, normalEyeColors } from '../data/eye-colors';
 export class EyeColorService {
   getEyeColor(species: alienSpeciesList): EyeColor[] {
     switch (species) {
-      case alienSpeciesList.human:
+      case alienSpeciesList.andorian:
+      case alienSpeciesList.benzite:
       case alienSpeciesList.betazoid:
-      case alienSpeciesList.trill: {
-        return this.getSecondEyeColor(normalEyeColors);
-      }
-      case alienSpeciesList.vulcan:
-      case alienSpeciesList.romulan:
       case alienSpeciesList.denobulan:
       case alienSpeciesList.bajoran:
-      case alienSpeciesList.ktarian: {
-        return this.getSecondEyeColor(normalEyeColors);
-      }
-      case alienSpeciesList.klingon:
-      case alienSpeciesList.tellarite: {
-        return this.getSecondEyeColor(normalEyeColors);
-      }
-      case alienSpeciesList.andorian: {
-        return this.getSecondEyeColor(normalEyeColors);
-      }
-      case alienSpeciesList.bolian:
       case alienSpeciesList.ferengi:
       case alienSpeciesList.grazerite:
-      case alienSpeciesList.benzite: {
+      case alienSpeciesList.human:
+      case alienSpeciesList.ktarian:
+      case alienSpeciesList.klingon:
+      case alienSpeciesList.romulan:
+      case alienSpeciesList.tellarite:
+      case alienSpeciesList.trill:
+      case alienSpeciesList.vulcan: {
         return this.getSecondEyeColor(normalEyeColors);
       }
-      case alienSpeciesList.efrosian: {
+      case alienSpeciesList.efrosian:
+      case alienSpeciesList.bolian: {
         return this.getSecondEyeColor(bluePupil);
       }
       case alienSpeciesList.orion: {

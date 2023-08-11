@@ -15,9 +15,9 @@ export const headDecoSvgList: avatarList[] = [
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
+        alienSpeciesList.romulan,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
       ],
     },
   },
