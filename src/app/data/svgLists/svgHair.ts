@@ -15,6 +15,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -65,6 +66,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.tellarite,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -189,6 +191,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -203,6 +206,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -217,6 +221,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },

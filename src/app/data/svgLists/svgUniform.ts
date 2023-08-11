@@ -21,6 +21,7 @@ export const uniformSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -41,6 +42,7 @@ export const uniformSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -61,6 +63,7 @@ export const uniformSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -81,6 +84,7 @@ export const uniformSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -102,6 +106,7 @@ export const uniformSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -123,6 +128,7 @@ export const uniformSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -144,6 +150,7 @@ export const uniformSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },

@@ -17,6 +17,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -35,6 +36,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -52,6 +54,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -69,6 +72,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -86,6 +90,7 @@ export const noseSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },

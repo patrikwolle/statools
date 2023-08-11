@@ -13,9 +13,11 @@ export enum alienSpeciesList {
   ktarian = 'ktarian' /* */,
   klingon = 'klingon' /* */,
   orion = 'orion',
+  romulan = 'romulan',
   tellarite = 'tellarite' /* */,
   trill = 'trill',
   vulcan = 'vulcan',
+
 }
 export enum imageParts {
   uniform = 'uniform',
