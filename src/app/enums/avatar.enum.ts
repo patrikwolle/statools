@@ -6,16 +6,18 @@ export enum alienSpeciesList {
   bajoran = 'bajoran' /* */,
   //cardassian = 'cardassian' /* */,
   denobulan = 'denobulan' /***/,
-  efrosian = 'efrosian' /* */,
-  ferengi = 'ferengi' /* */,
+  efrosian = 'efrosian',
+  ferengi = 'ferengi',
   grazerite = 'grazerite' /* */,
   human = 'human',
   ktarian = 'ktarian' /* */,
   klingon = 'klingon' /* */,
   orion = 'orion',
+  romulan = 'romulan',
   tellarite = 'tellarite' /* */,
   trill = 'trill',
   vulcan = 'vulcan',
+
 }
 export enum imageParts {
   uniform = 'uniform',
