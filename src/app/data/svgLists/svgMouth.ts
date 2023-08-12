@@ -167,6 +167,48 @@ export const mouthSvgList: avatarList[] = [
     },
   },
   {
+    file: 'mouth_open_nervous.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male,gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.romulan,
+        alienSpeciesList.tellarite,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,  
+      ],
+    },
+  },
+  {
+    file: 'mouth_open_scream.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male,gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.romulan,
+        alienSpeciesList.tellarite,
+        alienSpeciesList.trill,
+        alienSpeciesList.vulcan,  
+      ],
+    },
+  },
+  {
     file: 'mouth_happy.svg',
     tags: {
       imagePart: imageParts.mouth,
