@@ -10,6 +10,7 @@ export const hairDecoSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         //alienSpeciesList.denobulan,

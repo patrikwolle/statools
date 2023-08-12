@@ -10,6 +10,7 @@ export const scarSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.benzite,
         alienSpeciesList.bolian,
@@ -34,6 +35,7 @@ export const scarSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.benzite,
         alienSpeciesList.denobulan,
@@ -56,6 +58,7 @@ export const scarSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.benzite,
         //alienSpeciesList.denobulan,

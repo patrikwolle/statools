@@ -9,6 +9,7 @@ export const earsSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -27,6 +28,7 @@ export const earsSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -55,4 +57,13 @@ export const earsSvgList: avatarList[] = [
       species: [alienSpeciesList.benzite],
     },
   },
+  {
+    file: 'ears_bajoran_gold1.svg',
+    tags: {
+      imagePart: imageParts.ears,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
+
 ];

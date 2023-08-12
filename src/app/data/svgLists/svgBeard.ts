@@ -9,6 +9,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
@@ -27,6 +28,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.trill,
@@ -42,6 +44,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.trill,
@@ -57,6 +60,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
         alienSpeciesList.human,
@@ -74,6 +78,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.klingon,
@@ -90,6 +95,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.trill,
@@ -105,6 +111,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.trill,
@@ -120,6 +127,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.trill,
@@ -135,6 +143,7 @@ export const beardSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.trill,
