@@ -1,5 +1,5 @@
-import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
-import {avatarList} from '../../interfaces/avatar.interface';
+import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
+import { avatarList } from '../../interfaces/avatar.interface';
 
 export const hairSvgList: avatarList[] = [
   {
@@ -13,9 +13,9 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.denobulan,
         alienSpeciesList.human,
         alienSpeciesList.orion,
+        alienSpeciesList.romulan,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
       ],
     },
   },
@@ -63,10 +63,10 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
+        alienSpeciesList.romulan,
         alienSpeciesList.tellarite,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
       ],
     },
   },
@@ -115,7 +115,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
-          alienSpeciesList.bolian
+        alienSpeciesList.bolian,
       ],
     },
   },
@@ -190,9 +190,9 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.orion,
+        alienSpeciesList.romulan,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
       ],
     },
   },
@@ -204,10 +204,10 @@ export const hairSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
+        alienSpeciesList.efrosian,
         alienSpeciesList.human,
+        alienSpeciesList.tellarite,
         alienSpeciesList.trill,
-        alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
       ],
     },
   },
@@ -220,9 +220,9 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
+        alienSpeciesList.romulan,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan
       ],
     },
   },
@@ -256,6 +256,14 @@ export const hairSvgList: avatarList[] = [
       imagePart: imageParts.hair,
       gender: [gender.male],
       species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: 'hair_benzite.svg',
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.benzite],
     },
   },
 ];

@@ -1,5 +1,5 @@
-import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
-import {avatarList} from '../../interfaces/avatar.interface';
+import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
+import { avatarList } from '../../interfaces/avatar.interface';
 
 export const mouthSvgList: avatarList[] = [
   {
@@ -9,6 +9,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -19,7 +20,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
+        alienSpeciesList.romulan,
       ],
     },
   },
@@ -30,6 +31,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -41,7 +43,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
         alienSpeciesList.romulan,
-          alienSpeciesList.bolian
+        alienSpeciesList.bolian,
       ],
     },
   },
@@ -52,6 +54,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -63,7 +66,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
         alienSpeciesList.romulan,
-        alienSpeciesList.bolian
+        alienSpeciesList.bolian,
       ],
     },
   },
@@ -74,6 +77,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
         alienSpeciesList.ferengi,
@@ -81,7 +85,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
-        alienSpeciesList.bolian
+        alienSpeciesList.bolian,
       ],
     },
   },
@@ -92,6 +96,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -99,7 +104,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
-        alienSpeciesList.bolian
+        alienSpeciesList.bolian,
       ],
     },
   },
@@ -110,6 +115,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -117,7 +123,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
-        alienSpeciesList.bolian
+        alienSpeciesList.bolian,
       ],
     },
   },
@@ -128,6 +134,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -135,9 +142,8 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
-        alienSpeciesList.trill
-        ,
-        alienSpeciesList.bolian
+        alienSpeciesList.trill,
+        alienSpeciesList.bolian,
       ],
     },
   },
@@ -148,6 +154,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -220,6 +227,42 @@ export const mouthSvgList: avatarList[] = [
       imagePart: imageParts.mouth,
       gender: [gender.male],
       species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
+    },
+  },
+  {
+    file: 'mouth_slightlySad.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+      ],
+    },
+  },
+  {
+    file: 'mouth_slightlySad_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.benzite,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+      ],
     },
   },
 ];

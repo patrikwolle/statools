@@ -1,5 +1,5 @@
-import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
-import {avatarList} from '../../interfaces/avatar.interface';
+import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
+import { avatarList } from '../../interfaces/avatar.interface';
 
 export const eyebrowsSvgList: avatarList[] = [
   {
@@ -33,10 +33,10 @@ export const eyebrowsSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
+        alienSpeciesList.romulan,
+        alienSpeciesList.tellarite,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.tellarite,
-        alienSpeciesList.romulan
       ],
     },
   },
@@ -87,7 +87,11 @@ export const eyebrowsSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.eyebrows,
       gender: [gender.male, gender.female],
-      species: [alienSpeciesList.ferengi, alienSpeciesList.bolian],
+      species: [
+        alienSpeciesList.benzite,
+        alienSpeciesList.bolian,
+        alienSpeciesList.ferengi,
+      ],
     },
   },
 ];
