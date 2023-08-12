@@ -1,5 +1,5 @@
-import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
-import { avatarList } from '../../interfaces/avatar.interface';
+import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
+import {avatarList} from '../../interfaces/avatar.interface';
 
 export const eyebrowsSvgList: avatarList[] = [
   {
@@ -12,7 +12,6 @@ export const eyebrowsSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
@@ -31,13 +30,13 @@ export const eyebrowsSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -51,7 +50,6 @@ export const eyebrowsSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
@@ -85,23 +83,11 @@ export const eyebrowsSvgList: avatarList[] = [
     },
   },
   {
-    file: 'mouth_neutral.svg',
+    file: 'no_eyebrows.svg',
     tags: {
-      imagePart: imageParts.mouth,
-      gender: [gender.male],
-      species: [
-        alienSpeciesList.andorian,
-        alienSpeciesList.betazoid,
-        alienSpeciesList.denobulan,
-        alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
-        alienSpeciesList.human,
-        alienSpeciesList.klingon,
-        alienSpeciesList.orion,
-        alienSpeciesList.trill,
-        alienSpeciesList.vulcan,
-        alienSpeciesList.tellarite,
-      ],
+      imagePart: imageParts.eyebrows,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.bolian],
     },
   },
 ];

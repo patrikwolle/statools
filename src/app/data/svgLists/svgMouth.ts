@@ -1,5 +1,5 @@
-import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
-import { avatarList } from '../../interfaces/avatar.interface';
+import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
+import {avatarList} from '../../interfaces/avatar.interface';
 
 export const mouthSvgList: avatarList[] = [
   {
@@ -19,6 +19,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -39,6 +40,8 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan,
+          alienSpeciesList.bolian
       ],
     },
   },
@@ -59,6 +62,8 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -76,6 +81,7 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -89,11 +95,11 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -107,11 +113,31 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+        alienSpeciesList.bolian
+      ],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappyDimple.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.denobulan,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
+        alienSpeciesList.human,
+        alienSpeciesList.klingon,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill
+        ,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -171,6 +197,69 @@ export const mouthSvgList: avatarList[] = [
         alienSpeciesList.vulcan,
         alienSpeciesList.tellarite,
       ],
+    },
+  },
+  {
+    file: 'mouth_happy.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male, gender.female],
+      species: [
+        alienSpeciesList.andorian,
+        alienSpeciesList.betazoid,
+        alienSpeciesList.efrosian,
+        alienSpeciesList.human,
+        alienSpeciesList.orion,
+        alienSpeciesList.trill,
+      ],
+    },
+  },
+  {
+    file: 'mouth_happyFerengi.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappy_darkredFerengi_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappy_redFerengi_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappyFerengi_f.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.female],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappyTeethDown.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
+    },
+  },
+  {
+    file: 'mouth_slightlyHappyTeethUp.svg',
+    tags: {
+      imagePart: imageParts.mouth,
+      gender: [gender.male],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.klingon],
     },
   },
 ];

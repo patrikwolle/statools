@@ -1,5 +1,5 @@
-import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
-import { avatarList } from '../../interfaces/avatar.interface';
+import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
+import {avatarList} from '../../interfaces/avatar.interface';
 
 export const hairSvgList: avatarList[] = [
   {
@@ -15,6 +15,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -65,6 +66,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.tellarite,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -78,7 +80,6 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
@@ -114,6 +115,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+          alienSpeciesList.bolian
       ],
     },
   },
@@ -186,12 +188,11 @@ export const hairSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
-        //alienSpeciesList.denobulan,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -206,6 +207,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
     },
   },
@@ -220,7 +222,40 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.human,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan
       ],
+    },
+  },
+  {
+    file: ['ears_ferengi_standard1.svg', 'ears_ferengi_standard2.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: ['ears_ferengi_variation1.svg', 'ears_ferengi_variation2.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: ['ears_ferengi_small1.svg', 'ears_ferengi_small2.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.ferengi],
+    },
+  },
+  {
+    file: ['ears_ferengi_edgy1.svg', 'ears_ferengi_edgy2.svg'],
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male],
+      species: [alienSpeciesList.ferengi],
     },
   },
 ];

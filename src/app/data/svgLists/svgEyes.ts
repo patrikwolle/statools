@@ -18,6 +18,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -37,6 +39,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -56,6 +60,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -75,6 +81,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -94,6 +102,8 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -107,12 +117,13 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
-        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.romulan,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -131,6 +142,7 @@ export const eyesSvgList: avatarList[] = [
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
+        alienSpeciesList.bolian
       ],
     },
   },
@@ -139,7 +151,7 @@ export const eyesSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.eyes,
       gender: [gender.male],
-      species: [alienSpeciesList.tellarite],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.tellarite],
     },
   },
   {
@@ -147,7 +159,7 @@ export const eyesSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.eyes,
       gender: [gender.male],
-      species: [alienSpeciesList.tellarite],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.tellarite],
     },
   },
   {
@@ -155,7 +167,7 @@ export const eyesSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.eyes,
       gender: [gender.male],
-      species: [alienSpeciesList.tellarite],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.tellarite],
     },
   },
   {
@@ -163,7 +175,7 @@ export const eyesSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.eyes,
       gender: [gender.female],
-      species: [alienSpeciesList.tellarite],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.tellarite],
     },
   },
   {
@@ -171,7 +183,7 @@ export const eyesSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.eyes,
       gender: [gender.female],
-      species: [alienSpeciesList.tellarite],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.tellarite],
     },
   },
   {
@@ -179,7 +191,7 @@ export const eyesSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.eyes,
       gender: [gender.female],
-      species: [alienSpeciesList.tellarite],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.tellarite],
     },
   },
   {

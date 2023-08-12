@@ -1,15 +1,8 @@
-import { Injectable } from '@angular/core';
-import { ColorHex, SkinColor } from '../interfaces/color.interface';
-import { ColorConversionService } from './color-converter.service';
-import { alienSpeciesList } from '../enums/avatar.enum';
-import {
-  blueSkin,
-  darkSkin,
-  fairSkin,
-  fleshySkin,
-  greenSkin,
-  pinkSkin,
-} from '../data/skin-colors';
+import {Injectable} from '@angular/core';
+import {ColorHex, SkinColor} from '../interfaces/color.interface';
+import {ColorConversionService} from './color-converter.service';
+import {alienSpeciesList} from '../enums/avatar.enum';
+import {blueSkin, darkSkin, fairSkin, fleshySkin, greenSkin, pinkSkin,} from '../data/skin-colors';
 
 /**
  * Service that handels loading colors and managing colors
@@ -24,7 +17,8 @@ export class SkinColorService {
     switch (species) {
       case alienSpeciesList.bajoran:
       case alienSpeciesList.human:
-      case alienSpeciesList.vulcan: {
+      case alienSpeciesList.vulcan:
+      case alienSpeciesList.romulan: {
         return fleshySkin;
       }
       case alienSpeciesList.klingon:

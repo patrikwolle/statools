@@ -53,11 +53,12 @@ export class AvatarComponent implements OnInit {
   allSkinColors: any[] = [];
   allHeadDeco: avatarList[] = [];
   allSpeciesSpecial: avatarList[] = [];
-  allHairColors: HairColor[] = [];
+  allHairColors: HairColor[] | 'skinColor' = [];
   allBackgrounds: any[] = [];
   allBeards: unknown[] = [];
   allScars: unknown[] = [];
   allHairDeco: unknown[] = [];
+  allEras: unknown[] = [];
 
   /** Selected elements out of the arrays of the body parts */
   selectedUniform: any;
@@ -77,6 +78,7 @@ export class AvatarComponent implements OnInit {
   selectedBeard: any;
   selectedScar: any;
   selectedHairDeco: any;
+  selectedEra: any;
   unshaven: boolean = false;
 
   /** Variables to hold the svg information */
@@ -118,6 +120,7 @@ export class AvatarComponent implements OnInit {
   /** Officer Ranking */
   selectedOfficerRank: number = 1;
   hairZIndex = 12;
+  longHairZIndex = 5;
   eyesZIndex = 10;
   noseZIndex = 10;
   eyebrowZIndex = 10;
@@ -141,12 +144,16 @@ export class AvatarComponent implements OnInit {
     for (const g in gender) {
       this.allGenders.push({ name: g, value: g });
     }
+    this.allEras.push({name: 'Voyager', value: '2365'})
+    this.allEras.push({name: 'Deep Space Nine', value: '2370'})
+    this.allEras.push({name: 'Lower Decks', value: '2380'})
     for (const r in roles) {
       this.allRoles.push({ name: r, value: r });
     }
     for (const r in ranks) {
       this.allRanks.push({ name: r, value: r });
     }
+    this.selectedEra = this.allEras[0];
     this.loadArrays();
   }
 
@@ -154,7 +161,8 @@ export class AvatarComponent implements OnInit {
     this.allUniforms = this.avatar.loadPart(
       imageParts.uniform,
       this.selectedSpecies,
-      this.selectedGender
+      this.selectedGender,
+      this.selectedEra.value
     );
     this.allHeads = this.avatar.loadPart(
       imageParts.head,
@@ -275,6 +283,12 @@ export class AvatarComponent implements OnInit {
     this.loadArrays();
   }
 
+  changeEra(era: any) {
+    this.loading = true;
+    this.selectedEra = era;
+    this.loadArrays();
+  }
+
   changeRank(sr: string) {
     this.loading = true;
     this.selectedRank = <ranks>sr;
@@ -358,7 +372,7 @@ export class AvatarComponent implements OnInit {
                                           this.changeSizeOfSVG(res)
                                         );
                                       this.avatar
-                                        .loadInsignia(this.selectedOfficerRank)
+                                        .loadInsignia(this.selectedOfficerRank, this.selectedEra.value)
                                         .subscribe((res) => {
                                           this.insigniaSVG =
                                             this.sanitizer.bypassSecurityTrustHtml(
@@ -447,7 +461,7 @@ export class AvatarComponent implements OnInit {
   finalizeCharacter() {
     setTimeout(() => {
       this.color.setUnshaven(this.unshaven);
-      this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank);
+      this.color.setInsigniaColor(this.selectedRank, this.selectedOfficerRank, this.selectedEra.value, this.selectedRole);
       this.avatar.setColor(
         this.skinColor.generateSkinColors(
           this.selectedSkinColor,
@@ -471,11 +485,18 @@ export class AvatarComponent implements OnInit {
       this.loading = false;
       switch (this.selectedSpecies) {
         case alienSpeciesList.denobulan:
+          this.speciesSpecialZIndex = 13;
           this.eyesZIndex = 15;
           this.eyebrowZIndex = 15;
           this.noseZIndex = 15;
           break;
         case alienSpeciesList.efrosian:
+          this.speciesSpecialZIndex = 10;
+          this.eyebrowZIndex = 13;
+          break;
+        case alienSpeciesList.ferengi:
+          this.longHairZIndex = 12;
+          this.hairZIndex = 5;
           this.speciesSpecialZIndex = 10;
           break;
         default:
@@ -484,6 +505,7 @@ export class AvatarComponent implements OnInit {
           this.eyebrowZIndex = 10;
           this.noseZIndex = 10;
           this.speciesSpecialZIndex = 12;
+          this.longHairZIndex = 5;
           break;
       }
     }, 1);
@@ -547,7 +569,15 @@ export class AvatarComponent implements OnInit {
 
   setColors(): void {
     this.selectedSkinColor = this.allSkinColors[this.skinColorIndex];
-    this.selectedHairColor = this.allHairColors[this.hairColorIndex];
+    this.selectedHairColor =
+      this.allHairColors === 'skinColor'
+        ? {
+            baseColor: this.selectedSkinColor,
+            highlightColor: 'this.selectedSkinColor',
+            kind: 'hairColor',
+            shadeColor: this.selectedSkinColor,
+          }
+        : this.allHairColors[this.hairColorIndex];
     this.selectedEyeColor = this.allEyeColors[this.eyeColorIndex];
   }
 

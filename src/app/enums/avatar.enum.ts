@@ -1,21 +1,26 @@
 export enum alienSpeciesList {
   andorian = 'andorian',
-  betazoid = 'betazoid',
-  bolian = 'bolian' /* */,
   benzite = 'benzite' /* */,
   bajoran = 'bajoran' /* */,
+  betazoid = 'betazoid',
+
+
+  bolian = 'bolian' /* */,
+
   //cardassian = 'cardassian' /* */,
   denobulan = 'denobulan' /***/,
-  efrosian = 'efrosian' /* */,
-  ferengi = 'ferengi' /* */,
+  efrosian = 'efrosian',
+  ferengi = 'ferengi',
   grazerite = 'grazerite' /* */,
   human = 'human',
   ktarian = 'ktarian' /* */,
   klingon = 'klingon' /* */,
   orion = 'orion',
+  romulan = 'romulan',
   tellarite = 'tellarite' /* */,
   trill = 'trill',
   vulcan = 'vulcan',
+
 }
 export enum imageParts {
   uniform = 'uniform',

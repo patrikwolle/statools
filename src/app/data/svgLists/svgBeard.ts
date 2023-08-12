@@ -11,6 +11,7 @@ export const beardSvgList: avatarList[] = [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
+        alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,

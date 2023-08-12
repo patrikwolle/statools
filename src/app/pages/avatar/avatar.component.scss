@@ -3,7 +3,21 @@
   width: 840px;
   position: relative;
 }
+::ng-deep {
+  .p-selectbutton .p-button.p-highlight {
+    background: #d44;
+    background-color: #d44;
+  }
+  .p-selectbutton .p-button {
+    background:  #c8f;
+    color: white;
+  }
 
+  .p-selectbutton .p-button.p-highlight:hover {
+    background: #d44;
+  }
+
+}
 .selectHeader {
   font-size: x-large;
 }
