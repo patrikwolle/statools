@@ -109,13 +109,13 @@ export const hairSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
+        alienSpeciesList.bolian,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
         alienSpeciesList.human,
         alienSpeciesList.klingon,
         alienSpeciesList.orion,
         alienSpeciesList.trill,
-        alienSpeciesList.bolian,
       ],
     },
   },
@@ -264,6 +264,14 @@ export const hairSvgList: avatarList[] = [
       imagePart: imageParts.hair,
       gender: [gender.male, gender.female],
       species: [alienSpeciesList.benzite],
+    },
+  },
+  {
+    file: 'hair_tamarian.svg',
+    tags: {
+      imagePart: imageParts.hair,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.tamarian],
     },
   },
 ];

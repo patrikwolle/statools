@@ -47,6 +47,7 @@ export class HairColorService {
       case alienSpeciesList.bolian:
       case alienSpeciesList.ferengi:
       case alienSpeciesList.grazerite:
+      case alienSpeciesList.tamarian:
         return 'skinColor';
       case alienSpeciesList.efrosian: {
         return this.getHairColorWithHighlightColor(whiteHair);

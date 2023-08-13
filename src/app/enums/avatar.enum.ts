@@ -14,6 +14,7 @@ export enum alienSpeciesList {
   klingon = 'klingon',
   orion = 'orion',
   romulan = 'romulan',
+  tamarian = 'tamarian',
   tellarite = 'tellarite',
   trill = 'trill',
   vulcan = 'vulcan',

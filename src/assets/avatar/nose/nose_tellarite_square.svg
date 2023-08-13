@@ -116,12 +116,12 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       id="nose_special"
+       id="special_dark"
        style="fill:#552200;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 118.06103,103.0508 c -2.10825,1.42021 -19.905808,2.00003 -19.910837,-0.27414 3.518537,-6.930968 6.115727,-13.80512 9.603217,-13.804345 3.48749,7.75e-4 7.5995,8.343871 10.30762,14.078485 z"
        sodipodi:nodetypes="cczc" />
     <path
-       id="nose_special_front"
+       id="special_light"
        style="fill:#784421;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 102.24793,101.69629 c -1.69645,-0.26322 -4.301543,-1.07641 -4.874546,1.66248 -1.922148,11.16865 1.533253,9.95594 9.962896,9.79556 1.2437,0.0515 1.84789,0.0324 2.72691,0.0222 7.80607,0.22002 11.06991,0.76171 8.77203,-9.78702 -0.60659,-2.64939 -3.02313,-1.94086 -4.69561,-1.81067 -0.83607,0.0651 -3.88532,0.62729 -5.84579,0.64972 -2.02296,0.0231 -5.36743,-0.427 -6.04589,-0.53227 z"
        sodipodi:nodetypes="sccccsss" />

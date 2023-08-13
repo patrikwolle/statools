@@ -23,6 +23,7 @@ export class EyeColorService {
       case alienSpeciesList.ktarian:
       case alienSpeciesList.klingon:
       case alienSpeciesList.romulan:
+      case alienSpeciesList.tamarian:
       case alienSpeciesList.tellarite:
       case alienSpeciesList.trill:
       case alienSpeciesList.vulcan: {

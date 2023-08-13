@@ -3,6 +3,14 @@ import { avatarList } from '../../interfaces/avatar.interface';
 
 export const speciesSpecialSvgList: avatarList[] = [
   {
+    file: 'no_species_special.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.benzite, alienSpeciesList.tamarian],
+    },
+  },
+  {
     file: 'antenna_short.svg',
     tags: {
       imagePart: imageParts.speciesSpecial,
@@ -128,6 +136,14 @@ export const speciesSpecialSvgList: avatarList[] = [
       imagePart: imageParts.speciesSpecial,
       gender: [gender.male, gender.female],
       species: [alienSpeciesList.bolian],
+    },
+  },
+  {
+    file: 'tamarian.svg',
+    tags: {
+      imagePart: imageParts.speciesSpecial,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.tamarian],
     },
   },
 ];

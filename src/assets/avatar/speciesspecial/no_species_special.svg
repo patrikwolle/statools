@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    width="840"
    height="880"
    viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="nose_tellarite_round.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="no_special.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -25,33 +37,21 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="8.3553672"
-     inkscape:cx="413.9854"
-     inkscape:cy="384.78261"
-     inkscape:window-width="2560"
-     inkscape:window-height="1369"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:zoom="1.0444209"
+     inkscape:cx="227.39874"
+     inkscape:cy="377.24255"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
      inkscape:pageshadow="2"
-     units="px"
-     inkscape:guide-bbox="true">
+     units="px">
     <inkscape:grid
        type="xygrid"
        id="grid9" />
-    <sodipodi:guide
-       position="71.437497,125.67709"
-       orientation="0,-1"
-       id="guide1575"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="108.67865,166.58749"
-       orientation="-1,0"
-       id="guide2462"
-       inkscape:locked="false"
-       inkscape:label=""
-       inkscape:color="rgb(0,134,229)" />
   </sodipodi:namedview>
   <defs
      id="defs2">
@@ -114,30 +114,5 @@
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <path
-       id="special_dark"
-       style="fill:#552200;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 118.06103,103.0508 c -2.10825,1.42021 -19.905808,2.00003 -19.910837,-0.27414 3.518537,-6.930968 6.115727,-13.80512 9.603217,-13.804345 3.48749,7.75e-4 7.5995,8.343871 10.30762,14.078485 z"
-       sodipodi:nodetypes="cczc" />
-    <path
-       id="special_light"
-       style="fill:#784421;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 97.310051,103.29544 c -2.848572,9.10857 2.744589,10.22508 9.551239,10.08055 1.2437,0.0515 2.06955,7.4e-4 2.94857,-0.009 8.73293,1.00828 11.25428,-3.27777 9.05703,-9.66036 -1.66843,-5.674318 -19.361002,-6.036745 -21.556839,-0.41073 z"
-       sodipodi:nodetypes="cccccc" />
-    <ellipse
-       style="fill:#000000;stroke:#000000;stroke-width:0.434509;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="path1749"
-       cx="113.33167"
-       cy="108.68587"
-       rx="1.6849631"
-       ry="3.4526234" />
-    <ellipse
-       style="fill:#000000;stroke:#000000;stroke-width:0.434509;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       id="ellipse11892"
-       cx="103.06711"
-       cy="108.54609"
-       rx="1.6849631"
-       ry="3.4526234" />
-  </g>
+     id="layer1" />
 </svg>

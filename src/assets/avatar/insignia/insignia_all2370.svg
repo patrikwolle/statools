@@ -7,7 +7,7 @@
    viewBox="0 0 222.24999 232.83334"
    version="1.1"
    id="mySVG"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    sodipodi:docname="insignia_all2370.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -26,12 +26,12 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="16.710734"
-     inkscape:cx="383.6157"
+     inkscape:cx="387.50542"
      inkscape:cy="572.62595"
      inkscape:window-width="1920"
-     inkscape:window-height="1057"
-     inkscape:window-x="2513"
-     inkscape:window-y="-8"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:pageshadow="2"
@@ -99,7 +99,7 @@
      id="layer1">
     <g
        id="g2"
-       transform="translate(0.20012793)">
+       transform="translate(0.20012793,0.60001194)">
       <ellipse
          style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          id="hintergrund-ens-bobble"
@@ -118,7 +118,7 @@
     </g>
     <g
        id="g1"
-       transform="translate(0.20019641,0.07598877)">
+       transform="translate(0.20019641,0.4760007)">
       <ellipse
          style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          id="hintergrund-lt-bobble"
@@ -137,7 +137,7 @@
     </g>
     <g
        id="g3"
-       transform="translate(0.10012634)">
+       transform="translate(0.10012634,0.20001194)">
       <ellipse
          style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          id="hintergrund-cmd-bobble"

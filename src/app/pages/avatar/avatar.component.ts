@@ -121,6 +121,7 @@ export class AvatarComponent implements OnInit {
   noseZIndex = 10;
   eyebrowZIndex = 10;
   speciesSpecialZIndex = 12;
+  insigniaZIndex = 8;
 
   loading = true;
 
@@ -504,6 +505,9 @@ export class AvatarComponent implements OnInit {
           this.hairZIndex = 5;
           this.speciesSpecialZIndex = 10;
           break;
+        case alienSpeciesList.tamarian:
+          this.insigniaZIndex = 0;
+          break;
         default:
           this.hairZIndex = 12;
           this.eyesZIndex = 10;
@@ -511,6 +515,7 @@ export class AvatarComponent implements OnInit {
           this.noseZIndex = 10;
           this.speciesSpecialZIndex = 12;
           this.longHairZIndex = 5;
+          this.insigniaZIndex = 8;
           break;
       }
     }, 1);

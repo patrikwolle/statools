@@ -29,15 +29,15 @@ export const noseSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
+        alienSpeciesList.bolian,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
         alienSpeciesList.ferengi,
         alienSpeciesList.human,
         alienSpeciesList.orion,
+        alienSpeciesList.romulan,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
-        alienSpeciesList.romulan,
-        alienSpeciesList.bolian,
       ],
     },
   },
@@ -168,6 +168,22 @@ export const noseSvgList: avatarList[] = [
       imagePart: imageParts.nose,
       gender: [gender.male, gender.female],
       species: [alienSpeciesList.benzite],
+    },
+  },
+  {
+    file: 'nose_tamarian_round.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.tamarian, alienSpeciesList.tellarite],
+    },
+  },
+  {
+    file: 'nose_tamarian_round_dark.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.tamarian, alienSpeciesList.tellarite],
     },
   },
 ];

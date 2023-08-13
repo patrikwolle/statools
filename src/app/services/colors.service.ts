@@ -61,9 +61,9 @@ export class ColorService {
     specialEls.push(document.getElementById('eye_left'));
     specialEls.push(document.getElementById('eye_right'));
     let specialDarkEls = [];
-    specialDarkEls.push(document.getElementById('nose_special'));
+    specialDarkEls.push(document.getElementById('special_dark'));
     let specialLightEls = [];
-    specialLightEls.push(document.getElementById('nose_special_front'));
+    specialLightEls.push(document.getElementById('special_light'));
 
     specialEls.forEach((el) => {
       if (el) {
@@ -167,9 +167,19 @@ export class ColorService {
           index
         ];
         if (elId !== undefined) {
-          if(era) {
-            this.fillInsignia(document.getElementById(elId.split('#')[1]), ins, era, role);
-            this.fillInsignia(document.getElementById('hintergrund-' + elId.split('#')[1]), ins, era, role);
+          if (era) {
+            this.fillInsignia(
+              document.getElementById(elId.split('#')[1]),
+              ins,
+              era,
+              role
+            );
+            this.fillInsignia(
+              document.getElementById('hintergrund-' + elId.split('#')[1]),
+              ins,
+              era,
+              role
+            );
           }
           this.fillInsignia(document.getElementById(elId.split('#')[1]), ins);
         }
@@ -190,45 +200,47 @@ export class ColorService {
     }
   }
 
-  fillInsignia(insignia: HTMLElement | null, fillValue: string, era?: string, role?: string) {
-
+  fillInsignia(
+    insignia: HTMLElement | null,
+    fillValue: string,
+    era?: string,
+    role?: string
+  ) {
     if (insignia !== null) {
-      if(insignia.id.includes('hintergrund')) {
-        if(fillValue === '0') {
-          if(role !== undefined && era === '2370') {
-            let color = disciplineColors.find(r => r.role === role)?.color;
-              this.changeColorOfStyle(insignia, 'fill', color);
-              this.changeColorOfStyle(insignia, 'stroke', color);
-
+      if (insignia.id.includes('hintergrund')) {
+        if (fillValue === '0') {
+          if (role !== undefined && era === '2370') {
+            let color = disciplineColors.find((r) => r.role === role)?.color;
+            this.changeColorOfStyle(insignia, 'fill', color);
+            this.changeColorOfStyle(insignia, 'stroke', color);
           } else {
             this.changeColorOfStyle(insignia, 'fill', '#808080');
             this.changeColorOfStyle(insignia, 'stroke', '#808080');
           }
         }
       } else {
-      switch (fillValue) {
-        case '2':
-          this.changeColorOfStyle(insignia, 'fill', 'none');
-          this.changeColorOfStyle(insignia, 'stroke', '#ffcc00');
-          break;
-        case '1':
-          this.changeColorOfStyle(insignia, 'fill', '#ffcc00');
-          this.changeColorOfStyle(insignia, 'stroke', '#ffcc00');
-          break;
-        case '0':
-          if (era === '2380') {
+        switch (fillValue) {
+          case '2':
             this.changeColorOfStyle(insignia, 'fill', 'none');
-            this.changeColorOfStyle(insignia, 'stroke', 'none');
-          } else if (era === '2365') {
-            this.changeColorOfStyle(insignia, 'fill', '#808080');
-            this.changeColorOfStyle(insignia, 'stroke', '#808080');
-          } else if(era === '2370') {
-            let color = disciplineColors.find(r => r.role === role)?.color;
-            this.changeColorOfStyle(insignia, 'fill', color);
-            this.changeColorOfStyle(insignia, 'stroke', color);
-          }
-      }
-
+            this.changeColorOfStyle(insignia, 'stroke', '#ffcc00');
+            break;
+          case '1':
+            this.changeColorOfStyle(insignia, 'fill', '#ffcc00');
+            this.changeColorOfStyle(insignia, 'stroke', '#ffcc00');
+            break;
+          case '0':
+            if (era === '2380') {
+              this.changeColorOfStyle(insignia, 'fill', 'none');
+              this.changeColorOfStyle(insignia, 'stroke', 'none');
+            } else if (era === '2365') {
+              this.changeColorOfStyle(insignia, 'fill', '#808080');
+              this.changeColorOfStyle(insignia, 'stroke', '#808080');
+            } else if (era === '2370') {
+              let color = disciplineColors.find((r) => r.role === role)?.color;
+              this.changeColorOfStyle(insignia, 'fill', color);
+              this.changeColorOfStyle(insignia, 'stroke', color);
+            }
+        }
       }
     }
   }

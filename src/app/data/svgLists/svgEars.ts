@@ -28,6 +28,7 @@ export const earsSvgList: avatarList[] = [
       species: [
         alienSpeciesList.andorian,
         alienSpeciesList.betazoid,
+        alienSpeciesList.bolian,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
         alienSpeciesList.human,
@@ -35,7 +36,6 @@ export const earsSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
-        alienSpeciesList.bolian
       ],
     },
   },
@@ -44,7 +44,7 @@ export const earsSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.ears,
       gender: [gender.male, gender.female],
-      species: [alienSpeciesList.ferengi],
+      species: [alienSpeciesList.ferengi, alienSpeciesList.tamarian],
     },
   },
   {
