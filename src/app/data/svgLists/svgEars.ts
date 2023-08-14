@@ -82,7 +82,7 @@ export const earsSvgList: avatarList[] = [
     },
   },
   {
-    file: 'ears_bajoran_silver.svg',
+    file: 'ears_bajoran_silver1.svg',
     tags: {
       imagePart: imageParts.ears,
       gender: [gender.male, gender.female],
