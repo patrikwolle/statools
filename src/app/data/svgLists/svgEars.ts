@@ -65,5 +65,45 @@ export const earsSvgList: avatarList[] = [
       species: [alienSpeciesList.bajoran],
     },
   },
+  {
+    file: 'ears_bajoran_gold2.svg',
+    tags: {
+      imagePart: imageParts.ears,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
+  {
+    file: 'ears_bajoran_gold3.svg',
+    tags: {
+      imagePart: imageParts.ears,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
+  {
+    file: 'ears_bajoran_silver.svg',
+    tags: {
+      imagePart: imageParts.ears,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
+  {
+    file: 'ears_bajoran_silver2.svg',
+    tags: {
+      imagePart: imageParts.ears,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
+  {
+    file: 'ears_bajoran_silver3.svg',
+    tags: {
+      imagePart: imageParts.ears,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
 
 ];
