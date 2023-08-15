@@ -1,5 +1,5 @@
-import { alienSpeciesList, gender, imageParts } from '../../enums/avatar.enum';
-import { avatarList } from '../../interfaces/avatar.interface';
+import {alienSpeciesList, gender, imageParts} from '../../enums/avatar.enum';
+import {avatarList} from '../../interfaces/avatar.interface';
 
 export const earsSvgList: avatarList[] = [
   {
@@ -17,6 +17,17 @@ export const earsSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
+      ],
+    },
+  },
+  {
+    file: 'ears_vulcan.svg',
+    tags: {
+      imagePart: imageParts.ears,
+      gender: [gender.male, gender.female],
+      species: [
+          alienSpeciesList.romulan,
+          alienSpeciesList.vulcan
       ],
     },
   },

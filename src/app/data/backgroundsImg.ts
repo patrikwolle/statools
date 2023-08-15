@@ -7,4 +7,5 @@ export const backgrounds: backgroundInterface[] = [
   { name: 'Space 4', path: 'assets/background/Space4.png' },
   { name: 'Space 5', path: 'assets/background/Space5.png' },
   { name: 'Space 6', path: 'assets/background/Space6.png' },
+  { name: 'Gray', path: 'assets/background/gray.png'}
 ];

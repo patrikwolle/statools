@@ -168,6 +168,7 @@ export class ColorService {
         ];
         if (elId !== undefined) {
           if(era) {
+
             this.fillInsignia(document.getElementById(elId.split('#')[1]), ins, era, role);
             this.fillInsignia(document.getElementById('hintergrund-' + elId.split('#')[1]), ins, era, role);
           }
@@ -216,7 +217,7 @@ export class ColorService {
           this.changeColorOfStyle(insignia, 'stroke', '#ffcc00');
           break;
         case '0':
-          if (era === '2380') {
+          if (era === '2380' || era === 'casual') {
             this.changeColorOfStyle(insignia, 'fill', 'none');
             this.changeColorOfStyle(insignia, 'stroke', 'none');
           } else if (era === '2365') {

@@ -15,6 +15,7 @@ import { speciesSpecialSvgList } from './svgLists/svgSpeciesSpecial';
 import {uniformSvg2380List} from './svgLists/svgUniform2380';
 import {uniform2370SvgList} from './svgLists/svgUniform2370';
 import {uniform2365SvgList} from './svgLists/svgUniform2365';
+import {casualClothsSvgList} from './svgLists/svgCasuaCloths';
 
 export const avatarSvgList: avatarList[] = [
   ...beardSvgList,
@@ -31,5 +32,6 @@ export const avatarSvgList: avatarList[] = [
   ...speciesSpecialSvgList,
   ...uniform2370SvgList,
   ...uniformSvg2380List,
-  ...uniform2365SvgList
+  ...uniform2365SvgList,
+  ...casualClothsSvgList
 ];

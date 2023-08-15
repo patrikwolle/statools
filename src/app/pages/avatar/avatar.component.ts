@@ -144,6 +144,7 @@ export class AvatarComponent implements OnInit {
     this.allEras.push({ name: 'Voyager', value: '2365' });
     this.allEras.push({ name: 'Deep Space Nine', value: '2370' });
     this.allEras.push({ name: 'Lower Decks', value: '2380' });
+    this.allEras.push({name: 'Casual', value: 'casual'})
     for (const r in roles) {
       this.allRoles.push({ name: r, value: r });
     }
