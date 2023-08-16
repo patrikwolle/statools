@@ -22,6 +22,7 @@ export const hairDecoSvgList: avatarList[] = [
         alienSpeciesList.romulan,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.vidiian,
       ],
     },
   },

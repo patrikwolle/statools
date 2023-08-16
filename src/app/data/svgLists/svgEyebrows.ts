@@ -94,6 +94,7 @@ export const eyebrowsSvgList: avatarList[] = [
         alienSpeciesList.benzite,
         alienSpeciesList.bolian,
         alienSpeciesList.ferengi,
+        alienSpeciesList.vidiian,
       ],
     },
   },

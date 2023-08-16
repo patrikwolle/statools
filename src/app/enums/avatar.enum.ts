@@ -16,6 +16,7 @@ export enum alienSpeciesList {
   romulan = 'romulan',
   tellarite = 'tellarite',
   trill = 'trill',
+  vidiian = 'vidiian',
   vulcan = 'vulcan',
 }
 export enum imageParts {

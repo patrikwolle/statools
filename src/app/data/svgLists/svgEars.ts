@@ -18,6 +18,7 @@ export const earsSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
+        alienSpeciesList.vidiian,
       ],
     },
   },
@@ -48,7 +49,8 @@ export const earsSvgList: avatarList[] = [
         alienSpeciesList.orion,
         alienSpeciesList.trill,
         alienSpeciesList.tellarite,
-        alienSpeciesList.bolian
+        alienSpeciesList.bolian,
+        alienSpeciesList.vidiian,
       ],
     },
   },

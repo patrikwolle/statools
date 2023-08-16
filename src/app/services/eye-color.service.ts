@@ -25,7 +25,8 @@ export class EyeColorService {
       case alienSpeciesList.romulan:
       case alienSpeciesList.tellarite:
       case alienSpeciesList.trill:
-      case alienSpeciesList.vulcan: {
+      case alienSpeciesList.vulcan:
+      case alienSpeciesList.vidiian: {
         return this.getSecondEyeColor(normalEyeColors);
       }
       case alienSpeciesList.efrosian:
