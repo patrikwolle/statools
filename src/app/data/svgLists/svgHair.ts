@@ -9,6 +9,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.human,
@@ -57,6 +58,7 @@ export const hairSvgList: avatarList[] = [
       imagePart: imageParts.hair,
       gender: [gender.male, gender.female],
       species: [
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -77,6 +79,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -93,6 +96,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
         alienSpeciesList.human,
@@ -108,6 +112,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -126,6 +131,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,
@@ -143,6 +149,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.human,
@@ -158,6 +165,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.orion,
@@ -172,6 +180,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.human,
@@ -187,6 +196,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.orion,
@@ -203,6 +213,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
         alienSpeciesList.human,
@@ -218,6 +229,7 @@ export const hairSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.human,
         alienSpeciesList.romulan,

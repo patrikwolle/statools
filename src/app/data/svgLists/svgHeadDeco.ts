@@ -10,6 +10,7 @@ export const headDecoSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         //alienSpeciesList.denobulan,
         alienSpeciesList.ferengi,

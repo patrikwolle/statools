@@ -9,6 +9,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -31,6 +32,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -54,6 +56,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -77,6 +80,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
@@ -96,6 +100,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -115,6 +120,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -134,6 +140,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -154,6 +161,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -215,6 +223,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.male, gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
         alienSpeciesList.human,
@@ -278,6 +287,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.efrosian,
@@ -296,6 +306,7 @@ export const mouthSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,

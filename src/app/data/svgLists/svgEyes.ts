@@ -9,6 +9,7 @@ export const eyesSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.bolian,
@@ -31,6 +32,7 @@ export const eyesSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.bolian,
@@ -53,6 +55,7 @@ export const eyesSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.bolian,
@@ -75,6 +78,7 @@ export const eyesSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.bolian,
@@ -97,6 +101,7 @@ export const eyesSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.bolian,
@@ -119,6 +124,7 @@ export const eyesSvgList: avatarList[] = [
       gender: [gender.female],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.bolian,
@@ -140,6 +146,7 @@ export const eyesSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -232,6 +239,7 @@ export const eyesSvgList: avatarList[] = [
       gender: [gender.male],
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
         alienSpeciesList.efrosian,

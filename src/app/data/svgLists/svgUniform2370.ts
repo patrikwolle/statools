@@ -11,6 +11,7 @@ export const uniform2370SvgList: avatarList[] = [
       era: '2370',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
@@ -35,6 +36,7 @@ export const uniform2370SvgList: avatarList[] = [
       era: '2370',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -58,6 +60,7 @@ export const uniform2370SvgList: avatarList[] = [
       era: '2370',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -81,6 +84,7 @@ export const uniform2370SvgList: avatarList[] = [
       era: '2370',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -104,6 +108,7 @@ export const uniform2370SvgList: avatarList[] = [
       era: '2370',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -127,6 +132,7 @@ export const uniform2370SvgList: avatarList[] = [
       era: '2370',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.denobulan,
@@ -150,6 +156,7 @@ export const uniform2370SvgList: avatarList[] = [
       era: '2370',
       species: [
         alienSpeciesList.andorian,
+        alienSpeciesList.bajoran,
         alienSpeciesList.benzite,
         alienSpeciesList.betazoid,
         alienSpeciesList.bolian,

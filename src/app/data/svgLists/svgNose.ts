@@ -170,4 +170,28 @@ export const noseSvgList: avatarList[] = [
       species: [alienSpeciesList.benzite],
     },
   },
+  {
+    file: 'nose_bajoran_round.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
+  {
+    file: 'nose_bajoran_sharp.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
+  {
+    file: 'nose_bajoran_pointy.svg',
+    tags: {
+      imagePart: imageParts.nose,
+      gender: [gender.male, gender.female],
+      species: [alienSpeciesList.bajoran],
+    },
+  },
 ];
