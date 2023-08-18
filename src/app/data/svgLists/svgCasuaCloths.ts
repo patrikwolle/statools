@@ -23,6 +23,7 @@ export const casualClothsSvgList: avatarList[] = [
                 alienSpeciesList.romulan,
                 alienSpeciesList.tellarite,
                 alienSpeciesList.trill,
+                alienSpeciesList.vidiian,
                 alienSpeciesList.vulcan,
 
             ],
@@ -49,6 +50,7 @@ export const casualClothsSvgList: avatarList[] = [
                 alienSpeciesList.romulan,
                 alienSpeciesList.tellarite,
                 alienSpeciesList.trill,
+                alienSpeciesList.vidiian,
                 alienSpeciesList.vulcan,
 
             ],
@@ -75,6 +77,7 @@ export const casualClothsSvgList: avatarList[] = [
                 alienSpeciesList.romulan,
                 alienSpeciesList.tellarite,
                 alienSpeciesList.trill,
+                alienSpeciesList.vidiian,
                 alienSpeciesList.vulcan,
 
             ],
@@ -101,6 +104,7 @@ export const casualClothsSvgList: avatarList[] = [
                 alienSpeciesList.romulan,
                 alienSpeciesList.tellarite,
                 alienSpeciesList.trill,
+                alienSpeciesList.vidiian,
                 alienSpeciesList.vulcan,
 
             ],

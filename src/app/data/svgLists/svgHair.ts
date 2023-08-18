@@ -25,7 +25,11 @@ export const hairSvgList: avatarList[] = [
     tags: {
       imagePart: imageParts.hair,
       gender: [gender.male, gender.female],
-      species: [alienSpeciesList.klingon, alienSpeciesList.tellarite],
+      species: [
+        alienSpeciesList.klingon,
+        alienSpeciesList.tellarite,
+        alienSpeciesList.vidiian,
+      ],
     },
   },
   {
@@ -37,6 +41,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.efrosian,
         alienSpeciesList.klingon,
         alienSpeciesList.tellarite,
+        alienSpeciesList.vidiian,
       ],
     },
   },
@@ -49,6 +54,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.efrosian,
         alienSpeciesList.klingon,
         alienSpeciesList.tellarite,
+        alienSpeciesList.vidiian,
       ],
     },
   },
@@ -69,6 +75,7 @@ export const hairSvgList: avatarList[] = [
         alienSpeciesList.tellarite,
         alienSpeciesList.trill,
         alienSpeciesList.vulcan,
+        alienSpeciesList.vidiian,
       ],
     },
   },

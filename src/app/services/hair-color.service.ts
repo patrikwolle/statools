@@ -24,6 +24,7 @@ export class HairColorService {
     switch (species) {
       case alienSpeciesList.human:
       case alienSpeciesList.betazoid:
+      case alienSpeciesList.vidiian:
       case alienSpeciesList.trill: {
         return this.getHairColorWithHighlightColor(normaleAndColeredHair);
       }
