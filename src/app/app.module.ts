@@ -18,8 +18,11 @@ import { MessageModule } from 'primeng/message';
 import { MessageService } from 'primeng/api';
 import { CheckboxModule } from 'primeng/checkbox';
 import {SelectButtonModule} from "primeng/selectbutton";
+import { TabMenuModule } from 'primeng/tabmenu';
+import {NgOptimizedImage} from '@angular/common';
+import { StaSelectButtonComponent } from './elements/sta-select-button/sta-select-button.component';
 @NgModule({
-  declarations: [AppComponent, AvatarComponent],
+  declarations: [AppComponent, AvatarComponent, StaSelectButtonComponent],
   imports: [
     BrowserModule,
     FileUploadModule,
@@ -36,6 +39,8 @@ import {SelectButtonModule} from "primeng/selectbutton";
     BrowserAnimationsModule,
     HttpClientModule,
     SelectButtonModule,
+    TabMenuModule,
+    NgOptimizedImage
   ],
   providers: [MessageService],
   bootstrap: [AppComponent],

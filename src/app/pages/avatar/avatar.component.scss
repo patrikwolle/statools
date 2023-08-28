@@ -17,11 +17,32 @@
     background: #d44;
   }
 
+
 }
 .selectHeader {
   font-size: x-large;
 }
 
+.selectContainer {
+  position: relative;
+}
+
+.containerBackground{
+    display: block;
+  z-index: 2;
+}
+
+.containerOverlay {
+  position: absolute;
+  left: 0
+}
+
+.preview {
+  border: solid red;
+  background-color: white;
+  padding: 20px;
+
+}
 .uniform {
   position: absolute;
   z-index: 6;

@@ -57,8 +57,35 @@
 </div>
 <div class="grid" style="width: 75vw">
   <div class="col-12 md:col-6 lg:col-6">
+    <p-tabMenu [model]="tabItems" [activeItem]="selectedTab" [scrollable]="true" (activeItemChange)="onActiveItemChange($event)"></p-tabMenu>
+    <div *ngIf="selectedTab.label === 'uniform'">
+      <div class="grid">
+        <div class="col-4" *ngFor="let uniform of allUniforms" >
+            <button [style]="{height: '200px', width: '200px'}" (click)="changeUniform(uniform)">
+              <div class="selectContainer">
+                <img class="containerOverlay" style="width: 100%" src="assets/avatar/lcars_rahmen.svg#svgView(viewBox(35, 0, 20ng serve0, 200))">
+                <img class="containerBackground" style="width: 100%" src="assets/avatar/{{uniform.tags.imagePart.toLowerCase()}}/{{uniform.file}}#svgView(viewBox(50, 100, 120, 150))">
+
+              </div>
+            </button>
+          </div>
+      </div>
+    </div>
+    <div *ngIf="selectedTab.label === 'head'">
+      <div class="grid">
+        <div class="col-6" *ngFor="let head of allHeads" >
+          <button pButton [style]="{height: '200px', width: '200px'}" (click)="changeHead(head)">
+            <img style="width: 100%" src="assets/avatar/{{head.tags.imagePart.toLowerCase()}}/{{head.file}}#svgView(viewBox(50, 25, 120, 150))">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedTab.label === 'head'">
+      head
+    </div>
     <div class="grid">
       <div class="col-12 md:col-6 lg:col-6">
+
         <div class="selectHeader">Hair</div>
         <div class="grid">
           <div class="col-2">

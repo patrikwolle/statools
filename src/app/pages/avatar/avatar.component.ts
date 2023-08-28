@@ -15,6 +15,7 @@ import { HairColor, EyeColor } from 'src/app/interfaces/color.interface';
 import { backgrounds } from 'src/app/data/backgroundsImg';
 import { SkinColorService } from 'src/app/services/skin-color.service';
 import { ColorConversionService } from 'src/app/services/color-converter.service';
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-avatar',
@@ -22,6 +23,11 @@ import { ColorConversionService } from 'src/app/services/color-converter.service
   styleUrls: ['./avatar.component.scss'],
 })
 export class AvatarComponent implements OnInit {
+
+  /** TabMenu */
+
+  tabItems: MenuItem[] = [];
+  selectedTab: MenuItem = {label: 'head'}
   /** Main selections */
   allSpecies: unknown[] = [];
   selectedTestSpecies = { name: 'human', value: 'human' };
@@ -135,6 +141,7 @@ export class AvatarComponent implements OnInit {
 
   /** Load all the informations from the arrays, because of the fact thats a sync call we can do this by simple calls directly in the onInit */
   ngOnInit(): void {
+    this.fillMenuTab();
     for (const value in alienSpeciesList) {
       this.allSpecies.push({ name: value, value: value });
     }
@@ -152,7 +159,22 @@ export class AvatarComponent implements OnInit {
       this.allRanks.push({ name: r, value: r });
     }
     this.selectedEra = this.allEras[0];
+
     this.loadArrays();
+    this.onChangePart();
+
+  }
+
+  fillMenuTab() {
+    this.tabItems = []
+    Object.keys(imageParts).forEach(key => {
+      this.tabItems?.push({label: key})
+    })
+    this.selectedTab = this.tabItems[0]
+  }
+
+  onActiveItemChange(event: MenuItem) {
+    this.selectedTab = event
   }
 
   loadArrays() {
@@ -228,6 +250,8 @@ export class AvatarComponent implements OnInit {
     this.allEyeColors = this.avatar.loadEyeColor(this.selectedSpecies);
     this.allBackgrounds = backgrounds;
     this.onChangePart();
+    this.selectedUniform = this.allUniforms[0]
+    this.selectedHead = this.allHeads[0]
   }
 
   changeSpecies(sr: string) {
@@ -525,8 +549,8 @@ export class AvatarComponent implements OnInit {
   }
 
   setSVGs(): void {
-    this.selectedUniform = this.allUniforms[this.uniformIndex];
-    this.selectedHead = this.allHeads[this.headIndex];
+    //this.selectedUniform = this.allUniforms[this.uniformIndex];
+    //this.selectedHead = this.allHeads[this.headIndex];
     this.selectedEyes = this.allEyes[this.eyeIndex];
     this.selectedHair = this.allHairs[this.hairIndex];
     this.selectedNose = this.allNoses[this.noseIndex];
@@ -608,6 +632,17 @@ export class AvatarComponent implements OnInit {
       document.getElementById('avatar')?.offsetWidth! * 1.047619047619048
     }px`
     );
+  }
+
+  changeUniform(uniform: any) {
+    console.log(uniform)
+    this.selectedUniform = uniform
+    this.onChangePart()
+  }
+
+  changeHead(head: any) {
+    this.selectedHead = head;
+    this.onChangePart()
   }
 
   nextPart(part: string, up: boolean): void {
