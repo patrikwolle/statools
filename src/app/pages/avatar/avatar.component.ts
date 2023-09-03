@@ -560,7 +560,7 @@ export class AvatarComponent implements OnInit {
     this.scarIndex = this.randomInt(this.allScars.length);
     this.hairDecoIndex = this.randomInt(this.allHairDeco.length);
     this.unshaven =
-      this.selectedGender === gender.female
+      this.selectedGender === gender.female || this.allBeards.length === 0
         ? false
         : this.randomInt(2) === 0
         ? false
