@@ -13,6 +13,7 @@ import {image} from "html2canvas/dist/types/css/types/image";
 export class StaSelectButtonComponent implements OnInit{
 
   @Input('svgPath') pathToSvg: string = '';
+  @Input('imagePart') imagePart: string ="";
   @Input('height') heightValue: string = '300px';
   @Input('width') widthValue: string = '300px';
 
@@ -44,7 +45,7 @@ export class StaSelectButtonComponent implements OnInit{
   })}
 
   ngOnInit(): void {
-    this.changeSizeOfSVG('250', '250', 'assets/avatar/uniform/uniform_female1_2370.svg')
+    this.changeSizeOfSVG('250', '250', `assets/avatar/${this.imagePart.toLowerCase()}/${this.pathToSvg}`)
   }
 
 
