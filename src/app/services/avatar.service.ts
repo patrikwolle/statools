@@ -155,6 +155,9 @@ export class AvatarService {
   }
 }
 
+/**
+ * Export of the ids for the SVG images
+ */
 export const idsSvg = {
   uniform: ['uniform_right', 'uniform_left'],
   skin: ['head', 'ears', 'neck', 'species_special'],

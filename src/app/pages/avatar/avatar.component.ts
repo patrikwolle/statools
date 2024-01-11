@@ -844,7 +844,7 @@ export class AvatarComponent implements OnInit {
    * @returns size corrected SVG string
    */
   changeSizeOfSVG(input?: string): string {
-    let width = document.getElementById('avatar')?.offsetWidth;
+    let width = window.screen.width/3//document.getElementById('avatar')?.offsetWidth;
     let height = 0;
     if (width) {
       height = width * 1.047619047619048;

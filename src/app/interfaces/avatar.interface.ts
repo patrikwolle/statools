@@ -11,6 +11,9 @@ export interface avatarList {
   };
 }
 
+/**
+ * Interface for the background Images
+ */
 export interface backgroundInterface {
   name: string;
   path: string;
