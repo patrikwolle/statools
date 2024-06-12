@@ -208,7 +208,7 @@
             ></button>
           </div>
         </div>
-        <div class="selectHeader grid" *ngIf="selectedGender === 'male'">
+        <div class="selectHeader grid" *ngIf="selectedGender === 'male' && this.allBeards.length > 0 ">
           <div class="col-2" style="padding-bottom: 0px">Beard</div>
           <div class="col-4" style="padding-bottom: 0px"></div>
           <div class="col-6 text-right" style="padding-bottom: 0px">
@@ -228,7 +228,7 @@
             </div>
           </div>
         </div>
-        <div *ngIf="selectedGender === 'male'" class="grid">
+        <div *ngIf="selectedGender === 'male' && this.allBeards.length > 0" class="grid">
           <div class="col-2">
             <button
               pButton
