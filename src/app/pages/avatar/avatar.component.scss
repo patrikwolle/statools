@@ -1,6 +1,6 @@
 .wrapper {
-  height: 840px;
-  width: 840px;
+  height: 400px;
+  width: 100%;
   position: relative;
 }
 ::ng-deep {
@@ -42,6 +42,7 @@
 }
 
 .selectContainer {
+  background-color: white;
   position: relative;
 }
 

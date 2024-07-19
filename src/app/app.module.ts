@@ -21,8 +21,9 @@ import {SelectButtonModule} from "primeng/selectbutton";
 import { TabMenuModule } from 'primeng/tabmenu';
 import {NgOptimizedImage} from '@angular/common';
 import { StaSelectButtonComponent } from './elements/sta-select-button/sta-select-button.component';
+import { TypeofPipe } from './pipes/typeof.pipe';
 @NgModule({
-  declarations: [AppComponent, AvatarComponent, StaSelectButtonComponent],
+  declarations: [AppComponent, AvatarComponent, StaSelectButtonComponent, TypeofPipe],
   imports: [
     BrowserModule,
     FileUploadModule,

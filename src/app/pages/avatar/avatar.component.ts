@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import { AvatarService } from 'src/app/services/avatar.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ColorService } from 'src/app/services/colors.service';
@@ -23,6 +23,11 @@ import {MenuItem} from 'primeng/api';
   styleUrls: ['./avatar.component.scss'],
 })
 export class AvatarComponent implements OnInit {
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.onChangePart();
+  }
 
   /** TabMenu */
 
@@ -250,8 +255,9 @@ export class AvatarComponent implements OnInit {
     this.allEyeColors = this.avatar.loadEyeColor(this.selectedSpecies);
     this.allBackgrounds = backgrounds;
     this.onChangePart();
-    this.selectedUniform = this.allUniforms[0]
-    this.selectedHead = this.allHeads[0]
+    this.selectedUniform = this.allUniforms[0];
+    this.selectedHead = this.allHeads[0];
+    this.selectedHair = this.allHairs[0];
   }
 
   changeSpecies(sr: string) {
@@ -326,6 +332,7 @@ export class AvatarComponent implements OnInit {
   }
 
   onChangePart() {
+    console.log(document.getElementById('avatar')?.offsetWidth!)
     document
       .getElementById('avatar')
       ?.setAttribute(
@@ -553,6 +560,7 @@ export class AvatarComponent implements OnInit {
     //this.selectedHead = this.allHeads[this.headIndex];
     this.selectedEyes = this.allEyes[this.eyeIndex];
     this.selectedHair = this.allHairs[this.hairIndex];
+    console.log(this.selectedHair)
     this.selectedNose = this.allNoses[this.noseIndex];
     this.selectedMouth = this.allMouths[this.mouthIndex];
     this.selectedEyebrows = this.allEyebrows[this.eyebrowIndex];
@@ -634,9 +642,18 @@ export class AvatarComponent implements OnInit {
     );
   }
 
+  changeHair(hair: any): void {
+    this.selectedHair = hair;
+    this.onChangePart();
+  }
+
   changeUniform(uniform: any) {
-    console.log(uniform)
     this.selectedUniform = uniform
+    this.onChangePart()
+  }
+
+  changeEyes(eyes: any): void {
+    this.selectedEyes = eyes;
     this.onChangePart()
   }
 
@@ -656,6 +673,7 @@ export class AvatarComponent implements OnInit {
           : this.uniformIndex > 0
           ? this.uniformIndex - 1
           : this.allUniforms.length - 1;
+        this.changeUniform(this.allUniforms[this.uniformIndex])
         this.onChangePart();
         break;
       case 'head':
@@ -686,6 +704,7 @@ export class AvatarComponent implements OnInit {
           : this.hairIndex > 0
           ? this.hairIndex - 1
           : this.allHairs.length - 1;
+        this.changeHair(this.allHairs[this.hairIndex]);
         this.onChangePart();
         break;
       case 'nose':
@@ -844,7 +863,7 @@ export class AvatarComponent implements OnInit {
    * @returns size corrected SVG string
    */
   changeSizeOfSVG(input?: string): string {
-    let width = window.screen.width/3//document.getElementById('avatar')?.offsetWidth;
+    let width = document.getElementById('avatar')?.offsetWidth;
     let height = 0;
     if (width) {
       height = width * 1.047619047619048;
