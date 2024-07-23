@@ -258,6 +258,7 @@ export class AvatarComponent implements OnInit {
     this.selectedUniform = this.allUniforms[0];
     this.selectedHead = this.allHeads[0];
     this.selectedHair = this.allHairs[0];
+
   }
 
   changeSpecies(sr: string) {
@@ -662,6 +663,16 @@ export class AvatarComponent implements OnInit {
     this.onChangePart()
   }
 
+  changeHeadDeco(headDeco: any) {
+    this.selectedHeadDeco = headDeco;
+    this.onChangePart();
+  }
+
+  changeEyebrows(eyeBrows: any) {
+    this.selectedEyebrows = eyeBrows;
+    this.onChangePart();
+  }
+
   nextPart(part: string, up: boolean): void {
     this.loading = true;
     switch (part) {
@@ -684,6 +695,7 @@ export class AvatarComponent implements OnInit {
           : this.headIndex > 0
           ? this.headIndex - 1
           : this.allHeads.length - 1;
+        this.changeHead(this.allHeads[this.headIndex]);
         this.onChangePart();
         break;
       case 'eyes':
@@ -735,6 +747,7 @@ export class AvatarComponent implements OnInit {
           : this.eyebrowIndex > 0
           ? this.eyebrowIndex - 1
           : this.allEyebrows.length - 1;
+        this.changeEyebrows(this.allEyebrows[this.eyebrowIndex]);
         this.onChangePart();
         break;
       case 'ears':
@@ -765,6 +778,7 @@ export class AvatarComponent implements OnInit {
           : this.headDecoIndex > 0
           ? this.headDecoIndex - 1
           : this.allHeadDeco.length - 1;
+        this.changeHeadDeco(this.allHeadDeco[this.headDecoIndex]);
         this.onChangePart();
         break;
       case 'hairColor':
@@ -863,7 +877,7 @@ export class AvatarComponent implements OnInit {
    * @returns size corrected SVG string
    */
   changeSizeOfSVG(input?: string): string {
-    let width = window.screen.width/3//document.getElementById('avatar')?.offsetWidth;
+    let width = document.getElementById('avatar')?.offsetWidth;
     let height = 0;
     if (width) {
       height = width * 1.047619047619048;
