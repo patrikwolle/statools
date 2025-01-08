@@ -114,6 +114,11 @@
   border-color: black;
 }
 
+:host ::ng-deep .p-dropdown-header {
+  background-color: black;
+  border-color: black;
+}
+
 :host ::ng-deep .p-dropdown-items {
   font-family: "Antonio", "Arial Narrow", "Avenir Next Condensed", sans-serif;
 }

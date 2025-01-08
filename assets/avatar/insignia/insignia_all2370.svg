@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="840"
+   height="880"
+   viewBox="0 0 222.24999 232.83334"
+   version="1.1"
+   id="mySVG"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="insignia_all2370.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="16.710734"
+     inkscape:cx="383.6157"
+     inkscape:cy="572.62595"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="2513"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2"
+     units="px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect14166"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect2574"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect441"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect437"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.00243902"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2"
+       transform="translate(0.20012793)">
+      <ellipse
+         style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="hintergrund-ens-bobble"
+         cx="106.57987"
+         cy="150.18799"
+         rx="1.1107376"
+         ry="1.1727377"
+         inkscape:label="hintergrund" />
+      <ellipse
+         style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="ens-bobble"
+         cx="106.57987"
+         cy="150.18799"
+         rx="0.98562723"
+         ry="1.047745" />
+    </g>
+    <g
+       id="g1"
+       transform="translate(0.20019641,0.07598877)">
+      <ellipse
+         style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="hintergrund-lt-bobble"
+         cx="103.9128"
+         cy="150.112"
+         rx="1.1107376"
+         ry="1.1727377"
+         inkscape:label="hintergrund" />
+      <ellipse
+         style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="lt-bobble"
+         cx="103.9128"
+         cy="150.112"
+         rx="0.98562723"
+         ry="1.047745" />
+    </g>
+    <g
+       id="g3"
+       transform="translate(0.10012634)">
+      <ellipse
+         style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="hintergrund-cmd-bobble"
+         cx="101.34087"
+         cy="150.18799"
+         rx="1.1107376"
+         ry="1.1727377"
+         inkscape:label="hintergrund" />
+      <ellipse
+         style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="cmd-bobble"
+         cx="101.34087"
+         cy="150.18799"
+         rx="0.98562723"
+         ry="1.047745" />
+    </g>
+    <g
+       id="g4"
+       transform="translate(0,0.02362061)">
+      <ellipse
+         style="fill:#000000;stroke:#000000;stroke-width:0.456525;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="hintergrund-captain-bobble"
+         cx="98.779999"
+         cy="150.16437"
+         rx="1.1107376"
+         ry="1.1727377"
+         inkscape:label="hintergrund" />
+      <ellipse
+         style="fill:none;stroke:#ffcc00;stroke-width:0.406483;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="captain-bobble"
+         cx="98.779999"
+         cy="150.16437"
+         rx="0.98562723"
+         ry="1.047745" />
+    </g>
+  </g>
+</svg>
