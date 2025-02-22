@@ -674,6 +674,7 @@ export class AvatarComponent implements OnInit {
   }
 
   nextPart(part: string, up: boolean): void {
+    console.log(this.selectedBackground)
     this.loading = true;
     switch (part) {
       case 'uniform':

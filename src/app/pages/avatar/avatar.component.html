@@ -135,9 +135,9 @@
       </div>
     </div>
   </div>
-  <div class="col-12 md:col-6 lg:col-6">
+  <div class="col-12 md:col-6 lg:col-8">
     <div class="grid">
-      <div class="col-12 md:col-6 lg:col-6">
+      <div class="col-12 md:col-6 lg:col-4">
 
         <div class="selectHeader">Hair</div>
         <div class="grid">
@@ -214,9 +214,18 @@
           <div class="col-8">
             <div class="col-8">
               <div class="selectContainer">
-                {{selectedHeadDeco.file}}
-                <div *ngIf="(selectedHeadDeco.file | typeof) === 'string'">
+                <div *ngIf="(selectedHeadDeco.file | typeof) === 'string' && selectedHeadDeco.file !== 'no_headDeco.svg'">
+                  {{selectedHeadDeco.file}}
                   <img class="containerBackground" style="width: 50%; margin-left: 25%" src="assets/avatar/{{selectedHeadDeco.tags.imagePart.toLowerCase()}}/{{selectedHeadDeco.file}}#svgView(viewBox(50, 0, 120, 150))">
+                </div>
+                <div *ngIf="(selectedHeadDeco.file | typeof) === 'string' && selectedHeadDeco.file === 'no_headDeco.svg'">
+                  <input
+                    style="width: 100%"
+                    *ngIf="selectedHeadDeco"
+                    [disabled]="true"
+                    [value]="'No Head Deco'"
+                    pInputText
+                  />
                 </div>
               </div>
             </div>
@@ -265,25 +274,24 @@
           <div class="col-2">
             <button
               pButton
-              [style]="{ width: '100%' }"
+              [style]="{ width: '100%', 'height': '100%' }"
               (click)="nextPart('eyes', false)"
               class="p-button-bw"
               icon="pi pi-angle-left"
             ></button>
           </div>
-          <div class="col-8">
-            <input
-              style="width: 100%"
-              *ngIf="selectedEyes"
-              [disabled]="true"
-              [(ngModel)]="selectedEyes.file"
-              pInputText
-            />
-          </div>
+            <div class="col-8">
+              <div class="selectContainer">
+                {{selectedEyes.file}}
+                <div *ngIf="(selectedEyes.file | typeof) === 'string'">
+                  <img class="containerBackground" style="width: 50%; margin-left: 25%" src="assets/avatar/{{selectedEyes.tags.imagePart.toLowerCase()}}/{{selectedEyes.file}}#svgView(viewBox(50, 0, 120, 150))">
+                </div>
+              </div>
+            </div>
           <div class="col-2">
             <button
               pButton
-              [style]="{ width: '100%' }"
+              [style]="{ width: '100%', 'height': '100%' }"
               (click)="nextPart('eyes', true)"
               class="p-button-fw"
               icon="pi pi-angle-right"
@@ -339,6 +347,9 @@
             ></button>
           </div>
         </div>
+      </div>
+
+      <div class="col-12 md:col-6 lg:col-4">
         <div class="selectHeader">Scars</div>
         <div class="grid">
           <div class="col-2">
@@ -369,6 +380,157 @@
             ></button>
           </div>
         </div>
+
+        <div class="selectHeader">Hair Decoration</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('hairDeco', false)"
+              class="p-button-bw"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              *ngIf="selectedHairDeco"
+              [disabled]="true"
+              [(ngModel)]="selectedHairDeco.name"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('hairDeco', true)"
+              class="p-button-fw"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div class="selectHeader">Mouth</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              class="p-button-bw"
+              [style]="{ width: '100%', 'height': '100%' }"
+              (click)="nextPart('mouth', false)"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <div class="selectContainer">
+              {{selectedMouth.file}}
+              <div *ngIf="(selectedMouth.file | typeof) === 'string'">
+                <img class="containerBackground" style="width: 50%; margin-left: 25%" src="assets/avatar/{{selectedMouth.tags.imagePart.toLowerCase()}}/{{selectedMouth.file}}#svgView(viewBox(50, 0, 120, 150))">
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%', 'height': '100%' }"
+              (click)="nextPart('mouth', true)"
+              icon="pi pi-angle-right"
+              class="p-button-fw"
+            ></button>
+          </div>
+        </div>
+        <div class="selectHeader">Nose</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%', 'height': '100%' }"
+              (click)="nextPart('nose', false)"
+              class="p-button-bw"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <div class="selectContainer">
+              {{selectedNose.file}}
+              <div *ngIf="(selectedNose.file | typeof) === 'string'">
+                <img class="containerBackground" style="width: 50%; margin-left: 25%" src="assets/avatar/{{selectedNose.tags.imagePart.toLowerCase()}}/{{selectedNose.file}}#svgView(viewBox(50, 0, 120, 150))">
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%', 'height': '100%' }"
+              (click)="nextPart('nose', true)"
+              class="p-button-fw"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div class="selectHeader">Ears</div>
+        <div class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%', 'height': '100%' }"
+              (click)="nextPart('ears', false)"
+              class="p-button-bw"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <div class="selectContainer">
+              {{selectedEars.file}}
+              <div *ngIf="(selectedEars.file | typeof) === 'string'">
+                <img class="containerBackground" style="width: 50%; margin-left: 25%" src="assets/avatar/{{selectedEars.tags.imagePart.toLowerCase()}}/{{selectedEars.file}}#svgView(viewBox(50, 0, 120, 150))">
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%', 'height': '100%' }"
+              (click)="nextPart('ears', true)"
+              class="p-button-fw"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+        <div class="selectHeader" *ngIf="selectedSpeciesSpecial">
+          SpeciesSpecial
+        </div>
+        <div *ngIf="selectedSpeciesSpecial" class="grid">
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('speciesSpecial', false)"
+              class="p-button-bw"
+              icon="pi pi-angle-left"
+            ></button>
+          </div>
+          <div class="col-8">
+            <input
+              style="width: 100%"
+              [disabled]="true"
+              [(ngModel)]="selectedSpeciesSpecial.file"
+              pInputText
+            />
+          </div>
+          <div class="col-2">
+            <button
+              pButton
+              [style]="{ width: '100%' }"
+              (click)="nextPart('speciesSpecial', true)"
+              class="p-button-fw"
+              icon="pi pi-angle-right"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4">
         <div class="selectHeader">Body</div>
         <div class="grid">
           <div class="col-2">
@@ -403,8 +565,6 @@
             ></button>
           </div>
         </div>
-      </div>
-      <div class="col-12 md:col-6 lg:col-6">
         <div class="selectHeader">Haircolor</div>
         <div class="grid">
           <div class="col-2">
@@ -507,177 +667,29 @@
             ></button>
           </div>
         </div>
-        <div class="selectHeader">Hair Decoration</div>
-        <div class="grid">
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('hairDeco', false)"
-              class="p-button-bw"
-              icon="pi pi-angle-left"
-            ></button>
-          </div>
-          <div class="col-8">
-            <input
-              style="width: 100%"
-              *ngIf="selectedHairDeco"
-              [disabled]="true"
-              [(ngModel)]="selectedHairDeco.name"
-              pInputText
-            />
-          </div>
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('hairDeco', true)"
-              class="p-button-fw"
-              icon="pi pi-angle-right"
-            ></button>
-          </div>
-        </div>
-        <div class="selectHeader">Mouth</div>
-        <div class="grid">
-          <div class="col-2">
-            <button
-              pButton
-              class="p-button-bw"
-              [style]="{ width: '100%' }"
-              (click)="nextPart('mouth', false)"
-              icon="pi pi-angle-left"
-            ></button>
-          </div>
-          <div class="col-8">
-            <input
-              style="width: 100%"
-              [disabled]="true"
-              [(ngModel)]="selectedMouth.file"
-              pInputText
-            />
-          </div>
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('mouth', true)"
-              icon="pi pi-angle-right"
-              class="p-button-fw"
-            ></button>
-          </div>
-        </div>
-        <div class="selectHeader">Nose</div>
-        <div class="grid">
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('nose', false)"
-              class="p-button-bw"
-              icon="pi pi-angle-left"
-            ></button>
-          </div>
-          <div class="col-8">
-            <input
-              style="width: 100%"
-              [disabled]="true"
-              [(ngModel)]="selectedNose.file"
-              pInputText
-            />
-          </div>
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('nose', true)"
-              class="p-button-fw"
-              icon="pi pi-angle-right"
-            ></button>
-          </div>
-        </div>
-        <div class="selectHeader">Ears</div>
-        <div class="grid">
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('ears', false)"
-              class="p-button-bw"
-              icon="pi pi-angle-left"
-            ></button>
-          </div>
-          <div class="col-8">
-            <input
-              style="width: 100%"
-              [disabled]="true"
-              [(ngModel)]="selectedEars.file"
-              pInputText
-            />
-          </div>
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('ears', true)"
-              class="p-button-fw"
-              icon="pi pi-angle-right"
-            ></button>
-          </div>
-        </div>
-        <div class="selectHeader" *ngIf="selectedSpeciesSpecial">
-          SpeciesSpecial
-        </div>
-        <div *ngIf="selectedSpeciesSpecial" class="grid">
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('speciesSpecial', false)"
-              class="p-button-bw"
-              icon="pi pi-angle-left"
-            ></button>
-          </div>
-          <div class="col-8">
-            <input
-              style="width: 100%"
-              [disabled]="true"
-              [(ngModel)]="selectedSpeciesSpecial.file"
-              pInputText
-            />
-          </div>
-          <div class="col-2">
-            <button
-              pButton
-              [style]="{ width: '100%' }"
-              (click)="nextPart('speciesSpecial', true)"
-              class="p-button-fw"
-              icon="pi pi-angle-right"
-            ></button>
-          </div>
-        </div>
         <div class="selectHeader">Background</div>
         <div *ngIf="selectedBackground" class="grid">
           <div class="col-2">
             <button
               pButton
-              [style]="{ width: '100%' }"
+              [style]="{ width: '100%', 'height': '100%' }"
               (click)="nextPart('background', false)"
               class="p-button-bw"
               icon="pi pi-angle-left"
             ></button>
           </div>
           <div class="col-8">
-            <input
-              style="width: 100%"
-              [disabled]="true"
-              [(ngModel)]="selectedBackground.name"
-              pInputText
-            />
+            <div class="selectContainer">
+              {{selectedBackground.name}}
+              <div *ngIf="(selectedBackground.path | typeof) === 'string'">
+                <img class="containerBackground" style="width: 100%" src="{{selectedBackground.path}}">
+              </div>
+            </div>
           </div>
           <div class="col-2">
             <button
               pButton
-              [style]="{ width: '100%' }"
+              [style]="{ width: '100%', 'height': '100%' }"
               (click)="nextPart('background', true)"
               class="p-button-fw"
               icon="pi pi-angle-right"
